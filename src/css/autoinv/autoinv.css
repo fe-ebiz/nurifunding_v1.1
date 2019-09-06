@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+@media (max-width: 767px) {
+
+	.page-tit {display: block; text-align: center; width: 100%; font-size: 22px; font-weight: 00; letter-spacing: -1px; margin: 25px auto 20px;}
+	.page-tit .ic-new {top: -3px; margin-left: 5px;}
+	.cont {width: 310px; padding: 20px 10px; margin: 15px auto 40px; border: 1px solid #ddd; background: #ffffff; border-radius: 4px;}
+	.cont hr.sun {margin: 20px auto;}
+	.sec .sec-top .sec-tit {font-size: 17px; line-height: 1.2; letter-spacing: -1px;}
+	.sec .sec-mid {font-size: 12px;}
+	.sec .sec-mid .row-txt {line-height: 1.5; margin-top: 10px; letter-spacing: -0.5px; word-break: keep-all;}
+	.sec .sec-mid .row-btn .cmt {line-height: 1.5;}
+	.sec .sec-mid .row-btn .cmt > p {margin-top: 5px;}
+	.sec .sec-mid .row-btn .cmt > p:first-child {margin-top: 0px;}
+	.sec.intro .sec-mid .row-box {border: 1px solid #dbdbdb; padding: 10px 10px; margin-top: 15px; line-height: 1.5; font-size: 13px;}
+	.sec.intro .sec-mid .row-box.type-01 {background: #f9f9f9; margin-top: 10px; padding: 10px 25px;}
+	.sec.intro .sec-mid .row-box.type-01 .dropdown.prc {top: -2px; width: 85px; margin-left: 5px;}
+	.sec.intro .sec-mid .row-box.type-01 span.sun {display: block; width: 100%; height: 1px; margin: 5px 0; background: #dbdbdb;}
+    .sec.intro .sec-mid .row-box.type-01 .btn-base {margin-left: 7px; padding: 0 6px;}
+	.sec.intro .sec-mid .row-btn {margin-top: 10px;}
+	.sec.intro .sec-mid .row-btn .btn-base {width: 100%; margin-top: 10px; font-size: 14px; height: 40px; line-height: 40px;}
+	.sec.intro .sec-mid .row-btn .btn-base:first-child {margin-top: 0;}
+	.sec.intro .sec-mid .row-btn .cmt {margin-top: 10px; line-height: 1.4;}
+	.sec.merit .list {margin-top: 15px; font-size: 0;}
+	.sec.merit .list .item {font-size: 13px; position: relative; display: inline-block; vertical-align: top; width: 33.33%; box-sizing: border-box;}
+	.sec.merit .list .item.nth-2:before,
+	.sec.merit .list .item.nth-2:after {position: absolute; content: ""; display: inline-block; top: 10px; width: 1px; height: 35px; background: #8dbdec;}
+	.sec.merit .list .item.nth-2:before {left: 0;}
+	.sec.merit .list .item.nth-2:after {right: 0;}
+	.sec.merit .list .item figure figcaption {font-size: 11px; line-height: 1.5; margin-top: 15px; letter-spacing: -1.5px;}
+	.sec.merit .list .item figure img {padding: 0 20px;}
+	.sec.merit .row-txt.notice {margin-top: 10px; font-size: 11px;}
+	.sec.merit .row-txt.notice strong {display: block; margin-bottom: 5px; font-size: 12px;}
+	.sec.merit .row-txt.notice .row-dot {padding-left: 15px;}
+	.sec.merit .row-txt.notice .row-dot .dot {position: absolute; left: 2px;}
+
+    /* 190619 투자 후 투자금 변경 팝업 */
+    .pop-autoinv {}
+    .pop-autoinv .bg-back {opacity: 0.7;}
+    .pop-autoinv .pop-wrapper {position: fixed; box-sizing: border-box; width: 286px; height: 74px; top: 50%; left: 50%; margin: -36px 0 0 -143px; padding: 23px 0; text-align: center; border: 1px solid #dbdbdb; background: #f9f9f9; box-shadow: 0px 0px 1px 1px rgba(0,0,0, 0);} 
+    .pop-autoinv .pop-wrapper .pop-area {position: relative; display: inline-block; text-align: left;}
+    .pop-autoinv .pop-wrapper .pop-area .row {float: left;}
+    .pop-autoinv .pop-wrapper .pop-area .row + .row {margin-left: 7px;}
+    .pop-autoinv .pop-wrapper .pop-area .row span {font-size: 13px; vertical-align: middle; line-height: 26px; color: #000;}
+    .pop-autoinv .pop-wrapper .pop-area .row .btn, .pop-autoinv .pop-wrapper .pop-area .row .dropdown-menu {width: 74px; padding: 0px 7px 0 5px; font-size: 11px; line-height: 26px; color: #595858;}
+    .pop-autoinv .pop-wrapper .pop-area .row .btn {height: 26px; margin-right: 2px;}
+    .pop-autoinv .pop-wrapper .pop-area .row .btn .pull-right {font-size: 10px;}
+    .pop-autoinv .pop-wrapper .pop-area .row-btn .btn-base {min-width: 48px; height: 26px; padding: 0 12px; border-radius: 4px;}
+    .pop-autoinv .pop-wrapper .pop-area .row-btn .btn-base span {display: block; font-size: 11px; line-height: 26px; color: #fff;}
+    .pop-autoinv .pop-wrapper .pop-area .row-btn .btn-base + .btn-base {margin-left: 1px;}
+}
+
+@media (min-width: 768px) {
+
+	.page-tit {display: block; text-align: center; width: 100%; font-size: 36px; font-weight: 00; letter-spacing: -1px; margin: 45px auto 40px;}
+    .page-tit .ic-new {top: -5px; margin-left: 5px;}
+    .cont {width: 800px; padding: 50px 90px; margin: 15px auto 65px; border: 1px solid #ddd; background: #ffffff; border-radius: 4px;}
+    .cont hr.sun {margin: 50px auto;}
+    .sec .sec-top .sec-tit {font-size: 30px; line-height: 1.2;}
+    .sec .sec-mid {font-size: 18px;}
+    .sec .sec-mid .row-txt {line-height: 1.5; margin-top: 20px; letter-spacing: -0.5px; word-break: keep-all;}
+    .sec .sec-mid .row-txt.small {font-size: 16px;}
+	.sec .sec-mid .row-btn .cmt {font-size: 16px; line-height: 1.5;}
+	.sec .sec-mid .row-btn .cmt > p {margin-top: 5px;}
+	.sec .sec-mid .row-btn .cmt > p:first-child {margin-top: 0px;}
+	.sec.intro .sec-mid .row-box {border: 1px solid #dbdbdb; padding: 20px; line-height: 1.5; margin-top: 30px;}
+	.sec.intro .sec-mid .row-box.type-01 {position: relative; border: 1px solid #dbdbdb; background: #f9f9f9; margin-top: 20px; padding-right: 115px;}
+	.sec.intro .sec-mid .row-box.type-01 .dropdown.prc {width: 120px; margin-left: 10px;} 
+	.sec.intro .sec-mid .row-box.type-01 .form-box {margin-left: 30px;}
+    .sec.intro .sec-mid .row-box.type-01 .btn-base {position: absolute; top: 50%; right: 26px; margin-top: -18px; padding: 0 10px; border-radius: 6px;}
+	.sec.intro .sec-mid .row-box.type-02 {font-size: 17px; background: #ecfdff;}
+    .sec.intro .sec-mid .row-btn {margin-top: 30px;}
+    .sec.intro .sec-mid .row-btn .btn-base {width: 100%; margin-top: 20px; font-size: 17px; height: 50px; line-height: 50px;}
+    .sec.intro .sec-mid .row-btn .btn-base:first-child {margin-top: 0;}
+    .sec.intro .sec-mid .row-btn .cmt {font-size: 16px; margin-top: 20px;}
+    .sec.merit .list {margin-top: 35px;}
+    .sec.merit .list .item {position: relative; display: inline-block; vertical-align: top;}
+    .sec.merit .list .item.nth-1 {padding-right: 30px;}
+    .sec.merit .list .item.nth-2 {padding: 0 30px;}
+    .sec.merit .list .item.nth-3 {padding-left: 30px;}
+    .sec.merit .list .sun {vertical-align: top; top: 20px; width: 1px; height: 70px; background: #8dbdec;}
+	.sec.merit .list .item figure figcaption {font-size: 16px; line-height: 1.5; margin-top: 15px;}
+	.sec.merit .row-txt.smart {margin-top: 30px;}
+	.sec.merit .row-txt.notice {margin-top: 30px; font-size: 16px;}
+	.sec.merit .row-txt.notice strong {display: block; margin-bottom: 10px; font-size: 18px;}
+	.sec.merit .row-txt.notice .row-dot {padding-left: 20px;}
+	.sec.merit .row-txt.notice .row-dot .dot {position: absolute; left: 2px;}
+
+    /* 190619 투자 후 투자금 변경 팝업 */
+    .pop-autoinv {}
+    .pop-autoinv .bg-back {opacity: 0.7;}
+    .pop-autoinv .pop-wrapper {position: fixed; box-sizing: border-box; width: 620px; height: 70px; top: 50%; left: 50%; margin: -35px 0 0 -310px; padding: 15px 0 14px; text-align: center; border: 1px solid #dbdbdb; background: #f9f9f9; box-shadow: 0px 0px 1px 1px rgba(0,0,0, 0);} 
+    .pop-autoinv .pop-wrapper .pop-area {position: relative; display: inline-block; text-align: left;}
+    .pop-autoinv .pop-wrapper .pop-area .row {float: left;}
+    .pop-autoinv .pop-wrapper .pop-area .row + .row {margin-left: 18px;}
+    .pop-autoinv .pop-wrapper .pop-area .row span {font-size: 20px; vertical-align: middle; line-height: 38px; color: #595959;}
+    .pop-autoinv .pop-wrapper .pop-area .row .btn, .pop-autoinv .pop-wrapper .pop-area .row .dropdown-menu {width: 124px; padding: 0px 19px 0 10px; font-size: 16px; line-height: 38px;}
+    .pop-autoinv .pop-wrapper .pop-area .row .btn {height: 38px; margin-right: 4px;}
+    .pop-autoinv .pop-wrapper .pop-area .row .btn .pull-right {font-size: 12px;}
+    .pop-autoinv .pop-wrapper .pop-area .row .dropdown-menu {}
+    .pop-autoinv .pop-wrapper .pop-area .row-btn {}
+    .pop-autoinv .pop-wrapper .pop-area .row-btn .btn-base {height: 38px; padding: 0 9px;}
+    .pop-autoinv .pop-wrapper .pop-area .row-btn .btn-base span {display: block; font-size: 16px; line-height: 38px; color: #fff;}
+    .pop-autoinv .pop-wrapper .pop-area .row-btn .btn-base + .btn-base {margin-left: 5px;}
+}

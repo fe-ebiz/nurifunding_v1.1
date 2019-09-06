@@ -1,0 +1,69 @@
+.show-xs {display: none;}
+.contents {background: #fff;}
+.btn-pay {position:relative; display:inline-block; box-sizing:border-box; padding:0 13px; height:54px; font-size:18px; line-height:54px; color:#fff; text-align:center; border-radius:4px; background: #398fe1}
+section[class*="pay-sec"] {position:relative;}
+section[class*="pay-sec"] .pay-area {position:relative; width:960px; margin:0 auto;}
+section[class*="pay-sec"] .pay-area .pay-tit {font-size: 36px; line-height: 52px; text-align: left; vertical-align: middle;} 
+section[class*="pay-sec"] .pay-area .pay-tit em {vertical-align: middle;}
+
+/* 서브타이틀영역 */
+.pay-sec1 {width: 100%; /*height: 200px;*/ padding: 80px 0 42px; background: #126cc3;}
+.pay-sec1 .pay-area .pay-tit {color: #fff;}
+.pay-sec1 .pay-area .pay-txt {margin-top: 7px; font-size: 16px; color: #fff;}
+
+/* 미리페이 선결제 서비스? */
+.pay-sec2 {}
+.pay-sec2 .pay-area > div {border-top: 1px solid #dcdcdc}
+.pay-sec2 .pay-tit-box {margin-top: 40px;}
+.pay-sec2 .pay-tit-box .pay-tit em {display: inline-block; color: #000;}
+.pay-sec2 .pay-tit-box .pay-tit p {margin-top: 5px; font-size: 20px; line-height: 28px; color: #000;}
+.pay-sec2 .pay-info-0 {padding: 22px 0 40px; border-top: 0;}
+.pay-sec2 .pay-info-0 .pay-tit-box .pay-tit {}
+.pay-sec2 .pay-info-0 .pay-tit-box .pay-tit .pay-img {display: inline-block; vertical-align: middle; margin-right: 10px;}
+.pay-sec2 .pay-info-0 .pay-tit-box .pay-tit .pay-img img {height: 52px;}
+.pay-sec2 .pay-info-0 .pay-tit-box .pay-txt {margin-top: 18px; font-size: 18px; line-height: 26px;}
+.pay-sec2 .pay-info-0 .pay-tit-box .pay-txt em {color: #398fe6;}
+
+.pay-sec2 .pay-info-1 {padding-bottom: 10px;}
+.pay-sec2 .pay-info-1 .pay-info-list {position: relative; box-sizing: border-box; padding-left: 0;}
+.pay-sec2 .pay-info-1 .pay-tit-box + .pay-info-list {margin-top: 20px;}
+.pay-sec2 .pay-info-1 .pay-info-list li {float: left; position: relative; box-sizing: border-box; width: 45%; margin-bottom: 35px; padding-left: 105px;}
+.pay-sec2 .pay-info-1 .pay-info-list li p {}
+.pay-sec2 .pay-info-1 .pay-info-list li .list-tit {font-size: 24px; font-weight: normal; line-height: 24px; color: #000;}
+.pay-sec2 .pay-info-1 .pay-info-list li .list-txt {margin-top: 8px; font-size: 16px; line-height: 26px; color: #3d3d3d;}
+.pay-sec2 .pay-info-1 .pay-info-list .list-2, .pay-sec2 .pay-info-1 .pay-info-list .list-4 {width: 55%;}
+.pay-sec2 .pay-info-1 .pay-info-list .list-1 {background: url(https://nurifunding.co.kr/img/nuripay/list_svc01.png) no-repeat 0 top;}
+.pay-sec2 .pay-info-1 .pay-info-list .list-2 {background: url(https://nurifunding.co.kr/img/nuripay/list_svc02.png) no-repeat 0 top;}
+.pay-sec2 .pay-info-1 .pay-info-list .list-3 {background: url(https://nurifunding.co.kr/img/nuripay/list_svc03.png) no-repeat 0 top;}
+.pay-sec2 .pay-info-1 .pay-info-list .list-4 {background: url(https://nurifunding.co.kr/img/nuripay/list_svc04.png) no-repeat 0 top;}
+
+.pay-sec2 .pay-info-2 {padding-bottom: 45px;}
+.pay-sec2 .pay-info-2 .pay-tit-box {margin-top: 30px;}
+.pay-sec2 .pay-info-2 .pay-info-area {padding:33px 0;}
+.pay-sec2 .pay-info-2 .pay-info-area .pay-info-box {display:table-cell; vertical-align: middle;}
+.pay-sec2 .pay-info-2 .pay-info-area .pay-info-box.nth-2 {}
+.pay-sec2 .pay-info-2 .pay-info-area .pay-info-box dt {display: table-cell; font-size: 24px; font-weight: bold; line-height: 28px; text-align: right; word-break: keep-all; vertical-align: middle; color: #007ec3;}
+.pay-sec2 .pay-info-2 .pay-info-area .pay-info-box:first-child dt {}
+.pay-sec2 .pay-info-2 .pay-info-area .pay-info-box.nth-2 dt {width:70px; padding-left: 50px; line-height: 1.1;}
+.pay-sec2 .pay-info-2 .pay-info-area .pay-info-box dd {position: relative; display: table-cell; font-size: 18px; line-height: 26px; color: #3d3d3d;}
+.pay-sec2 .pay-info-2 .pay-info-area .pay-info-box:first-child dd {padding-left: 15px;}
+.pay-sec2 .pay-info-2 .pay-info-area .pay-info-box.nth-2 dd {padding-left: 28px;}
+.pay-sec2 .pay-info-2 .pay-info-area .pay-info-box:first-child dd:before,
+.pay-sec2 .pay-info-2 .pay-info-area .pay-info-box.nth-2 dd:before {content: ""; display: block; position: absolute;}
+.pay-sec2 .pay-info-2 .pay-info-area .pay-info-box:first-child dd:before {width: 1px; height: 79px; left: 15px; top: 50%; margin-top: -40px; background: #888;}
+.pay-sec2 .pay-info-2 .pay-info-area .pay-info-box.nth-2 dd:before {width: 10px; height: 1px; background: #888; left: 10px; top: 50%; margin-top: -2px;}
+.pay-sec2 .pay-info-2 .pay-info-area .pay-info-box .pay-info-txt {}
+.pay-sec2 .pay-info-2 .pay-txt-2 {font-size: 18px; line-height: 26px;}
+
+/* 자주 묻는 질문 */
+.pay-sec3 {text-align: center;}
+.pay-sec3 .pay-area {border-top: 1px solid #dcdcdc}
+.pay-sec3 .pay-area .pay-tit {margin-top: 40px;}
+.pay-sec3 .pay-area .pay-faq {margin-top: 25px; padding-left: 5px; text-align: left;}
+.pay-sec3 .pay-area .pay-faq > li > p {word-break: keep-all;}
+.pay-sec3 .pay-area .pay-faq .p-q {position: relative; margin-top: 18px; padding-left: 26px; font-size: 18px; line-height: 26px; color: #000;}
+.pay-sec3 .pay-area .pay-faq .p-q span.dot {position: absolute; color: #000; left: 0;}
+.pay-sec3 .pay-area .pay-faq .p-q span.dot:after {content: "."; display: inline-block; color: #333; font-weight: 700;}
+.pay-sec3 .pay-area .pay-faq .p-a {margin-top: 12px; padding: 20px 24px; font-size: 16px; line-height: 26px; background: #f2f2f2;}
+.pay-sec3 .pay-area .pay-faq .p-a em {color: #004eff;}
+.pay-sec3 .btn-pay {width: 280px; margin: 35px auto 65px;}
