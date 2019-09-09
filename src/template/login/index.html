@@ -1,0 +1,118 @@
+@@include('../include/_head.html', {
+	"page": "join"
+})
+    <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/join/join2.css"> 
+    
+	<!--[if lt IE 9]>
+        <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/join/join2_ie9lt.css">
+    <![endif]-->
+
+</head>
+<body>
+
+<h1 class="skip">누리펀딩 로그인</h1>
+<div class="wrap">
+	@@include('../include/_header.html') 
+   
+   <!-- 로그인은 간편 로그인, 회원가입은 회원가입으로 텍스트 변경 -->
+   <h2 class="com-ft">간편 로그인</h2>
+
+    <section class="faq com-pd">
+        <div class="container">
+
+            <!-- 20180322 휴대폰 번호 로그인 및 회원가입 -->
+            <div class="com-box f-wrap br4 nth-2 nr-login ftfm-nn">
+                <div class="login-box">
+                    <h2 class="login-tit">휴대폰 번호로 로그인</h2>
+                    <p class="login-txt">입력하신 휴대폰 번호가 누리펀딩의 아이디가 되는 간편로그인</p>
+
+                    <div class="area-login clr">
+                        <div class="pull-left">
+                            <input type="text" class="nr-text" name="userid" placeholder="아이디">
+                            <input type="password" class="nr-text" name="password" placeholder="비밀번호">
+                        </div>
+                        <a href="javascript: login();" class="a-btn pull-right">로그인</a>
+                        <!-- 20180329 회원가입 버튼 추가 -->
+                        <!--<a href="#none" class="a-btn bg-blue pull-right">휴대폰 번호로 회원가입하기</a>-->
+                    </div>
+
+                    <!--<div class="d-ps">
+                        <p class="p-2">
+                            로그인/회원가입 시 이용약관, 개인정보취급방침에 동의하게 되며<span class="show-sm show-md show-lg"></span>
+                            회원가입시 SMS/메일링 수신에 동의합니다.
+                        </p>
+                    </div>-->
+
+                    <!-- 180626 버튼 박스 및 버튼 추가 -->
+                    <div class="btn-bot-box">
+                        <a href="#none" class="a-btn bg-blue">회원가입</a>
+                        <a href="#none" class="a-btn bg-blue">비밀번호 재설정</a>
+                    </div>
+                </div>
+            </div>
+            <!--// -->
+
+
+            <!-- 20180322 간편로그인 -->
+            <div class="com-box f-wrap br4 nth-1 nr-login ftfm-nn">
+                <div class="login-box type-sns">
+                    <h3 class="login-tit">SNS 계정으로 간편로그인</h3>
+                    <p class="login-txt">별도의 가입없이 기존에 보유하신 SNS 계정으로 이용가능</p>
+                    <ul class="snsLarge-type02 clr">
+                        <li class="naver">
+                            <a href="javascript:total_login('naver')"><span>네이버 ID로 로그인</span></a>
+                        </li>
+                        <li class="kakao">
+                            <a href="javascript:total_login('kakao')"><span>카카오톡 ID로 로그인</span></a>
+                        </li>
+                        <!--<li class="daum">
+                            <a href="javascript:total_login('daum')"><img src="http://img.go.co.kr/mobile/daum_logo.jpg">&nbsp;&nbsp;<span>다음 아이디로 로그인</span></a>
+                        </li>
+                        <li class="facebook">
+                            <a href="javascript:total_login('facebook')"><img src="http://img.go.co.kr/mobile/f_logo.jpg">&nbsp;&nbsp;<span>페이스북 아이디로 로그인</span></a>
+                        </li>
+                        <li class="google">
+                            <a href="javascript:total_login('google')"><img src="http://img.go.co.kr/mobile/g_logo.jpg" width="25">&nbsp;&nbsp;<span>구글 아이디로 로그인</span></a>
+                        </li>-->
+                    </ul>
+                </div>
+                <!--
+                <hr class="sun">
+
+                <div class="area-login clr">
+                    <div class="pull-left">
+                        <input type="text" class="nr-text">
+                        <input type="text" class="nr-text">
+                    </div>
+                    <a href="#" class="a-btn pull-right">로그인</a>
+                </div>
+
+                <div class="area-mail">
+                    <div class="d-row-1">
+                        <p class="p-1">또는 이메일 인증으로 회원가입</p>
+                        <p class="p-2">회원가입 시 이메일 주소 수집 및 이용 동의가 필요합니다.</p>
+                    </div>
+                    <div class="d-row-2">
+                        <input type="text" class="nr-text">
+                        <a href="#" class="a-btn">이메일 인증</a>
+                    </div>
+                    <div class="d-row-3"><a href="#" class="a-btn">동의하고 회원가입</a></div>
+                </div>
+
+                <div class="d-ps">
+                    <p class="p-1">누리펀드의 가족으로 모십니다.</p>
+                    <p class="p-2">
+                        본인의 소셜 아이디로 간편하게 누리펀드의 가입과 로그인이 가능합니다.<span class="show-sm show-md show-lg"></span>
+                        가입시 로그인/회원가입 시 이용약관, 개인정보취급방침에 동의하게 되며<span class="show-sm show-md show-lg"></span>
+                        회원가입시 SMS/메일링 수신에 동의합니다.
+                    </p>
+                </div>-->
+            </div>
+        </div>
+    </section>
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+@@include('../include/_head.html', {
+	"page": "autoinv"
+})
+
+</head>
+<body>
+
+<h1 class="skip">누리펀딩 선정산 상품 자동 투자</h1>
+<div class="wrap">
+	@@include('../include/_header.html') 
+   
+    <!-- 콘텐츠 영역 -->
+    <div class="contents autoinv">
+        <h2 class="page-tit ft-nt">선정산 상품 자동 투자 <span class="ic-new big">NEW</span></h2>
+        <div class="cont">
+            <section class="sec intro">
+                <div class="sec-top">
+                    <h1 class="sec-tit ftfm-nt ta-center">선정산(미리페이) 상품 자동 투자 기능<span class="hidden-md">은</span><span
+                            class="hidden-xs">이란</span>?</h1>
+                </div>
+                <div class="sec-mid">
+                    <p class="row-txt ta-center">
+                        나의 투자성향에 맞게 <span class="c-blue">
+                            신규 선정산관련 상품이<span class="show-xs"></span> 나올 때 마다<span class="show-md"></span>
+                            '투자금액'으로 정하신 예치금 금액이<span class="show-xs"></span> 자동으로 투자되는 맞춤형 간편투자 기능
+                        </span>입니다.
+                    </p>
+                    <p class="row-txt small ta-center">
+                        본 기능은 투자 회원님의 보호를 위해 최초 동의 후<span class="show-xs"></span> 90일까지 적용되며,<span
+                            class="show-md"></span>
+                        연장 희망 시 재인증을 통해<span class="show-xs"></span> 기간연장을 하실 수 있습니다.
+                    </p>
+                    <!-- 190423 -->
+                    <div class="row-box type-02 ta-center">
+                        <span class="c-blue">나의 예치금 계좌</span> : NH투자증권 / 69416001366056<br/>
+                        <span class="c-blue">현재 예치금 잔액</span> : 200,000원
+                    </div>
+                    <!-- 투자 전 -->
+                    <!--<div class="row-box type-01 ta-center">
+                        상품별 투자금액
+                        <div class="dropdown prc">
+                            <button type="button" class="btn">금액선택<span class="pull-right">▼</span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">10</a></li>
+                                <li><a href="#">30</a></li>
+                                <li><a href="#">50</a></li>
+                                <li><a href="#">100</a></li>
+                            </ul>
+                        </div>
+                        만원
+                        <br class="show-xs" />
+                        <span class="form-box">
+                            <label><input type="checkbox" class="form-check" /> 자동투자에 동의함</label>
+                        </span>
+                    </div>
+                    <div class="row-btn">
+                        <a href="" class="btn-base btn-blue">자동투자 설정하기</a>
+                        <div class="cmt ta-center">
+                            <p class="c-red">※ 자동투자 금액에 비하여 예치금이 작을 경우<span class="show-xs"></span> 투자는 진행되지 않습니다.<br/>반드시 고객님의 예치금을 확인해주세요.</p>
+                            <p>※ 기능 설정 시 설정시점 이후의 선정산 상품부터<span class="show-xs"></span>자동투자가 시작됩니다.</p>
+                        </div>
+                    </div>-->
+                    <!-- 투자 후 -->
+                    <!-- 20190619 버튼 및 팝업 추가 -->
+                     <div class="row-box type-01 ta-center">
+                        <!-- 팝업에서 금액 선택 후 팝업 창 나오면 선택 한 금액 반영되어 있게 -->
+                        <span class="c-blue"><em>100</em>만원 자동 투자 중<a href="javascript:void(0);" onclick="popupOpen('.pop-autoinv');" class="btn-base btn-blue">투자금 변경</a> </span> <span class="sun"></span> <span class="hidden-xs">&nbsp;/&nbsp;</span> 잔여기한 [ <span class="c-red">20일</span> ] 종료일 [ <span class="c-red">2019.04.30</span> ]
+
+                    </div>
+                    <div class="row-btn">
+                        <a href="" class="btn-base btn-blue">자동투자 기한 연장하기</a> 
+                        <a href="" class="btn-base btn-gray">자동투자 해지하기</a> 
+                        <div class="cmt ta-center">※ 자동투자 해지는 반드시 누리펀딩 홈페이지에서만<span class="show-xs"></span> 이용해 주시기 바랍니다.</div>
+                    </div> 
+                </div>
+            </section>
+            <hr class="sun" />
+            <section class="sec merit">
+                <div class="sec-top">
+                    <h1 class="sec-tit ft-nt ta-center">너무 편리한 자동 투자 기능!</h1>
+                </div>
+                <div class="sec-mid">
+                    <p class="row-txt ta-center">
+                        나만의 투자성향으로 <span class="c-blue">신규 선정산 상품이<span class="show-xs"></span> 나올 때 마다 자동
+                            투자</span><span class="show-md"></span>
+                        자산도 투자도 자동으로 쉽고 빠르게 척척!
+                    </p>
+                    <div class="cf row-box">
+                        <ul class="list ta-center">
+                            <li class="item nth-1">
+                                <figure>
+                                    <img src="https://nurifunding.co.kr/img/autoinv/pic_watch.png" alt="시계" />
+                                    <figcaption>다른 일로 바빠도,<br />상품 오픈을 몰라도 OK!</figcaption>
+                                </figure>
+                            </li>
+                            <li class="item sun hidden-xs"></li>
+                            <li class="item nth-2">
+                                <figure>
+                                    <img src="https://nurifunding.co.kr/img/autoinv/pic_gear.png" alt="자동" />
+                                    <figcaption>내가 원하는 조건으로<br />자동 투자를 척척!</figcaption>
+                                </figure>
+                            </li>
+                            <li class="item sun hidden-xs"></li>
+                            <li class="item nth-3">
+                                <figure>
+                                    <img src="https://nurifunding.co.kr/img/autoinv/pic_gold.png" alt="금" />
+                                    <figcaption>상환금이 쉬지 않도록<br />재투자로 복리효과까지</figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="row-txt ta-center smart">이렇게 좋은 자동 투자기능! 이제 스마트하게 펀딩하세요.</p>
+                    <div class="row-txt notice">
+                        <strong>※ 자동투자 시 유의사항</strong>
+                        <p class="row row-dot">
+                            <span class="dot">1.</span> 자동투자는 유형에 맞는 상품이 오픈되면서 자동으로 투자가 진행되기때문에 상품에 관한 
+                                정보를 미리 알지 못한 상태에서 투자가 진행될 수 있습니다.
+                        </p>
+                        <p class="row row-dot">
+                            <span class="dot">2.</span> 자동투자 신청 전 이용방법, 상품 구조, 투자위험에 대해 충분히 숙지해주십시오.
+                        </p>
+                        <p class="row row-dot">
+                            <span class="dot">3.</span> 자동투자는 조건에 부합하는 상품이 오픈했을 때, 서비스 신청 순번에 따라 자동으로 투자가 
+                                진행됩니다.
+                        </p>
+                        <p class="row row-dot">
+                            <span class="dot">4.</span> 투자 상품이 오픈되어도 신청 순번이 도래하지 않거나 예치금 부족 등의 사유로 투자가
+                                진행되지 않을 수 있습니다. 이 경우 다음 투자상품 모집 시 해당 투자자들부터 신청 순번에 
+                                따라 자동투자가 진행됩니다.
+                        </p>
+                        <p class="row row-dot">
+                            <span class="dot">5.</span> 자동투자 후 투자된 상품의 모집이 완료되면 투자를 취소하거나 투자금액을 변경할 수  
+                                없습니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <hr class="sun" />
+            <section class="sec certi">
+                <h1 class="text-hide">자동투자 설정 시 휴대폰 인증 안내</h1>
+                <figure class="ta-center">
+                    <img src="https://nurifunding.co.kr/img/invest/autoinv_m_certi.png"
+                        alt="고객님의 휴대폰으로 전송된 인증관련 문자를 확인해주세요" />
+                </figure>
+            </section>
+        </div>
+    </div>
+    
+    <!-- 20190619 팝업 추가 -->
+	@@include('../include/pop/_autoinv.html') 
+   
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

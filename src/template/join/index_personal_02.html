@@ -1,0 +1,77 @@
+@@include('../include/_head.html', {
+	"page": "join"
+})
+    <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/join/join2.css"> 
+	
+	<script type="text/javascript" src="http://nurifunding.co.kr/static/js/mypage/mypage.js"></script>
+    
+	<!--[if lt IE 9]>
+        <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/join/join2_ie9lt.css">
+    <![endif]-->
+
+</head>
+<body>
+
+<h1 class="skip">누리펀딩 회원가입 개인</h1>
+<div class="wrap">
+	@@include('../include/_header.html') 
+   
+    <!-- 20180329 타이틀 -->
+    <h2 class="com-ft">회원가입</h2>
+   
+    <!-- 20180620 회원가입 - 일반 -->
+    <section class="member-info com-mg">
+        <div class="container">
+            <!-- type-01 멀티클래스 추가 -->
+            <div class="mi-box com-box type-01 row br3">
+
+                <!-- 개인회원일경우 : STEP03 -->
+                <div class="personal-join">
+                    <p class="mib-p1 fir">
+                        <span class="label">
+                            <label for="memberAdr">주소</label>
+                        </span>
+                        <input type="text" id="memberAdr" class="nr-text nr-adr" placeholder="주소를 입력해주세요.">
+
+                       <div class="phone-cert cert-check">
+                            <input type="text" id="memberPhone" class="nr-text" placeholder="상세주소를 입력해주세요.">
+                            <a href="javascript:;" class="a-btn">주소검색</a>
+                       </div>
+                    </p>
+
+                    <div class="bank-area clr">
+                       <div class="bank-sel-box">
+                            <span class="label">은행</span>
+                            <div class="dropdown bank sel-bank" id="my_bank">
+                                <button type="button" class="btn">선택<span class="pull-right">▼</span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:;" class="bank">우리은행</a></li>
+                                    <li><a href="javascript:;" class="bank">기업은행</a></li>
+                                    <li><a href="javascript:;" class="bank">국민은행</a></li>
+                                    <li><a href="javascript:;" class="bank">신한은행</a></li>
+                                </ul>
+                            </div>
+                       </div>
+                       <p class="mib-p1 bank-input-box">
+                            <span class="label">
+                                <label for="bankNum">계좌번호</label>
+                            </span>
+                            <input type="text" id="bankNum" class="nr-text" placeholder="계좌번호를 입력해주세요.">
+                       </p>
+                    </div>
+
+                    <p class="mib-p2 mib-p2-mt clr">※ 투자금 및 이자 출금을 위해 출금계좌를 등록해 주세요.</p>
+
+                    <p class="mib-p3"><a href="#none" class="btn fc-white bg-blue center-block align-center br4">가입완료</a></p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+@@include('../include/_head.html', {
+	"page": "join"
+})
+    <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/join/join2.css"> 
+	
+	<script type="text/javascript" src="http://nurifunding.co.kr/static/js/mypage/mypage.js"></script>
+    
+	<!--[if lt IE 9]>
+        <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/join/join2_ie9lt.css">
+    <![endif]-->
+
+</head>
+<body>
+
+<h1 class="skip">누리펀딩 회원가입</h1>
+<div class="wrap">
+	@@include('../include/_header.html') 
+   
+    <!-- 20180329 타이틀 -->
+    <h2 class="com-ft">회원가입</h2>
+   
+    <!-- 20180620 회원가입 - 일반/법인 -->
+    <section class="member-info com-mg">
+        <div class="container">
+            <!-- type-01 멀티클래스 추가 -->
+            <div class="mi-box com-box type-01 row br3">
+                <p class="mib-p1 fir">
+                    <span class="label">회원구분</span>
+                    <input class="nr-radio" type="radio" value="1" name="mtype" id="mtype1" onclick="javascript: member_type(1);" checked=""> <label for="mtype1">일반회원</label>
+                    <input class="nr-radio ml" type="radio" value="2" name="mtype" id="mtype2" onclick="javascript: member_type(2);"> <label for="mtype2">법인회원</label>
+                </p>
+
+                <!-- 개인회원일경우 : STEP01 -->
+                <div class="personal-join">
+                    <p class="mib-p1">
+                        <span class="label">
+                            <label for="memberName">휴대폰번호(아이디)</label>
+                        </span>
+                        <input type="text" id="memberName" class="nr-text" placeholder="아이디로 사용할 본인의 휴대폰번호를 입력하세요.">
+                    </p>
+                    <p class="mib-p1">
+                        <span class="label">
+                            <label for="memberPwd">비밀번호</label>
+                        </span>
+                        <input type="password" id="memberPwd" class="nr-text" placeholder="비밀번호를 입력해주세요.">
+                    </p>
+                    <p class="mib-p1">
+                        <span class="label">
+                            <label for="memberPwd2">비밀번호 확인</label>
+                        </span>
+                        <input type="password" id="memberPwd2" class="nr-text" placeholder="비밀번호를 다시한번 입력해주세요.">
+                    </p>
+
+                    <div class="chk-area">
+                        <p class="all-agree">
+                            <input type="checkbox" id="all" name="전체 이용약관 동의" />
+                            <label for="all"><span></span>전체 이용약관 동의</label>
+                        </p>
+                        <div class="chk-box">
+                            <p class="chk-p1">
+                                <input type="checkbox" id="chk-1" />
+                                <label for="chk-1"><span></span>서비스이용약관 (필수)</label>
+                            </p>
+                            <p class="chk-p1">
+                                <input type="checkbox" id="chk-2" />
+                                <label for="chk-2"><span></span>투자이용약관 (필수)</label>
+                            </p>
+                            <p class="chk-p1">
+                                <input type="checkbox" id="chk-3" />
+                                <label for="chk-3"><span></span>개인정보취급방침 (필수)</label>
+                            </p>
+                            <p class="chk-p1">
+                                <input type="checkbox" id="chk-4" />
+                                <label for="chk-4"><span></span>대부거래기본약관 (필수)</label>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="mib-p3"><a href="#none" class="btn fc-white bg-blue center-block align-center br4">다음단계 (1/3)</a></p>
+
+                    <!--<div class="sns-area nr-login clr">
+                        <div class="login-box type-sns">
+                            <h3 class="login-tit">SNS 계정으로 로그인</h3>
+                            <p class="login-txt">기존에 사용하시던 SNS 계정으로 로그인 가능합니다.</p>
+                            <ul class="snsLarge clr">
+                                <li class="naver">
+                                    <a href="javascript:total_login('naver')"><img src="http://img.go.co.kr/mobile/n_logo.jpg">&nbsp;&nbsp;<span>네이버<span class="hidden-xs">로 로그인</span></span></a>
+                                </li>
+                                <li class="kakao">
+                                    <a href="javascript:total_login('kakao')"><img src="http://img.go.co.kr/mobile/k2_logo.jpg">&nbsp;&nbsp;<span>카카오톡<span class="hidden-xs">으로 로그인</span></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>-->
+                </div>
+
+                <!-- 법인회원일 경우 : STEP01 -->
+                <!--<div class="company-join">
+                    <p class="mib-p1">
+                        <span class="label">
+                            <label for="companyName">법인명</label>
+                        </span>
+                        <input type="text" id="companyName" class="nr-text" placeholder="법인명을 입력해주세요.">
+                    </p>
+                    <p class="mib-p1">
+                        <span class="label">
+                            <label for="companyNum">사업자등록번호</label>
+                        </span>
+                        <input type="number" id="companyNum" class="nr-text" placeholder="사업자등록번호를 입력해주세요.">
+                    </p>
+                    <p class="mib-p1">
+                        <span class="label">
+                            <label for="companyName2">담당자 이름</label>
+                        </span>
+                        <input type="text" id="companyName2" class="nr-text" placeholder="담당자명을 입력해주세요.">
+                    </p>
+                    <p class="mib-p1">
+                        <span class="label">
+                            <label for="companyEmail">담당자 이메일</label>
+                        </span>
+                        <input type="text" id="companyEmail" class="nr-text" placeholder="담당자 이메일을 입력해주세요.">
+                    </p>
+                    <p class="mib-p1">
+                        <span class="label">
+                            <label for="companyPhone">담당자 휴대폰</label>
+                        </span>
+                        <input type="tel" id="companyPhone" class="nr-text" placeholder="담당자 휴대폰을 입력해주세요.">
+                    </p>
+
+                    <p class="mib-p3"><a href="#none" class="btn fc-white bg-blue center-block align-center br4">다음단계</a></p>
+                </div>-->
+
+            </div>
+
+        </div>
+    </section>
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

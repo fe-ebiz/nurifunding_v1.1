@@ -1,0 +1,157 @@
+@@include('../include/_head.html', {
+	"page": "loan"
+})
+</head>
+<body>
+
+<h1 class="skip">누리펀딩 금리 한도 알아보기</h1>
+<div class="wrap">
+	@@include('../include/_header.html') 
+   
+    <div class="contents">
+
+        <!-- 02.재직금융정보입력 -->
+        <section class="loan nth-2">
+            <h2 class="lon-h2">금리<span class="lon-dot">&#8226;</span>한도 알아보기</h2>
+            <div class="container lon-box br4">
+                <em class="lon-em center-block">아래 추가정보를 입력하시면.<br/>금리<span class="lh3-dot">&#8226;</span>한도, 기간을 바로 확인할 수 있습니다.</em>
+
+                <h3 class="lon-h3">재직정보</h3>
+                <ul class="lon-ul">
+                    <li class="lon-li">
+                        <p class="lon-p">직장규모</p>
+                        <div class="lon-d dropdown" id="lon-company">
+                            <button type="button" class="btn">직장규모를 선택하세요<span class="pull-right">▼</span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">코스피상장사</a></li>
+                                <li><a href="#">코스닥상장사</a></li>
+                                <li><a href="#">외국계기업</a></li>
+                                <li><a href="#">공기업/공무원</a></li>
+                                <li><a href="#">프리랜서</a></li>
+                                <li><a href="#">자영업</a></li>
+                                <li><a href="#">중기업</a></li>
+                                <li><a href="#">소기업</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="lon-li">
+                        <p class="lon-p">고용형태</p>
+                        <div class="lon-d nr-box">
+                            <div class="lon-d dropdown" id="lon-employ">
+                                <button type="button" class="btn">직장규모를 선택하세요<span class="pull-right">▼</span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">근로소득자(정규직)</a></li>
+                                    <li><a href="#">근로소득자(계약직)</a></li>
+                                    <li><a href="#">근로소득자(프리랜서)</a></li>
+                                    <li><a href="#">개인사업자</a></li>
+                                    <li><a href="#">법인사업자</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lon-li">
+                        <p class="lon-p">현 직장 입사일</p>
+                        <div class="lon-d dropdown" id="lon-year">
+                            <button type="button" class="btn">연도<span class="pull-right">▼</span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">2017</a></li>
+                                <li><a href="#">2016</a></li>
+                                <li><a href="#">2015</a></li>
+                                <li><a href="#">2014</a></li>
+                                <li><a href="#">1973</a></li>
+                                <li><a href="#">1972</a></li>
+                                <li><a href="#">1971</a></li>
+                            </ul>
+                        </div>
+                        <div class="lon-d dropdown" id="lon-month">
+                            <button type="button" class="btn">월<span class="pull-right">▼</span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">10</a></li>
+                                <li><a href="#">11</a></li>
+                                <li><a href="#">12</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="lon-li">
+                        <p class="lon-p">4대 보험 가입</p>
+                        <div class="lon-d dropdown" id="lon-major4">
+                            <button type="button" class="btn">가입됨<span class="pull-right">▼</span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">가입됨</a></li>
+                                <li><a href="#">가입되지 않음</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <p class="lon-ps">※사업자의 경우 사업개시일선택</p>
+                </ul>
+
+                <h3 class="lon-h3">금융정보</h3>
+                <ul class="lon-ul">
+                    <li class="lon-li">
+                        <p class="lon-p">월소득 (실수령액)</p>
+                        <div class="lon-d nr-box">
+                            <p class="nr-bg-txt">만원</p>
+                            <input type="text" class="nr-text pw-nr-t br4 center-block" placeholder="0"><span class="nr-ph">0</span>
+                        </div>
+                    </li>
+                    <li class="lon-li">
+                        <p class="lon-p">월 금융비용 (보험비용을 제외한 부채상환액)</p>
+                        <div class="lon-d nr-box">
+                            <p class="nr-bg-txt">만원</p>
+                            <input type="text" class="nr-text pw-nr-t br4 center-block" placeholder="0"><span class="nr-ph">0</span>
+                        </div>
+                    </li>
+                    <li class="lon-li">
+                        <p class="lon-p">월 생활미용 (금융비용과 저축비용을 제외)</p>
+                        <div class="lon-d nr-box">
+                            <p class="nr-bg-txt">만원</p>
+                            <input type="text" class="nr-text pw-nr-t br4 center-block" placeholder="0"><span class="nr-ph">0</span>
+                        </div>
+                    </li>
+                    <li class="lon-li">
+                        <p class="lon-p">동거중인 가족 구성원 수 (본인포함)</p>
+                        <div class="lon-d nr-box">
+                            <p class="nr-bg-txt">만원</p>
+                            <input type="text" class="nr-text pw-nr-t br4 center-block" placeholder="0"><span class="nr-ph">0</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3 class="lon-h3">신청정보</h3>
+                <ul class="lon-ul lt">
+                    <li class="lon-li">
+                        <p class="lon-p">월소득 (실수령액)</p>
+                        <div class="lon-d nr-box">
+                            <input type="text" class="nr-text pw-nr-t br4 center-block" placeholder="1000만원 / 3개월"><span class="nr-ph">1000만원 / 3개월</span>
+                        </div>
+                    </li>
+                    <li class="lon-li lon-li-area">
+                        <p class="lon-p">대출 목적</p>
+                        <div class="lon-d nr-box">
+                            <textarea type="text" class="nr-text nr-area pw-nr-t br4 center-block" placeholder="대출목적을 작성해 주세요"></textarea><span class="nr-ph">대출목적을 작성해 주세요</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <p class="alow3"><a href="" class="a-btn br4 bg-blue">바로 확인하기<span class="pull-right">▶</span></a></p>
+                <p class="a-ps">금리<span class="a-ps-dot">&#8226;</span>한도 조회시 신용등급에 영향이 없습니다.</p>
+
+            </div>
+        </section>
+
+    </div>
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

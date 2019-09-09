@@ -1,0 +1,112 @@
+@@include('../include/_head.html', {
+	"page": "mydeposit"
+})
+
+</head>
+<body>
+
+<h1 class="skip">누리펀딩</h1>
+<div class="wrap">
+	@@include('../include/_header.html') 
+   
+    <!--01.나의 계좌로 출금-->
+    <section class="contents com-mg">
+        <div class="container">
+
+            <div class="row lg-wrapper">
+                <div class="deposit com-box row br3">
+                    <h2 class="center-block">예치금</h2>
+                    <!--계좌없을 경우-->
+                    <div class="md-with">
+                        <p class="mdw-p0">
+                            본인명의 은행계좌가 있다면
+                            <br/> 바로 누리펀딩전용 예치금 가상계좌를
+                            <span class="xs-block">발급받으실 수 있습니다.</span>
+                        </p>
+                        <p class="mdw-p2"><a href="" class="btn fc-white bg-blue br4">예치금 게좌 발급받기 &gt;</a></p>
+                    </div>
+                    <!--계좌있을 경우-->
+                    <!--<div class="dep-p1-box">
+          <p class="dep-p1">
+            <span>누리펀딩 예치금 계좌</span>
+            신한은행 12312300123123
+          </p>
+          <p class="dep-p1 sm-ml">
+            <span>예금주</span>
+            누리펀딩 임준수
+          </p>
+          <p class="dep-p2 fc-blue">0 원</p>
+        </div>-->
+                </div>
+
+                <div class="withdraw com-box row br3">
+                    <h2 class="center-block">나의 계좌로 출금</h2>
+                    <p class="with-p1">출금 신청을 하시면 다음 날(영업일 기준) 오전에 고객님 계좌로 입금됩니다.(1일 1회 신청 가능)</p>
+                    <p class="with-p5">나의 계좌<span>국민은행 12312300123123</span><img class="user-icon" src="http://img.nurifunding.co.kr/myp_icon.png" alt="사용자"></p>
+                    <p class="with-p2">
+                        <button class="br4" type="button">+ 10만원</button>
+                        <button class="br4" type="button">+ 100만원</button>
+                        <button class="br4" type="button">+ 전체</button>
+                    </p>
+                    <p class="with-p3 nr-box">
+                        <input type="text" class="nr-text br4" placeholder="0"> 원
+                    </p>
+                    <p class="with-p4"><a href="" class="btn align-center br4">출금하기</a></p>
+                </div>
+            </div>
+
+            <div class="history com-box row br3">
+                <h2>거래내역</h2>
+                <div class="tab-box clearfix">
+                    <ul class="tab clearfix" id="tab">
+                        <li class="nth-1 on"><a href="">전체</a></li>
+                        <li class="nth-2"><a href="">지급내역</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-cont-box" id="tab-cont-box">
+
+                    <section class="all on">
+                        <ul class="th clearfix">
+                            <li class="nth-1 m">날짜</li>
+                            <li class="nth-2">구분</li>
+                            <li class="nth-3 m">거래내역</li>
+                            <li class="nth-4 m">입출금액</li>
+                            <li class="nth-5">거래 후 잔액</li>
+                        </ul>
+                        <ul class="td clearfix">
+                            <li class="nth-1 m">17.02.22</li>
+                            <li class="nth-2">투자</li>
+                            <li class="nth-3 m">채권번호 : 2498호 대전상가 건물</li>
+                            <li class="nth-4 m">-100,000원</li>
+                            <li class="nth-5"><span class="fc-blue">100,000</span> 원</li>
+                        </ul>
+                    </section>
+                    <section class="payback">
+                        <ul class="th clearfix">
+                            <li class="nth-1 m">날짜</li>
+                            <li class="nth-2">구분</li>
+                            <li class="nth-3 m">거래내역</li>
+                            <li class="nth-4 m">지급액</li>
+                            <li class="nth-5">누적지급액</li>
+                        </ul>
+                        <ul class="td clearfix">
+                            <li class="nth-1 m">17.02.22</li>
+                            <li class="nth-2">투자</li>
+                            <li class="nth-3 m">채권번호 : 2498호 대전상가 건물</li>
+                            <li class="nth-4 m">100,000원</li>
+                            <li class="nth-5"><span class="fc-blue">100,000</span> 원</li>
+                        </ul>
+                    </section>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

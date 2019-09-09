@@ -1,0 +1,674 @@
+@@include('../include/_head.html', {
+	"page": "myinvest"
+})
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/myinvest/myinvest_190412.css">
+    
+</head>
+<body>
+
+<h1 class="skip">누리펀딩</h1>
+<div class="wrap">
+	@@include('../include/_header.html') 
+   
+
+    <!--01.나의 투자-->
+    <section class="contents com-mg">
+        <div class="container">
+
+<!--
+            <div class="mode com-box row br3">
+                <h2><img class="mode-icon" src="http://img.nurifunding.co.kr/mode_icon.png" alt="자동투자">자동투자 모드 : <span class="use">사용안함</span><span class="hidden-xs">동일한 금액을 자동으로 투자하여 최적의 포트폴리오를 구성할 수 있습니다.</span></h2>
+                <div class="modify-tab" id="modify-tab">
+                    - 각 채권당 <span class="td-under">5만원</span>씩 자동으로 투자 <a href="" class="on-btn fc-white">수정</a>
+                </div>
+                <div class="modify-box clearfix" id="modify-box">
+                    - 각 채권당
+                    <div class="dropdown mode-prc" id="mode-prc">
+                        <button type="button" class="btn">5만원<span class="pull-right">▼</span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">5만원</a></li>
+                            <li><a href="#">10만원</a></li>
+                            <li><a href="#">20만원</a></li>
+                            <li><a href="#">50만원</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown mode-range" id="mode-range">
+                        <button type="button" class="btn">채권기간 범위<span class="pull-right">▼</span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">6개월</a></li>
+                            <li><a href="#">12개월</a></li>
+                            <li><a href="#">18개월</a></li>
+                            <li><a href="#">24개월</a></li>
+                            <li><a href="#">30개월</a></li>
+                            <li><a href="#">36개월</a></li>
+                        </ul>
+                    </div>
+                    자동투자
+                    <p class="mod-p1 nr-box">
+                        <input type="checkbox" class="nr-check"><span>예치금 잔액부족 문자 알림받기 (SMS)</span></p>
+                    <p class="mod-p2"><a href="" class="cancle-btn br4">취소</a><a href="" class="save-btn fc-white bg-blue br4">저장</a></p>
+                </div>
+            </div>
+-->
+
+            <div class="row lg-wrapper">
+                <!--등록 안했을 경우-->
+                <!-- 180703 등록안했을 경우 내용 수정 -->
+                <!--<div class="myi-dep com-box row br3">
+                    <h2 class="clr"><span class="fc-blue">성다솜</span><a href="/member/mypage.php" class="user-btn"><img src="https://www.nurifunding.co.kr/img/myp_icon.png" alt="회원정보"></a></h2>
+                    <div class="md-bank">
+                        <h3>나의출금계좌<a href="/mydeposit/#pay_log" class="histry-btn">거래내역 &gt;</a></h3>
+                        <p class="mdb-p1">&nbsp;</p>
+                        <p class="mdb-p2">
+                            투자의 원리금을 수취할 본인명의의 은행 계좌 정보를 입력해 주세요<br><br>
+                            반드시 "성다솜"님 본인명의의 계좌를 등록해 주십시오.
+                        </p>
+                        <p class="mdw-p2"><a href="#none" class="btn fc-white bg-blue br4">나의 출금계좌 등록하기</a></p>            
+                    </div>
+                    <div class="md-with">
+                        <h3>나의 예치금<a href="/mydeposit/#pay_log" class="histry-btn">거래내역 &gt;</a></h3>
+                        <p class="mdw-p0" style="text-align:left;">
+                            투자를 진행하시려면 먼저 예치금 가상계좌를 발급받아주세요.<br><br>
+                            고객님의 가상계좌로 입금후 투자가 가능합니다.
+                        </p>
+
+                        <p class="mdw-p2"><a href="javascript: bank_insert();" class="btn fc-white bg-blue br4">예치금 가상계좌 발급받기</a></p>            
+
+                    </div>
+                </div>-->
+
+                <!--180601, 등록 했을 경우-->
+                <!-- 180703 등록 했을 경우 내용 수정 : myi-dep-on 멀티클래스 추가 -->
+                <div class="myi-dep com-box row br3">
+                    <h2 class="clr"><span class="fc-blue">임준수</span><a href="" class="user-btn"><img src="http://img.nurifunding.co.kr/myp_icon.png" alt="회원정보"></a></h2>
+
+                    <div class="md-code">
+                        <p class="p-1">
+                            나의 추천인 코드
+                        </p>
+                        <p class="p-1">
+                            1000782 <a href="javascript: copy();" class="fc-blue btn btn-copy">복사하기</a>
+                        </p>
+                    </div>
+                    <hr class="sun">
+                    <div class="md-bank">
+                        <h3>나의 출금계좌<a href="https://www.nurifunding.co.kr/mydeposit" class="histry-btn">거래내역 &gt;</a></h3>
+                        <!-- 실계좌 등록 -->
+                        <!--p class="mdb-p1">toxnsldxn@nate.com</p-->
+                        <!-- <p class="mdb-p1">&nbsp;</p> -->
+                        <p class="mdb-p2">은행명 : 기업은행</p>
+                        <p class="mdb-p2">계좌번호 : 33710244901011</p>
+                        <p class="mdb-p2">예금주 : 강혜준</p>
+                    </div>
+                    <div class="md-with">
+                        <h3>나의 예치금<a href="https://www.nurifunding.co.kr/mydeposit" class="histry-btn">거래내역 &gt;</a></h3>
+                        <div class="md-bank2">
+                            <p class="mdb-p2">은행명 : SC제일은행</p>
+                            <p class="mdb-p2">계좌번호 : 69416001457383</p>
+                            <p class="mdb-p2">예금주 : 강혜준</p>
+                        </div>
+                        <p class="p-1 clr"><span class="pull-left s-gray">예치금</span><span class="pull-right s-1">10,075원</span></p>
+                        <p class="p-1 clr"><span class="pull-left s-purple">이벤트</span><span class="pull-right s-1"><span class="s-purple">0</span>원</span></p>
+                        <p class="p-1 clr"><span class="pull-left s-gray">투자액</span><span class="pull-right s-1">0원</span></p>
+                        <hr class="sun clr">
+                        <p class="p-1 total clr"><span class="pull-left s-gray">합계</span><span class="pull-right s-1"><span class="s-blue">10,075</span>원</span></p>
+                        <p class="mdw-p2"><a href="/mydeposit/" class="btn fc-white bg-blue br4">출금 하기</a></p>
+                        <!-- <input type="button" value="90일 선인증 테스트" onclick="javascript: window.open('./auto/autopay.php', 'autopay', 'width=500, height=500');">
+                        <input type="button" value="선인증 취소 테스트" onclick="javascript: window.open('./auto/auth_cancel.php', 'autopay');"> -->
+                    </div>
+                    <!--<div class="md-bank">
+                        <p class="mdb-p1">mykasya@naver.com</p>
+                        <p class="mdb-p2">국민은행 55284 16238510</p>
+                    </div>
+                    <div class="md-with">
+                        <h3>나의 예치금<a href="" class="histry-btn">거래내역 &gt;</a></h3>
+                        <p class="p-1 clr"><span class="pull-left s-gray">일반 예치금</span><span class="pull-right s-1">20,001원</span></p>
+                        <p class="p-1 clr"><span class="pull-left s-purple">이벤트 적립금</span><span class="pull-right s-1"><span class="s-purple">10,000</span>원</span></p>
+                        <hr class="sun clr">
+                        <p class="p-1 total clr"><span class="pull-left s-gray">총 예치금</span><span class="pull-right s-1"><span class="s-blue">30,001</span>원</span></p>
+                        <p class="mdw-p2"><a href="../mydeposit/index.html" class="btn fc-white bg-blue br4">출금 하기</a></p>
+                    </div>
+                    <div class="md-bank2">
+                        <p class="mdb-p1">예치금 계좌</p>
+                        <p class="mdb-p2">신한은행 4567894561238</p>
+                        <p class="mdb-p1">예금주</p>
+                        <p class="mdb-p2">누리펀딩임준수</p>
+                    </div>-->
+
+                </div>
+
+                <!-- 190412 -->
+                <div class="md-wrapper com-box row br3 miri-autoinv">
+                    <div class="row-txt top">
+                        <h3><span class="c-blue">선정산(미리페이)<span class="hidden-xs">상품</span> 자동 투자기능!</span> <span class="ic-new">NEW</span></h3>
+                    </div>
+                    <!-- 인증 전 화면 -->
+                    <div class="row-txt mid before">
+                        시간에 구애받지 않는 너무 편리한 자동투자!<br/>
+                        기능 설명을 확인<span class="hidden-xs">하신</span> 후 자동 투자 기능을 설정하시겠습니까?
+                        <div class="setup">
+                            <p class="c-org">※ 현재 자동 투자 미사용 중</p>
+                            <a href="" class="btn-base termi">기능설명 확인 후 설정하기</a>
+                        </div>
+                    </div>
+                    <!-- 인증 후 화면 -->
+                    <!-- <div class="row-txt mid after">
+                        <span class="c-blue">100만원 자동 투자 중</span><br class="show-xs"/><span class="hidden-xs">/</span> 잔여기한 [<span class="c-red">20일</span>] 종료일 [<span class="c-red">2019.04.30</span>]
+                        <div class="setup">
+                            <p class="c-green">※ 현재 자동 투자 미사용 중</p>
+                            <a href="" class="btn-base termi bg-org">기간연장 또는 해지하기</a>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="row md-wrapper">
+                    <div class="revenue com-box row br3">
+                        <h3>예상평균 수익률<span class="fc-blue">0 %</span></h3>
+                    </div>
+
+                    <div class="total-payment com-box row br3">
+                        <h3>총 수익</h3>
+                        <div class="tp-box">
+                          <p class="tp-p1 clearfix"><span class="pull-left">회수원금</span><span class="pull-right" id="_money">10,000 원</span></p>
+                          <p class="tp-p1 clearfix"><span class="pull-left">이자수익(세후)</span><span class="pull-right" id="_profit">75 원</span></p>
+                      </div>
+                        <p class="tp-p2"><span class="c-blue">0</span> 원</p>
+                        <!--<p class="tp-p3"><span class="pull-left">지급 예정중</span><span class="pull-right">0 원</span></p>-->
+                    </div>
+
+                    <div class="total-invest com-box row br3">
+                        <h3>누적 총 투자금액</h3>
+                        <p class="ti-p1"><span class="c-blue">0</span> 원</p>
+                        <!--<p class="ti-p2"><span class="pull-left">투자 신청중</span><span class="pull-right">0 원</span></p>-->
+                    </div>
+                </div>
+
+                <div class="md-wrapper com-box row br3 portfolio">
+                    <h3>나의 포트폴리오</h3>
+                    <div class="pf-tab-box" id="pf-tab-box">
+                        <a href="" class="btn br4 on">상품</a>
+                        <a href="" class="btn br4">수익률</a>
+                        <a href="" class="btn br4">리스트 등급</a>
+                    </div>
+                    <ul class="chart-box">
+                        <li class="on">
+                            <div class="chart-area-empty"></div>
+                            <div id="canvas-holder-pdt"><span class="in-txt">상품</span>
+                                <canvas id="chart-area-pdt" />
+                            </div>
+                            <script>
+                                var dataGroupPdt = [0, 0, 0];
+                                if (dataGroupPdt[0] == 0 && dataGroupPdt[1] == 0 && dataGroupPdt[2] == 0) {
+                                    $("#canvas-holder-pdt").prev().css("display", "block");
+                                }
+
+                                var configPdt = {
+                                    type: 'doughnut',
+                                    data: {
+                                        datasets: [{
+                                            data: [
+                                                dataGroupPdt[0],
+                                                dataGroupPdt[1],
+                                                dataGroupPdt[2],
+                                            ],
+                                            backgroundColor: [
+                                                "#575A8D",
+                                                "#B2B1C3",
+                                                "#8488A3",
+                                            ],
+                                            borderWidth: 4,
+                                        }],
+                                        labels: [
+                                            "법인",
+                                            "개인",
+                                            "부동산"
+                                        ]
+                                    },
+                                    options: {
+                                        responsive: true,
+                                        legend: {
+                                            position: 'bottom',
+                                            labels: {
+                                                usePointStyle: 'circle'
+                                            }
+                                        },
+                                        animation: {
+                                            animateScale: false,
+                                            animateRotate: true
+                                        }
+                                    }
+                                };
+                            </script>
+
+                        </li>
+                        <li>
+                            <div class="chart-area-empty"></div>
+                            <div id="canvas-holder-rev"><span class="in-txt">수익률</span>
+                                <canvas id="chart-area-rev" />
+                            </div>
+                            <script>
+                                var dataGroupRev = [10, 10, 10, 10];
+                                if (dataGroupRev[0] == 0 && dataGroupRev[1] == 0 && dataGroupRev[2] == 0 && dataGroupRev[3] == 0) {
+                                    $("#canvas-holder-rev").prev().css("display", "block");
+                                }
+
+                                var configRev = {
+                                    type: 'doughnut',
+                                    data: {
+                                        datasets: [{
+                                            data: [
+                                                dataGroupRev[0],
+                                                dataGroupRev[1],
+                                                dataGroupRev[2],
+                                                dataGroupRev[3],
+                                            ],
+                                            backgroundColor: [
+                                                "#393A7B",
+                                                "#585A8A",
+                                                "#83859E",
+                                                "#AFB0C2"
+                                            ],
+                                            borderWidth: 2,
+                                        }],
+                                        labels: [
+                                            "8%미만",
+                                            "8%~10%",
+                                            "10.1~12%",
+                                            "12%초과",
+                                        ]
+                                    },
+                                    options: {
+                                        responsive: true,
+                                        legend: {
+                                            position: 'bottom',
+                                            labels: {
+                                                usePointStyle: 'circle'
+                                            }
+                                        },
+                                        animation: {
+                                            animateScale: false,
+                                            animateRotate: true
+                                        }
+                                    }
+                                };
+                            </script>
+                        </li>
+                        <li>
+                            <div class="chart-area-empty"></div>
+                            <div id="canvas-holder-grade"><span class="in-txt">리스크 등급</span>
+                                <canvas id="chart-area-grade" />
+                            </div>
+                            <script>
+                                var dataGroupGrade = [10, 10, 10, 10];
+                                if (dataGroupGrade[0] == 0 && dataGroupGrade[1] == 0 && dataGroupGrade[2] == 0 && dataGroupGrade[3] == 0) {
+                                    $("#canvas-holder-rev").prev().css("display", "block");
+                                }
+
+                                var configGrade = {
+                                    type: 'doughnut',
+                                    data: {
+                                        datasets: [{
+                                            data: [
+                                                dataGroupGrade[0],
+                                                dataGroupGrade[1],
+                                                dataGroupGrade[2],
+                                                dataGroupGrade[3],
+                                            ],
+                                            backgroundColor: [
+                                                "#2AA3FF",
+                                                "#3ACC00",
+                                                "#FFD600",
+                                                "#FF9100"
+                                            ],
+                                            borderWidth: 2,
+                                        }],
+                                        labels: [
+                                            "A 등급",
+                                            "B 등급",
+                                            "C 등급",
+                                            "D 등급",
+                                        ]
+                                    },
+                                    options: {
+                                        responsive: true,
+                                        legend: {
+                                            position: 'bottom',
+                                            labels: {
+                                                usePointStyle: 'circle'
+                                            }
+                                        },
+                                        animation: {
+                                            animateScale: false,
+                                            animateRotate: true
+                                        }
+                                    }
+                                };
+                            </script>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bond-pdt com-box row br3">
+                <h3>나의 채권상품<a href="">월별 지금 스케쥴 &gt;</a></h3>
+            </div>
+
+            <div class="pdt-cat-box">
+                <ul class="pdt-cate clearfix">
+                    <li class="on br4 ml0 clearfix"><span class="pull-left">전체</span><span class="pull-right">1</span></li>
+                    <li class="br4 clearfix"><span class="pull-left">투자신청</span><span class="pull-right">1</span></li>
+                    <li class="br4 clearfix"><span class="pull-left">상환중</span><span class="pull-right">0</span></li>
+                    <li class="br4 ml0 clearfix"><span class="pull-left">상환완료</span><span class="pull-right">0</span></li>
+                    <li class="br4 clearfix"><span class="pull-left">연체중</span><span class="pull-right">0</span></li>
+                    <li class="br4 clearfix"><span class="pull-left">부도</span><span class="pull-right">0</span></li>
+                </ul>
+            </div>
+
+            <!--없을 경우-->
+            <!--<p class="pdt-0"><span class="fc-blue">전체</span> 투자상품이 <span class="fc-blue">0개</span> 있습니다.</p>-->
+            <!--있을 경우-->
+            <div class="mypdt-num com-box row br3">
+                <span class="pull-left nth-1">17.02.22 기준</span><span class="pull-left nth-2">1개의 채권에 투자</span><span class="pull-right">10,000원</span>
+            </div>
+
+
+            <div id="pay_info"> 
+                <div class="mypdt com-box row br3"> 
+                    <ul class="mp-ul clearfix"> 
+                        <!-- 180706 스타일 제거 -->
+                        <li class="mp-li nth1 clearfix"> 
+                                <div class="mp-d1"><p class="mp-number">채권번호 : 30호</p><p class="mp-label">30호, 매출채권 + 동산 담보대출( 컬러 TV)</p>
+                                <!--p class="mp-wid-box"><span class="mp-wid bg-blue" style='width:0%'></span></p--></div> 
+                                <!--div class="mp-d2"><p class="mp-label">상환중</p><p class="mp-prc">0/3</p></div--> 
+                                <div class="mp-d2"></div> 
+                                <div class="mp-d3"><p class="mp-label">세후수익</p><p class="mp-prc">88원</p></div> 
+                                <div class="mp-d4"><p1 class="mp-label">투자금액<p></p><p class="mp-prc fc-blue">30,000원</p></p1></div> 
+                                <!-- 180706 클래스 추가 및 스타일 제거 -->
+                                <!--<a href="javascript: void(0);" onclick="javascript: show_fee('30');" class="btn-mp">원리금수취증서</a>-->
+                            </li> 
+                            <li class="mp-li nth2 clearfix"> 
+                                <div class="mp-d clearfix"><p class="pull-left">회수원금</p><p class="pull-right">15,000원</p></div> 
+                                <div class="mp-d clearfix"><p class="pull-left">투자잔액</p><p class="pull-right">15,000원</p></div> 
+                                <div class="mp-d clearfix"><p class="pull-left">이자수익(세후)</p><p class="pull-right">88원</p></div> 
+                                <div class="mp-d clearfix"><p class="pull-left">만기일</p><p class="pull-right">2018-09-19</p></div> 
+
+                                <!-- 180816 Mobile용 -->
+                                <div class="mp-d clearfix hidden-md"><p class="pull-left">대출실행일</p><p class="pull-right">2018-09-19<br>30,000만원</p></div> 
+                                <!-- 180807 -->
+                                <!-- <div class="mp-d clearfix"><a class="fc-blue pull-right btn btn-more" style="font-size:14px;" href="https://www.nurifunding.co.kr/mydeposit">투자내역 자세히보기</a></div>  -->
+                                <div class="mp-d clearfix"><a class="fc-blue pull-right btn btn-table" style="font-size:14px;" href="javascript:test(41)" onclick="$('.exp-list-box').slideToggle();">월별 수익금 지급표</a></div>
+                                <!-- // -->
+                        </li> 
+                        <!-- 180816 PC, Table용 -->
+                        <li class="row-dPrc hidden-xs">
+                            대출실행일: 2018-09-19 <span class="dPrc">30,000만원</span>
+                        </li>
+                    </ul>
+
+                    <!-- 180807 -->
+                    <div class="exp-list-box" style="">
+                        <!--<p class="exp-list-tit">※ 금일 2018년 08월 07일 대출실행시 기준</p>-->
+                        <div class="exp-list">
+                            <div class="thead">
+                                <ul class="tr">
+                                    <li class="th nth-1">회차</li>
+                                    <li class="th nth-2">날짜</li>
+                                    <li class="th nth-3">이용일수</li>
+                                    <li class="th nth-4">수익금(세전)</li>
+                                    <li class="th nth-5">이자소득세</li>
+                                    <li class="th nth-6">주민세</li>
+                                    <li class="th nth-7">수익금(세후)</li>
+                                </ul>
+                            </div>
+                            <div class="tbody">
+                                <ul class="tr">
+                                    <li class="td nth-1">1회차</li>
+                                    <li class="td nth-2">2018-09-06</li>
+                                    <li class="td nth-3">30일</li>
+                                    <li class="td nth-4">9,863원</li>
+                                    <li class="td nth-5">2,460원</li>
+                                    <li class="td nth-6">240원</li>
+                                    <li class="td nth-7">7,163원</li>
+                                </ul>
+                            </div>
+                            <div class="tfoot">
+                                <ul class="tr">
+                                    <li class="td nth-1">합계</li>
+                                    <li class="td nth-4">9,863원</li>
+                                    <li class="td nth-5">2,460원</li>
+                                    <li class="td nth-6">240원</li>
+                                    <li class="td nth-7">7,163원</li>
+                                </ul>
+                            </div>
+                        </div>
+<!--
+                        <p class="exp-list-txt">※ 대출 실행일이 매월 1일 ~ 24일까지 - 첫번째 이자수익 지급일은 익월 첫영업일입니다.</p>
+                        <p class="exp-list-txt">※ 대출 실행일이 매월 25일 ~ 말일까지 - 첫번째 이자수익 지급일은 익익월 첫영업일입니다.</p>
+-->
+                    </div>
+                    <!-- // -->
+
+                    <!-- 180706 거래내용보기 & 거래내역 테이블 추가 -->
+<!--
+                    <a href="javascript:;" class="btn-mp btn-view">거래내용 <span>보기</span></a>
+                    <div class="tab-cont-box" id="tab-cont-box" style="display:none">
+
+                        <section class="all on">
+                            <ul class="th clearfix">
+                                <li class="nth-1 m">날짜</li>
+                                <li class="nth-2">구분</li>
+                                <li class="nth-3 m">거래내역</li>
+                                <li class="nth-4 m">입출금액</li>
+                                <li class="nth-5">거래 후 잔액</li>
+                            </ul>
+                            <ul class="td clearfix">
+                                <li class="nth-1 m">17.02.22</li>
+                                <li class="nth-2">투자</li>
+                                <li class="nth-3 m">채권번호 : 2498호 대전상가 건물</li>
+                                <li class="nth-4 m">-100,000원</li>
+                                <li class="nth-5"><span class="fc-blue">100,000</span> 원</li>
+                            </ul>
+                        </section>
+                        <section class="payback">
+                            <ul class="th clearfix">
+                                <li class="nth-1 m">날짜</li>
+                                <li class="nth-2">구분</li>
+                                <li class="nth-3 m">거래내역</li>
+                                <li class="nth-4 m">지급액</li>
+                                <li class="nth-5">누적지급액</li>
+                            </ul>
+                            <ul class="td clearfix">
+                                <li class="nth-1 m">17.02.22</li>
+                                <li class="nth-2">투자</li>
+                                <li class="nth-3 m">채권번호 : 2498호 대전상가 건물</li>
+                                <li class="nth-4 m">100,000원</li>
+                                <li class="nth-5"><span class="fc-blue">100,000</span> 원</li>
+                            </ul>
+                        </section>
+
+
+                    </div>
+-->
+
+                </div>
+                <div class="mypdt com-box row br3"> 
+                    <!-- 180808 취소 클래스 cancle 추가-->
+                    <div class="bg-cancle">취소</div>
+                    <!-- // -->
+                    <ul class="mp-ul clearfix"> 
+                        <!-- 180706 스타일 제거 -->
+                        <li class="mp-li nth1 clearfix"> 
+                                <div class="mp-d1"><p class="mp-number">채권번호 : 30호</p><p class="mp-label">30호, 매출채권 + 동산 담보대출( 컬러 TV)</p>
+                                <!--p class="mp-wid-box"><span class="mp-wid bg-blue" style='width:0%'></span></p--></div> 
+                                <!--div class="mp-d2"><p class="mp-label">상환중</p><p class="mp-prc">0/3</p></div--> 
+                                <div class="mp-d2"></div> 
+                                <div class="mp-d3"><p class="mp-label">세후수익</p><p class="mp-prc">88원</p></div> 
+                                <div class="mp-d4"><p1 class="mp-label">투자금액<p></p><p class="mp-prc fc-blue">30,000원</p></p1></div> 
+                                <!-- 180706 클래스 추가 및 스타일 제거 -->
+                                <!--<a href="javascript: void(0);" onclick="javascript: show_fee('30');" class="btn-mp">원리금수취증서</a>-->
+                            </li> 
+                            <li class="mp-li nth2 clearfix"> 
+                                <div class="mp-d clearfix"><p class="pull-left">회수원금</p><p class="pull-right">15,000원</p></div> 
+                                <div class="mp-d clearfix"><p class="pull-left">투자잔액</p><p class="pull-right">15,000원</p></div> 
+                                <div class="mp-d clearfix"><p class="pull-left">이자수익(세후)</p><p class="pull-right">88원</p></div> 
+                                <div class="mp-d clearfix"><p class="pull-left">만기일</p><p class="pull-right">2018-09-19</p></div> 
+                                <!-- 180807 -->
+                                <!-- <div class="mp-d clearfix"><a class="fc-blue pull-right btn btn-more" style="font-size:14px;" href="https://www.nurifunding.co.kr/mydeposit">투자내역 자세히보기</a></div>  -->
+                                <div class="mp-d clearfix"><a class="fc-blue pull-right btn btn-table" style="font-size:14px;" href="javascript:test(41)" onclick="$('.exp-list-box').slideToggle();">월별 수익금 지급표</a></div>
+                                <!-- // -->
+                        </li> 
+                    </ul>
+
+                    <!-- 180807 -->
+                    <div class="exp-list-box" style="">
+                        <!--<p class="exp-list-tit">※ 금일 2018년 08월 07일 대출실행시 기준</p>-->
+                        <div class="exp-list">
+                            <div class="thead">
+                                <ul class="tr">
+                                    <li class="th nth-1">회차</li>
+                                    <li class="th nth-2">날짜</li>
+                                    <li class="th nth-3">이용일수</li>
+                                    <li class="th nth-4">수익금(세전)</li>
+                                    <li class="th nth-5">이자소득세</li>
+                                    <li class="th nth-6">주민세</li>
+                                    <li class="th nth-7">수익금(세후)</li>
+                                </ul>
+                            </div>
+                            <div class="tbody">
+                                <ul class="tr">
+                                    <li class="td nth-1">1회차</li>
+                                    <li class="td nth-2">2018-09-06</li>
+                                    <li class="td nth-3">30일</li>
+                                    <li class="td nth-4">9,863원</li>
+                                    <li class="td nth-5">2,460원</li>
+                                    <li class="td nth-6">240원</li>
+                                    <li class="td nth-7">7,163원</li>
+                                </ul>
+                            </div>
+                            <div class="tfoot">
+                                <ul class="tr">
+                                    <li class="td nth-1">합계</li>
+                                    <li class="td nth-4">9,863원</li>
+                                    <li class="td nth-5">2,460원</li>
+                                    <li class="td nth-6">240원</li>
+                                    <li class="td nth-7">7,163원</li>
+                                </ul>
+                            </div>
+                        </div>
+<!--
+                        <p class="exp-list-txt">※ 대출 실행일이 매월 1일 ~ 24일까지 - 첫번째 이자수익 지급일은 익월 첫영업일입니다.</p>
+                        <p class="exp-list-txt">※ 대출 실행일이 매월 25일 ~ 말일까지 - 첫번째 이자수익 지급일은 익익월 첫영업일입니다.</p>
+-->
+                    </div>
+                    <!-- // -->
+
+                    <!-- 180706 거래내용보기 & 거래내역 테이블 추가 -->
+<!--
+                    <a href="javascript:;" class="btn-mp btn-view">거래내용 <span>보기</span></a>
+                    <div class="tab-cont-box" id="tab-cont-box" style="display:none">
+
+                        <section class="all on">
+                            <ul class="th clearfix">
+                                <li class="nth-1 m">날짜</li>
+                                <li class="nth-2">구분</li>
+                                <li class="nth-3 m">거래내역</li>
+                                <li class="nth-4 m">입출금액</li>
+                                <li class="nth-5">거래 후 잔액</li>
+                            </ul>
+                            <ul class="td clearfix">
+                                <li class="nth-1 m">17.02.22</li>
+                                <li class="nth-2">투자</li>
+                                <li class="nth-3 m">채권번호 : 2498호 대전상가 건물</li>
+                                <li class="nth-4 m">-100,000원</li>
+                                <li class="nth-5"><span class="fc-blue">100,000</span> 원</li>
+                            </ul>
+                        </section>
+                        <section class="payback">
+                            <ul class="th clearfix">
+                                <li class="nth-1 m">날짜</li>
+                                <li class="nth-2">구분</li>
+                                <li class="nth-3 m">거래내역</li>
+                                <li class="nth-4 m">지급액</li>
+                                <li class="nth-5">누적지급액</li>
+                            </ul>
+                            <ul class="td clearfix">
+                                <li class="nth-1 m">17.02.22</li>
+                                <li class="nth-2">투자</li>
+                                <li class="nth-3 m">채권번호 : 2498호 대전상가 건물</li>
+                                <li class="nth-4 m">100,000원</li>
+                                <li class="nth-5"><span class="fc-blue">100,000</span> 원</li>
+                            </ul>
+                        </section>
+
+
+                    </div>
+-->
+
+                </div>
+            </div>
+            <!--<div class="mypdt com-box row br3">
+                <ul class="mp-ul clearfix">
+                    <li class="mp-li nth1 clearfix">
+                        <div class="mp-d1">
+                            <p class="mp-number">채권번호 : 41586호</p>
+                            <p class="mp-label">퍼드림채권 103호</p>
+                            <p class="mp-wid-box"><span class="mp-wid bg-blue"></span></p>
+                        </div>
+                        <div class="mp-d2">
+                            <p class="mp-label">상환중</p>
+                            <p class="mp-prc">0/1</p>
+                        </div>
+                        <div class="mp-d3">
+                            <p class="mp-label">수익</p>
+                            <p class="mp-prc">2,000원</p>
+                        </div>
+                        <div class="mp-d4">
+                            <p class="mp-label">투자금액</p>
+                            <p class="mp-prc fc-blue">10,000원</p>
+                        </div>
+                    </li>
+                    <li class="mp-li nth2 clearfix">
+                        <div class="mp-d clearfix">
+                            <p class="pull-left">지급</p>
+                            <p class="pull-right">0원</p>
+                        </div>
+                        <div class="mp-d clearfix">
+                            <p class="pull-left">지급예정</p>
+                            <p class="pull-right">0원</p>
+                        </div>
+                        <div class="mp-d clearfix">
+                            <p class="pull-left">지급기간</p>
+                            <p class="pull-right">-</p>
+                        </div>
+                        <div class="mp-d clearfix">
+                            <p class="pull-left">다음 지급일</p>
+                            <p class="pull-right">17.03.02</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>-->
+
+        </div>
+    </section>
+
+    <script>
+        window.onload = function () {
+            var ctxPdt = document.getElementById("chart-area-pdt").getContext("2d");
+            window.myDoughnut = new Chart(ctxPdt, configPdt);
+
+            var ctxRev = document.getElementById("chart-area-rev").getContext("2d");
+            window.myLine = new Chart(ctxRev, configRev);
+
+
+            var ctxGrade = document.getElementById("chart-area-grade").getContext("2d");
+            window.myDoughnut = new Chart(ctxGrade, configGrade);
+
+        };
+    </script>
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

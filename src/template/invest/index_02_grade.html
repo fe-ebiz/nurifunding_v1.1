@@ -1,0 +1,175 @@
+@@include('../include/_head.html', {
+	"page": "invest"
+})
+   
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/invest/invest2.css">
+
+	<!--[if lt IE 9]>
+        <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/invest/invest2_ie9lt.css">
+  <![endif]-->
+</head>
+<body>
+
+<h1 class="skip">누리펀딩 여신평가 등급</h1>
+<div class="wrap">
+	@@include('../include/_header.html') 
+    
+    <!-- 평가등급 -->
+    <section class="grade-sec">
+        <div class="container">
+            <h2 class="grd-h2">누리펀딩 여신평가 등급</h2>
+
+            <div class="row com-box br4">
+                <h3 class="grd-com-h3">법인의 신용등급과 담보가치를 결합한 여신평가 등급</h3>
+                <!--변경내용_170620 등급별 체크표시, 등급별로 x-01~x-10 과 y-01~y-10 혼합하여 사용-->
+                <div class="grd-rate-img"><img src="https://nurifunding.co.kr/img/invest/i_grdCheck.png" alt="자신의등급표시" class="x-01 y-01"></div>
+                <ul class="grd-label">
+                    <li class="l1">여신종합등급</li>
+                    <li class="l2">SAFTY ZONE 안전존</li>
+                    <li class="l3">THINK ZONE 고려존</li>
+                    <li class="l4">AGREE ZONE 합의존</li>
+                    <li class="l5">REJECT ZONE 거절존</li>
+                </ul>
+            </div>
+
+            <div class="row com-box br4">
+                <h3 class="grd-com-h3"><i>담보 가치 분석</i></h3>
+                <!--변경내용170802 코딩화-->
+                <div class="left-chart">
+                    <div id="canvas-holder-value">
+                        <span class="in-txt align-center">감정금액<br>150억<!--<br><span class="sm">(단위, %)</span>--></span>
+                        <canvas id="chart-area-value" />
+                    </div>
+                    <script>
+                        var dataGroupGrade = [34, 24, 21, 7];
+
+                        var configGrade = {
+                            type: 'doughnut',
+                            data: {
+                                datasets: [{
+                                    data: [
+                                        dataGroupGrade[0],
+                                        dataGroupGrade[1],
+                                        dataGroupGrade[2],
+                                        dataGroupGrade[3],
+                                    ],
+                                    backgroundColor: [
+                                        "#3AC1E3",
+                                        "#34BA89",
+                                        "#BED13F",
+                                        "#DFAF2D",
+                                    ],
+                                    borderWidth: 2,
+                                }],
+                                labels: [
+                                    "기존대출금",
+                                    "우선순위금",
+                                    "본건대출금",
+                                    "담보여유",
+                                ],
+                                tooltips: [
+
+                                ]
+                            },
+                            options: {
+                                responsive: true,
+                                animation: {
+                                    animateScale: false,
+                                    animateRotate: true
+                                },
+                                legend: {
+                                    display: false
+                                },
+                                tooltips : {
+                                    callbacks : { 
+                                        label : function(tooltipItem, data) {
+                                            var indice = tooltipItem.index;
+                                            var dataset = data.datasets[tooltipItem.datasetIndex];
+                                            var currentLabel = data.labels[indice];
+                                            var currentValue = dataset.data[tooltipItem.index];
+                                            return " " + currentLabel + " : " + currentValue + " %";
+                                        }
+                                    }
+                                }
+                            }
+                        };
+                    </script>
+                    <div class="chart-per">
+                        <ul class="per-table clearfix">
+                            <li class="nth-2 clearfix">
+                                <div class="cell-1"><span class="circle"></span> 기존대출금 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</div>
+                                <div class="cell-2">34.0%</div>
+                            </li>
+                            <li class="nth-3 clearfix">
+                                <div class="cell-1"><span class="circle"></span> 우선순위금 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</div>
+                                <div class="cell-2">21.0%</div>
+                            </li>
+                            <li class="nth-4 clearfix">
+                                <div class="cell-1"><span class="circle"></span> 본건 대출금 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</div>
+                                <div class="cell-2">24.0%</div>
+                            </li>
+                            <li class="nth-5 clearfix">
+                                <div class="cell-1"><span class="circle"></span> 담보여유 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</div>
+                                <div class="cell-2">21.0%</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="chart-label">
+                    <h4>항목별 비율 금액 (백만원)</h4>
+                    <ul class="lbl-table">
+                        <li class="nth-1">
+                            <div class="cell-1">담보감정가</div>
+                            <div class="cell-2">5,000,000,000</div>
+                        </li>
+                        <li class="nth-2">
+                            <div class="cell-1">기존대출금</div>
+                            <div class="cell-2">3,500,000,000</div>
+                        </li>
+                        <li class="nth-3">
+                            <div class="cell-1">우선순위금</div>
+                            <div class="cell-2">3,200,000,000</div>
+                        </li>
+                        <li class="nth-4">
+                            <div class="cell-1">본건 대출금</div>
+                            <div class="cell-2">1,000,000,000</div>
+                        </li>
+                        <li class="nth-5">
+                            <div class="cell-1">담보여유</div>
+                            <div class="cell-2">1,000,000,000</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <!--변경내용170802 끝-->
+                <div class="grd-txt-box">
+                    <p class="grd-p mt">감정금액이란? </p>
+                    <p class="grd-p">현재 부동산 가격에서 70% ~ 80% 수준으로 대출을 위한 적정 금액 산출한 가격</p>
+                    <p class="grd-p mt">담보여유란?</p>
+                    <p class="grd-p">현재 부동산 가격에서 기존 대출금(기대출)과 본건 대출금으로 부동산 가격 하락시에도 대출금 회수를
+                        위한 안전성을 확보할 수 있는 여유 부분</p>
+                    <p class="grd-p mt">선순위란?</p>
+                    <p class="grd-p">법에서 보장하는 임대 보증금, 우선 임금채권 등</p>
+                    <p class="grd-p mt"><span class="xs-block">담보여유 </span>= 감정금액 - 선순위 - 기존 대출금 - 본건 대출금</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        window.onload = function () {
+            var ctxGrade = document.getElementById("chart-area-value").getContext("2d");
+            window.myDoughnut = new Chart(ctxGrade, configGrade);
+
+        };
+    </script>
+   
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

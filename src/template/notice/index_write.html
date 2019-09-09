@@ -1,0 +1,60 @@
+@@include('../include/_head.html', {
+	"page": "notice"
+})
+
+</head>
+<body>
+
+<h1 class="skip">누리펀딩 공지사항</h1>
+<div class="wrap">
+	@@include('../include/_header.html') 
+   
+    <h2 class="com-ft">공지사항</h2>
+
+    <!-- 03.공지사항글쓰기 -->
+    <section class="faq-write com-pd">
+        <div class="container">
+
+            <div class="com-box fw-wrap br4">
+                <div class="fw-title nr-box">
+                    <p class="fwt-label">제목</p>
+                    <input type="text" class="nr-text br4 center-block" placeholder="제목을 입력해주세요"><span class="nr-ph">제목을 입력해주세요</span>
+                </div>
+                <ul class="fw-info clearfix">
+                    <li class="nth-1">
+                        <p class="fwi-label">작성자</p>
+                        <div class="fwi-name">ebiznetworks</div>
+                    </li>
+                    <li class="nth-2">
+                        <p class="fwi-label">분류</p>
+                        <div class="dropdown" id="fwi-category">
+                            <button type="button" class="btn">선택하세요<span class="pull-right">▼</span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">공지사항</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nth-3">
+                        <p class="fwi-label">파일첨부</p>
+                        <div class="filebox">
+                            <label class="br4" for="filename">파일찾기<span>▶</span></label>
+                            <input type="file" id="filename" class="upload-hidden">
+                            <input class="upload-name" value="" disabled="disabled">
+                        </div>
+                    </li>
+                </ul>
+                <div class="fw-contents">
+                    <p class="fwi-label">내용</p>
+                    <textarea class="br4" name="" id="" cols="30" rows="5"></textarea>
+                </div>
+                <div class="fw-footer"><a href="notice_01.html" class="cancle-btn br4">취소</a><a href="notice_01.html" class="create-btn bg-blue fc-white br4">등록</a></div>
+            </div>
+
+        </div>
+    </section>
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

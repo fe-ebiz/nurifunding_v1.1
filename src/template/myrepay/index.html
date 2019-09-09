@@ -1,0 +1,149 @@
+@@include('../include/_head.html', {
+	"page": "myrepay"
+})
+
+</head>
+<body>
+
+<h1 class="skip">누리펀딩</h1>
+<div class="wrap">
+	@@include('../include/_header.html') 
+   
+    <!--01.나의 예치금-->
+    <section class="contents com-mg">
+        <div class="container">
+
+            <div class="row lg-wrapper">
+                <div class="repayment com-box row br3">
+                    <h2 class="center-block">총 지급</h2>
+                    <div class="rep-box clearfix">
+                        <p class="rep-p1 clearfix"><span class="pull-left">원금</span><span class="pull-right">0 원</span></p>
+                        <p class="rep-p1 clearfix"><span class="pull-left">이자</span><span class="pull-right">0 원</span></p>
+                        <p class="rep-p1 clearfix"><span class="pull-left">세금</span><span class="pull-right">0 원</span></p>
+                        <p class="rep-p1 clearfix"><span class="pull-left">안심료</span><span class="pull-right">0 원</span></p>
+                        <p class="rep-p1 clearfix"><span class="pull-left">안심펀드 보호금</span><span class="pull-right">0 원</span></p>
+                    </div>
+                    <p class="rep-p2"><span class="fc-blue">0</span> 원</p>
+                    <p class="rep-p3 clearfix"><span class="pull-left">지금 예정금 ( 세후 )</span><span class="pull-right">0 원</span></p>
+                </div>
+
+                <div class="schedule com-box row br3">
+                    <h2 class="center-block">지급 스케줄 <span class="sm-inBlock">( 2017.3 ~ 2018.2 )</span></h2>
+                    <p class="sch-p1"><span class="c-blue">&#9679;</span> 누적 지급액 <span class="c-gray">&#9679;</span> 총 투자액</p>
+                    <div class="canvas-wrap">
+                        <div class="canvas-box">
+                            <div id="canvas-holder-schedule">
+                                <canvas id="chart-area-schedule"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        var dataSchedule = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"];
+                        var config = {
+                            type: 'line',
+                            data: {
+                                labels: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+                                datasets: [{
+                                    label: "",
+                                    backgroundColor: '#398fe1',
+                                    borderColor: "#398fe1",
+                                    data: [
+                                        dataSchedule[0],
+                                        dataSchedule[1],
+                                        dataSchedule[2],
+                                        dataSchedule[3],
+                                        dataSchedule[4],
+                                        dataSchedule[5],
+                                        dataSchedule[6],
+                                        dataSchedule[7],
+                                        dataSchedule[8],
+                                        dataSchedule[9],
+                                        dataSchedule[10],
+                                        dataSchedule[11]
+
+                                    ],
+                                    fill: false,
+                                    tension: 0,
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                tooltips: {
+                                    mode: 'index',
+                                    intersect: false,
+                                },
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            beginAtZero: true,
+                                        }
+                                    }]
+                                },
+                            }
+                        };
+                    </script>
+                </div>
+            </div>
+
+            <div class="monthly-rep com-box row br3">
+                <h2>이달의 지급</h2>
+
+                <div class="th-wrap clearfix">
+                    <div class="month-box clearfix">
+                        <a href="" class="prev">&lt;</a>
+                        <p class="month">2017년 2월</p>
+                        <a href="" class="next">&gt;</a>
+                    </div>
+
+                    <ul class="th clearfix">
+                        <li class="nth-1 m">지급일</li>
+                        <li class="nth-2 m">차수</li>
+                        <li class="nth-3 m">채권명</li>
+                        <li class="nth-4">투자금액</li>
+                        <li class="nth-5">수입률</li>
+                        <li class="nth-6">원금</li>
+                        <li class="nth-7">이자</li>
+                        <li class="nth-8">안심펀드</li>
+                        <li class="nth-9">세금</li>
+                        <li class="nth-10 m">입금액</li>
+                    </ul>
+                </div>
+
+                <ul class="m-rep clearfix">
+                    <li class="m-rep-li nth-1">
+                        <span class="nth-1">지금 완료</span>
+                        <span class="nth-2">0</span>
+                        <span class="nth-3">0 원</span>
+                    </li>
+                    <li class="m-rep-li nth-2">
+                        <span class="nth-1">지급 예정</span>
+                        <span class="nth-2">0</span>
+                        <span class="nth-3">0 원</span>
+                    </li>
+                </ul>
+
+                <div class="rep-box clearfix">
+                    <p class="rep-p1 clearfix"><span class="pull-left">원금</span><span class="pull-right">0 원</span></p>
+                    <p class="rep-p1 clearfix"><span class="pull-left">이자</span><span class="pull-right">0 원</span></p>
+                    <p class="rep-p1 clearfix"><span class="pull-left">세금</span><span class="pull-right">0 원</span></p>
+                    <p class="rep-p1 clearfix"><span class="pull-left">안심료</span><span class="pull-right">0 원</span></p>
+                    <p class="rep-p1 clearfix"><span class="pull-left">안심펀드 보호금</span><span class="pull-right">0 원</span></p>
+                </div>
+                <p class="rep-p2"><span class="fc-blue">0</span> 원</p>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        window.onload = function () {
+            var ctx = document.getElementById("chart-area-schedule").getContext("2d");
+            window.myLine = new Chart(ctx, config);
+        };
+    </script>
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

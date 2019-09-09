@@ -1,0 +1,81 @@
+@@include('../include/_head.html', {
+	"page": "join"
+})
+    <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/join/join2.css"> 
+	
+	<script type="text/javascript" src="http://nurifunding.co.kr/static/js/mypage/mypage.js"></script>
+    
+	<!--[if lt IE 9]>
+        <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/join/join2_ie9lt.css">
+    <![endif]-->
+
+</head>
+<body>
+
+<h1 class="skip">누리펀딩 회원가입 개인</h1>
+<div class="wrap">
+	@@include('../include/_header.html') 
+   
+    <!-- 20180329 타이틀 -->
+    <h2 class="com-ft">회원가입</h2>
+   
+    <!-- 20180620 회원가입 - 일반 -->
+    <section class="member-info com-mg">
+        <div class="container">
+            <!-- type-01 멀티클래스 추가 -->
+            <div class="mi-box com-box type-01 row br3">
+
+                <!-- 개인회원일경우 : STEP02 -->
+                <div class="personal-join">
+                    <p class="mib-p1 fir">
+                        <span class="label">
+                            <label for="memberName">이름</label>
+                        </span>
+                        <input type="text" id="memberName" class="nr-text" placeholder="이름을 입력해주세요.">
+                    </p>
+                    <p class="mib-p1 type-prinum clearfix">
+                        <span class="label" id="mtype_t2">
+                            <label for="memberNum">주민등록번호</label>
+                        </span>
+                        <input type="tel" id="memberNum" class="nr-text" name="jumin" placeholder="앞번호 6자리" maxlength="6" onkeypress="javascript:checktype('number', 'jumin')">
+                        <span class="deco-line">-</span>
+                        <input type="password" class="nr-text wid-2" name="jumin2" id="jumin2" placeholder="뒷번호 7자리" maxlength="7" onkeypress="javascript:checktype('number', 'jumin')">
+                    </p>
+
+                    <p class="mib-p1">
+                        <span class="label">
+                            <label for="memberPhone">휴대폰 번호</label> 
+                        </span>
+
+                       <div class="phone-cert">
+                            <input type="tel" id="memberPhone" class="nr-text" placeholder="본인의 휴대폰 번호를 입력하세요.">
+                            <a href="javascript:;" class="a-btn">인증번호 발송</a>
+                       </div>
+                    </p>
+
+                    <p class="mib-p1">
+                        <span class="label">
+                            <label for="memberPhone2">휴대폰 인증번호</label> 
+                        </span>
+
+                       <div class="phone-cert cert-check">
+                            <input type="text" class="nr-text" name="memberPhone2"  placeholder="인증번호 4자리를 입력해주세요">
+                            <a href="#none" class="a-btn">확인</a>
+                           <!-- 인증완료 -->
+                           <!-- <a href="#none" class="a-btn passed">확인</a>-->
+                       </div>
+                    </p>
+
+                    <p class="mib-p3"><a href="#none" class="btn fc-white bg-blue center-block align-center br4">다음단계 (2/3)</a></p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

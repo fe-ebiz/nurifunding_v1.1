@@ -1,0 +1,138 @@
+@@include('../include/_head.html', {
+	"page": "loan"
+})
+</head>
+<body>
+
+<h1 class="skip">누리펀딩 금리 한도 알아보기</h1>
+<div class="wrap">
+	@@include('../include/_header.html') 
+   
+
+    <div class="contents">
+
+        <!-- 01.금리한도알아보기 -->
+        <section class="loan nth-1">
+            <h2 class="lon-h2">금리<span class="lon-dot">&#8226;</span>한도 알아보기</h2>
+            <div class="container lon-box br4">
+                <em class="lon-em center-block">아래 간단한 기본 정보를 입력해 주세요.<br/>금리<span class="lh3-dot">&#8226;</span>한도 조회시 신용등급에 영향이 없습니다.</em>
+
+                <ul class="lon-ul">
+                    <li class="lon-li">
+                        <p class="lon-p">상품구분</p>
+                        <div class="lon-d dropdown" id="lon-pdt">
+                            <button type="button" class="btn">대출 상품을 선택하세요<span class="pull-right">▼</span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">타기관 대출신청</a></li>
+                                <li><a href="#">개인 신용 대출</a></li>
+                                <li><a href="#">개인 사업자 대출</a></li>
+                                <li><a href="#">법인 사업자 대출</a></li>
+                                <li><a href="#">부동산 담보 대출</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="lon-li">
+                        <p class="lon-p">신청금액</p>
+                        <div class="lon-d nr-box">
+                            <p class="nr-bg-txt">만원</p>
+                            <input type="text" class="nr-text pw-nr-t br4 center-block" placeholder="1000"><span class="nr-ph">1000</span>
+                        </div>
+                    </li>
+                    <li class="lon-li">
+                        <p class="lon-p">상환기간</p>
+                        <div class="lon-d dropdown" id="lon-term">
+                            <button type="button" class="btn">3개월<span class="pull-right">▼</span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">6개월</a></li>
+                                <li><a href="#">12개월</a></li>
+                                <li><a href="#">18개월</a></li>
+                                <li><a href="#">24개월</a></li>
+                                <li><a href="#">36개월</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="lon-li">
+                        <p class="lon-p">상환일</p>
+                        <div class="lon-d dropdown" id="lon-day">
+                            <button type="button" class="btn">5<span class="pull-right">▼</span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">15</a></li>
+                                <li><a href="#">25</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="lon-ul">
+                    <li class="lon-li">
+                        <p class="lon-p">이름</p>
+                        <div class="lon-d nr-box">
+                            <input type="text" class="nr-text pw-nr-t br4 center-block" placeholder="이름을 입력해 주세요"><span class="nr-ph">이름을 입력해 주세요</span>
+                        </div>
+                    </li>
+                    <li class="lon-li">
+                        <p class="lon-p">생년월일</p>
+                        <div class="lon-d nr-box">
+                            <input type="text" class="nr-text pw-nr-t br4 center-block" placeholder="19880315"><span class="nr-ph">19880315</span>
+                        </div>
+                    </li>
+                    <li class="lon-li">
+                        <p class="lon-p">성별</p>
+                        <div class="lon-d dropdown" id="lon-gender">
+                            <button type="button" class="btn">성별을 선택해 주세요<span class="pull-right">▼</span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">남성</a></li>
+                                <li><a href="#">여성</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="lon-li">
+                        <p class="lon-p">휴대폰 번호</p>
+                        <div class="lon-d nr-box">
+                            <input type="text" class="nr-text pw-nr-t br4 center-block" placeholder="'-'를 제외하고 입력해 주세요"><span class="nr-ph">'-'를 제외하고 입력해 주세요</span>
+                        </div>
+                        <p class="lon-ps">※본인 명의 휴대폰이 있어야 서비스 이용이 가능합니다.</p>
+                    </li>
+                    <li class="lon-li">
+                        <p class="lon-p">이메일</p>
+                        <div class="lon-d nr-box">
+                            <input type="text" class="nr-text pw-nr-t br4 center-block" placeholder="nurifunding@naver.com"><span class="nr-ph">nurifunding@naver.com</span>
+                        </div>
+                        <p class="lon-ps">※위 이메일로 대출안내가 진행됩니다.</p>
+                    </li>
+                </ul>
+
+                <p class="alow2 nr-box">
+                    <input type="checkbox" class="nr-check all" id="a-all">
+                    <label for="a-all" class="nr-label">아래 내용에 모두 동의합니다.</label>
+                </p>
+
+                <div class="agree-box br4">
+                    <p class="alow mt nr-box">
+                        <input type="checkbox" class="nr-check"><span class="a-fc1">[필수]</span><a href="" class="al-link">서비스 이용약관</a><span class="a-fc0"> 동의</span></p>
+                    <p class="alow nr-box">
+                        <input type="checkbox" class="nr-check"><span class="a-fc1">[필수]</span><a href="" class="al-link">개인정보 제공 이용약관</a><span class="a-fc0"> 동의</span></p>
+                    <p class="alow nr-box">
+                        <input type="checkbox" class="nr-check"><span class="a-fc1">[필수]</span><a href="" class="al-link">개인정보 조회</a><span class="a-fc0"> 동의</span></p>
+                    <p class="alow nr-box">
+                        <input type="checkbox" class="nr-check"><span class="a-fc1">[필수]</span><a href="" class="al-link">개인정보 수집, 이용 동의</a><span class="a-fc0"> 동의</span></p>
+                    <p class="alow nr-box">
+                        <input type="checkbox" class="nr-check"><span class="a-fc1">[필수]</span><a href="" class="al-link">고유식별정보 처리방침 동의</a><span class="a-fc0"> 동의</span></p>
+                    <p class="alow nr-box">
+                        <input type="checkbox" class="nr-check"><span class="a-fc2">[선택]</span><a href="" class="al-link">서비스 이용약관</a><span class="a-fc0"> 동의</span></p>
+                </div>
+
+                <p class="alow3"><a href="" class="a-btn br4 bg-blue">다 음<span class="pull-right">▶</span></a></p>
+                <p class="a-ps">안전한 대출 심사를 위해 본인 여부 확인 후 진행합니다.</p>
+
+            </div>
+        </section>
+
+    </div>
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>
