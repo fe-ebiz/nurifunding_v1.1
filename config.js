@@ -47,8 +47,8 @@ module.exports = function() {
 
 		// etc 경로
 		etc = {
-			src: source + '/static/etc/**',
-			dest: development + '/static/etc',
+			src: source + '/!(css|sass|js|img)/**',
+			dest: development + '/static',
 		},
 
 		// HTML 옵션
