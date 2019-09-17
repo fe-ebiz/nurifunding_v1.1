@@ -7,9 +7,6 @@ module.exports = function() {
 
 		// 템플릿 경로
 		template = {
-//			src  : source + '/jade/**/!(_)*.jade',
-//			parts: source + '/jade/**/_*.jade',
-//			dest : development + '/views'
 			src  : source + '/template/**/!(_)*.html',
 			parts: source + '/template/**/_*.html',
 			dest : development + '/views',
@@ -47,7 +44,7 @@ module.exports = function() {
 
 		// etc 경로
 		etc = {
-			src: source + '/!(css|sass|js|img)/**',
+			src: source + '/!(css|scss|js|img)/**',
 			dest: development + '/static',
 		},
 
