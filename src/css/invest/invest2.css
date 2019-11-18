@@ -88,7 +88,19 @@
 	.thumb-box img {width: 100%;}
 	.thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 12px; background: rgba(38, 196, 183, 0.88); padding: 9px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
 	.thumb-box .end {z-index: 5; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .6); text-align: center; border-top-left-radius: 4px; border-top-right-radius: 4px;}
-	.thumb-box .end > span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; /*margin-top: 95px;*/margin-top: 18%; border: 1px solid #fff; letter-spacing: 0;}
+    .thumb-box .end > span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; /*margin-top: 95px;*/margin-top: 18%; border: 1px solid #fff; letter-spacing: 0;}
+    
+    .thumb-box .thumb-text-wrapper {
+        position: absolute; bottom: 10px; right: 0; background-color: rgba(0,0,0, .6); padding: 7px; text-align: center; font-family: 'Nanum Square', 'Noto Sans KR', sans-serif; line-height: 1.15;
+    }
+    .thumb-box .thumb-text-wrapper .title,
+    .thumb-box .thumb-text-wrapper .price {
+        font-weight: 700;
+        letter-spacing: -1.7px;
+    }
+    .thumb-box .thumb-text-wrapper .title {font-size: 18px; color: #fff; }
+    .thumb-box .thumb-text-wrapper .price {font-size: 22px; color: #ffba00;}
+    .thumb-box .thumb-text-wrapper .text {font-size: 16px; color: #479fe9;}
     
     /* 190619 자동투자 */
 	.thumb-box .autoinv {/*z-index: 4;*/ position: absolute; top: 10px; right: 11px; }
@@ -741,7 +753,19 @@
 	.thumb-box img {width: 100%;}
 	.thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 14px; background: rgba(38, 196, 183, 0.88); padding: 11px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
 	.thumb-box .end {z-index: 5; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .6); text-align: center; border-top-left-radius: 4px; border-top-right-radius: 4px;}
-	.thumb-box .end > span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; margin-top: 75px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
+    .thumb-box .end > span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; margin-top: 75px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
+    
+    .thumb-box .thumb-text-wrapper {
+        position: absolute; bottom: 10px; right: 0; background-color: rgba(0,0,0, .6); padding: 7px; text-align: center; font-family: 'Nanum Square', 'Noto Sans KR', sans-serif; line-height: 1.15;
+    }
+    .thumb-box .thumb-text-wrapper .title,
+    .thumb-box .thumb-text-wrapper .price {
+        font-weight: 700;
+        letter-spacing: -1.7px;
+    }
+    .thumb-box .thumb-text-wrapper .title {font-size: 18px; color: #fff; }
+    .thumb-box .thumb-text-wrapper .price {font-size: 22px; color: #ffba00;}
+    .thumb-box .thumb-text-wrapper .text {font-size: 16px; color: #479fe9;}
     
     /* 190619 자동투자 */
 	.thumb-box .autoinv {/*z-index: 4;*/ position: absolute; top: 10px; right: 11px; }
@@ -1359,6 +1383,18 @@
 	.thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 14px; background: rgba(38, 196, 183, 0.88); padding: 11px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
 	.thumb-box .end {z-index: 5; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .6); text-align: center; border-top-left-radius: 4px; border-top-right-radius: 4px;}
 	.thumb-box .end > span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; margin-top: 65px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
+    
+    .thumb-box .thumb-text-wrapper {
+        position: absolute; bottom: 10px; right: 0; background-color: rgba(0,0,0, .6); padding: 7px; text-align: center; font-family: 'Nanum Square', 'Noto Sans KR', sans-serif; line-height: 1.15;
+    }
+    .thumb-box .thumb-text-wrapper .title,
+    .thumb-box .thumb-text-wrapper .price {
+        font-weight: 700;
+        letter-spacing: -1.7px;
+    }
+    .thumb-box .thumb-text-wrapper .title {font-size: 18px; color: #fff; }
+    .thumb-box .thumb-text-wrapper .price {font-size: 22px; color: #ffba00;}
+    .thumb-box .thumb-text-wrapper .text {font-size: 16px; color: #479fe9;}
     
     /* 190619 자동투자 */
 	.thumb-box .autoinv {/*z-index: 4;*/ position: absolute; top: 10px; right: 11px; }

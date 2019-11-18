@@ -179,7 +179,19 @@
 	.thumb-box img {width: 100%;}
 	.thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 12px; background: rgba(38, 196, 183, 0.88); padding: 9px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
 	.thumb-box .end {z-index: 5; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center;}
-	.thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 85px; border: 1px solid #fff; letter-spacing: 0;}
+    .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 85px; border: 1px solid #fff; letter-spacing: 0;}
+    
+    .thumb-box .thumb-text-wrapper {
+        position: absolute; bottom: 10px; right: 0; background-color: rgba(0,0,0, .6); padding: 7px; text-align: center; font-family: 'Nanum Square', 'Noto Sans KR', sans-serif; line-height: 1.15;
+    }
+    .thumb-box .thumb-text-wrapper .title,
+    .thumb-box .thumb-text-wrapper .price {
+        font-weight: 700;
+        letter-spacing: -1.7px;
+    }
+    .thumb-box .thumb-text-wrapper .title {font-size: 18px; color: #fff; }
+    .thumb-box .thumb-text-wrapper .price {font-size: 22px; color: #ffba00;}
+    .thumb-box .thumb-text-wrapper .text {font-size: 16px; color: #479fe9;}
 
     /* 190619 자동투자 */
 	.thumb-box .autoinv {/*z-index: 4;*/ position: absolute; top: 10px; right: 11px; }
@@ -198,9 +210,14 @@
 	.ip-btn-box {text-align: center; margin: 15px 0;}
 	.ip-btn {display: inline-block; width: 280px; color: #fff; line-height: 2.8em; font-size: 14px; letter-spacing: 0;}
 	.ip-more-outer {margin: 20px auto 5px;}
-	.ip-more-box {text-align: center;}
-	.ip-more-btn {display: inline-block; width: 100%; border: 1px solid #dcdcdc; line-height: 2.5em; font-size: 15px; background: #126cc3; color: #fff;}
-	.black-r-icon {width: 7px; height: 11px; background: url(https://nurifunding.co.kr/img/i_whiteArr.png) no-repeat; background-size: 6px; left: 6px;}
+	.ip-more-outer .ip-more-box {text-align: center;}
+	.ip-more-outer .ip-more-btn {display: inline-block; width: 100%; border: 1px solid #dcdcdc; line-height: 2.5em; font-size: 15px; background: #126cc3; color: #fff;}
+    .ip-more-outer .black-r-icon {width: 7px; height: 11px; background: url(https://nurifunding.co.kr/img/i_whiteArr.png) no-repeat; background-size: 6px; left: 6px;}
+    .ip-more-outer-2 {margin: 20px auto 5px;}
+    .ip-more-outer-2 .ip-more-box {float: left; width: 49%; text-align: center;}
+    .ip-more-outer-2 .ip-more-box + .ip-more-box {margin-left: 2%;}
+	.ip-more-outer-2 .ip-more-btn {position: relative; display: inline-block; width: 100%; border: 1px solid #dcdcdc; line-height: 2.5em; font-size: 15px; background: #126cc3; color: #fff;}
+    .ip-more-outer-2 .black-r-icon {width: 7px; height: 11px; background: url(https://nurifunding.co.kr/img/i_whiteArr.png) no-repeat; background-size: 6px; float: right; top: 14px; right: 6px;}
 
 	.faq {background: #dae7f3;}
 	.fq-outer {margin-top: 10px;}
@@ -417,7 +434,19 @@
 	.thumb-box img {width: 100%;}
 	.thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 14px; background: rgba(38, 196, 183, 0.88); padding: 11px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
 	.thumb-box .end {z-index: 5; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center; border-top-left-radius: 4px; border-top-right-radius: 4px;}
-	.thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 97px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
+    .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 97px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
+    
+    .thumb-box .thumb-text-wrapper {
+        position: absolute; bottom: 10px; right: 0; background-color: rgba(0,0,0, .6); padding: 7px; text-align: center; font-family: 'Nanum Square', 'Noto Sans KR', sans-serif; line-height: 1.15;
+    }
+    .thumb-box .thumb-text-wrapper .title,
+    .thumb-box .thumb-text-wrapper .price {
+        font-weight: 700;
+        letter-spacing: -1.7px;
+    }
+    .thumb-box .thumb-text-wrapper .title {font-size: 18px; color: #fff; }
+    .thumb-box .thumb-text-wrapper .price {font-size: 22px; color: #ffba00;}
+    .thumb-box .thumb-text-wrapper .text {font-size: 16px; color: #479fe9;}
 
     /* 190619 자동투자 */
 	.thumb-box .autoinv {/*z-index: 4;*/ position: absolute; top: 10px; right: 11px; }
@@ -440,9 +469,13 @@
 	.ip-btn-box {text-align: center; margin: 15px 0;}
 	.ip-btn {display: inline-block; width: 88.5%; color: #fff; line-height: 2.8em; font-size: 16px; letter-spacing: 0;}
 	.ip-more-outer {margin: 30px auto 0;}
-	.ip-more-box {text-align: center;}
-	.ip-more-btn {position: relative; left: -10px; display: inline-block; width: 60%; border: 1px solid #dcdcdc; line-height: 2.8em; font-size: 18px; background: #126cc3; color: #fff;}
-	.black-r-icon {width: 10px; height: 16px; background: url(https://nurifunding.co.kr/img/i_whiteArr.png) no-repeat; left: 8px; top: 2px;}
+	.ip-more-outer .ip-more-box {text-align: center;}
+	.ip-more-outer .ip-more-btn {position: relative; left: -10px; display: inline-block; width: 60%; border: 1px solid #dcdcdc; line-height: 2.8em; font-size: 18px; background: #126cc3; color: #fff;}
+    .ip-more-outer .black-r-icon {width: 10px; height: 16px; background: url(https://nurifunding.co.kr/img/i_whiteArr.png) no-repeat; left: 8px; top: 2px;}
+    .ip-more-outer-2 {margin: 30px auto 0; text-align: center;}
+    .ip-more-outer-2 .ip-more-box {display: inline-block; width: 40%; margin: 0 2px;}
+	.ip-more-outer-2 .ip-more-btn {position: relative; display: inline-block; width: 100%; border: 1px solid #dcdcdc; line-height: 2.8em; font-size: 18px; background: #126cc3; color: #fff;}
+    .ip-more-outer-2 .black-r-icon {width: 10px; height: 16px; background: url(https://nurifunding.co.kr/img/i_whiteArr.png) no-repeat; float: right; top: 18px; right: 20px;}
 
 	.faq {background: #dae7f3;}
 	.fq-outer {margin-top: 20px;}
@@ -600,14 +633,26 @@
 	.ingProduct {background: #f5f5f5;}
 	.ip-wrap {}
 	.ip-outer {padding: 0; margin-top: 30px;}
-	.ip-outer:nth-child(odd) {padding-right: 15px;}
-	.ip-outer:nth-child(even) {padding-left: 15px;}
+	.ip-outer:nth-of-type(odd) {padding-right: 15px;}
+	.ip-outer:nth-of-type(even) {padding-left: 15px;}
 	.ip-box { margin: 0 auto; background: #fff; border: 1px solid #ddd; /*overflow: hidden;*/}
 	.thumb-box {position: relative; width: 485px; height: 335px; border-top-left-radius: 4px; border-top-right-radius: 4px;}
 	.thumb-box img {width: 100%;}
 	.thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 14px; background: rgba(38, 196, 183, 0.88); padding: 11px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
 	.thumb-box .end {z-index: 5; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center; border-top-left-radius: 4px; border-top-right-radius: 4px;}
-	.thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top:145px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
+    .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top:145px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
+    
+    .thumb-box .thumb-text-wrapper {
+        position: absolute; bottom: 10px; right: 0; background-color: rgba(0,0,0, .6); padding: 10px 15px; text-align: center; font-family: 'Nanum Square', 'Noto Sans KR', sans-serif;
+    }
+    .thumb-box .thumb-text-wrapper .title,
+    .thumb-box .thumb-text-wrapper .price {
+        font-weight: 700;
+        letter-spacing: -3px;
+    }
+    .thumb-box .thumb-text-wrapper .title {font-size: 32px; color: #fff; }
+    .thumb-box .thumb-text-wrapper .price {font-size: 52px; color: #ffba00;}
+    .thumb-box .thumb-text-wrapper .text {font-size: 24px; color: #479fe9;}
 
     /* 190619 자동투자 */
 	.thumb-box .autoinv {/*z-index: 4; */position: absolute; top: 10px; right: 11px; }
@@ -630,9 +675,13 @@
 	.ip-btn-box {text-align: center; margin: 15px 0 25px;}
 	.ip-btn {display: inline-block; width: 88.5%; color: #fff; line-height: 2.8em; font-size: 18px; letter-spacing: 0;}
 	.ip-more-outer {margin: 50px auto 0;}
-	.ip-more-box {text-align: center;}
-	.ip-more-btn {position: relative; left: -10px; display: inline-block; width: 65%; border: 1px solid #dcdcdc; line-height: 2.8em; font-size: 20px; background: #126cc3; color: #fff;}
-	.black-r-icon {width: 10px; height: 16px; background: url(https://nurifunding.co.kr/img/i_whiteArr.png) no-repeat; left: 8px; top: 1px;}
+	.ip-more-outer .ip-more-box {text-align: center;}
+	.ip-more-outer .ip-more-btn {position: relative; left: -10px; display: inline-block; width: 65%; border: 1px solid #dcdcdc; line-height: 2.8em; font-size: 20px; background: #126cc3; color: #fff;}
+    .ip-more-outer .black-r-icon {width: 10px; height: 16px; background: url(https://nurifunding.co.kr/img/i_whiteArr.png) no-repeat; left: 8px; top: 1px;}
+    .ip-more-outer-2 {margin: 50px auto 0; text-align: center;}
+    .ip-more-outer-2 .ip-more-box {display: inline-block; width: 40%; margin: 0 2px;}
+	.ip-more-outer-2 .ip-more-btn {position: relative; display: inline-block; width: 100%; border: 1px solid #dcdcdc; line-height: 2.8em; font-size: 20px; background: #126cc3; color: #fff;}
+	.ip-more-outer-2 .black-r-icon {width: 10px; height: 16px; background: url(https://nurifunding.co.kr/img/i_whiteArr.png) no-repeat; float: right; top: 20px; right: 20px;}
 
 	.faq {background: #dae7f3;}
 	.fq-outer {margin-top: 30px;}
