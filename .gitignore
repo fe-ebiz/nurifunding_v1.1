@@ -1,32 +1,3 @@
-# etc
-gulpfile.js/
-_bak/
-_document/
-_draft/
-_work/
-_media/
-_tmp/
-img/
-dist/
-gulpfile.js
-.sass-cache/
-
-#fontFile
-*.ttf
-*.woff
-*.woff2
-*.eot
-*.otf
-
-#sftpFile, zip����
-*.json
-*.zip
-
-# ImeageFile
-*.jpg
-*.png
-*.gif
-
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -74,3 +45,15 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# etc
+_bak/
+_document/
+_draft/
+_work/
+_media/
+_tmp/
+img/
+dist/
+.sass-cache/
+*.zip
