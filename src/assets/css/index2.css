@@ -110,8 +110,21 @@
 	.rr-nth-5 .r-f2 {position: relative; top: -6px;}
 	.rate .mt {margin-top: 20px;}
 
+    .bnBar {
+        position: relative;
+        background: #7c88ff;
+        padding: 12px 0;
+        text-align: center;
+        font-size: 0;
+    }
+    .bnBar figure img {
+        width: 300px;
+    }
 	.miripayBn {position: relative; background: #7c88ff; padding: 12px 0; text-align: center;}
-	.miripayBn figure img {width: 300px;}
+    .miripayBn figure img {width: 300px;}
+    .nurisafeBn {
+        background-color: #483fca;
+    }
 
 	.benefit {background: #EBF4FB;}
 	.benefit h2 {font-weight: 600; margin-bottom: 10px;}
@@ -365,7 +378,17 @@
 	.rr-nth-5 .r-f2 {position: relative; top: -6px;}
 	.rate .mt {margin-top: 30px;}
 
-	.miripayBn {position: relative; background: #7c88ff; padding: 11px 0; text-align: center;}
+    .bnBar {
+        position: relative;
+        background: #7c88ff;
+        padding: 11px 0;
+        text-align: center;
+        font-size: 0;
+    }
+    .miripayBn {position: relative; background: #7c88ff; padding: 11px 0; text-align: center;}
+    .nurisafeBn {
+        background-color: #483fca;
+    }
 
 	.benefit {background: #EBF4FB;}
 	.benefit h2 {font-weight: 600; margin-bottom: 20px;}
@@ -572,7 +595,17 @@
 	.r-f2 {font-size: 28px; margin-top: 12px; font-weight: 500;}
 	.rr-nth-5 .r-f2 {position: relative; top: -4px;}
 
-	.miripayBn {position: relative; background: #7c88ff; padding: 11px 0; text-align: center;}
+    .bnBar {
+        position: relative;
+        background: #7c88ff;
+        padding: 11px 0;
+        text-align: center;
+        font-size: 0;
+    }
+    .miripayBn {position: relative; background: #7c88ff; padding: 11px 0; text-align: center;}
+    .nurisafeBn {
+        background-color: #483fca;
+    }
 
 	.benefit {background: #EBF4FB;}
 	.benefit h2 {font-weight: 600; margin-bottom: 20px;}

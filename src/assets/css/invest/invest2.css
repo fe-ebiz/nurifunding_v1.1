@@ -574,6 +574,16 @@
     /* 190619 자동투자 */
 	.invest-detail-view-area .invest-img .autoinv {position: absolute; top: 10px; right: 10px;}
     .invest-detail-view-area .invest-img .autoinv .txt {z-index: 3; position: relative; display: inline-block; padding: 5px 6px 7px; font-size: 12px; font-weight: 400; line-height: 1; text-align: center; /*line-height: 40px; */color: #fff; border: 2px solid #fff; background: #f66600;}
+    .invest-detail-view-area .invest-img .safe-mark {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .invest-detail-view-area .invest-img .safe-mark img {
+        display: block;
+        width: 50px;
+    }
 
 	.invest-detail-view-area .invest-detail-box {position:relative; box-sizing:border-box; width:100%; /*height:291px;*/ padding:18px 10px 14px; background:#fff }
 	.invest-detail-view-area .invest-detail-box .per-bar {position:absolute; width:100%; height:10px; padding-right:2px; top:0; left:0;}
@@ -708,7 +718,22 @@
 	.estate .cont-comments .post.post-reply .write-area textarea {}
 	/*댓글 입력창 .post.on .write-area - 댓글에 답글 쓰기 클릭시*/
 	.estate .cont-comments .post.on .write-area {display: block;}
-	.estate .cont-comments .post.on .row-btn .btn-reply:after {content: " 취소 ▲";}
+    .estate .cont-comments .post.on .row-btn .btn-reply:after {content: " 취소 ▲";}
+    
+    .bnBar-wrap.nurisafeBn {
+        margin-top: 15px !important;
+    }
+
+    .bnBar-wrap.nurisafeBn figure {
+        background-color: #3984E1;
+    }
+
+    .bnBar-wrap.nurisafeBn figure img {
+        display: block;
+        /* width: 310px; */
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 @media (max-width: 376px) {
 	.grd-h2 {font-size: 20px; }
@@ -728,6 +753,27 @@
 	.exp-calc-area .calc-txt-box p {font-size:14px}
 	.exp-calc-area .calc-txt-box .exp-input {margin: 0 3px 0 5px; font-size:14px}
 	.exp-list-box .exp-list .th, .exp-list-box .exp-list .td {font-size:12px;}
+}
+
+@media (min-width: 768px) {
+    .invest-detail-view-area .invest-img .safe-mark {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .invest-detail-view-area .invest-img .safe-mark img {
+        display: block;
+        width: 90px;
+    }
+
+    .bnBar-wrap.nurisafeBn {
+        margin-top: 20px !important;
+    }
+    .bnBar-wrap.nurisafeBn figure {
+        background-color: #3984E1;
+    }
+    .bnBar-wrap.nurisafeBn figure img {}
 }
 
 /*테블릿 영역, col-sm */

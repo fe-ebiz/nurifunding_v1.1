@@ -1,14 +1,171 @@
 @charset "utf-8";
 
 @media (max-width: 767px) {
+    strong {
+        font-weight: 500;
+    }
 
-	.page-tit {display: block; text-align: center; width: 100%; font-size: 22px; font-weight: 00; letter-spacing: -1px; margin: 25px auto 20px;}
-	.page-tit .ic-new {top: -3px; margin-left: 5px;}
+    em {
+        font-weight: 700;
+    }
+
+    .bor-b {
+        border-bottom: 1px solid #333;
+    }
+    .page-tit {
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 22px;
+        font-weight: 00;
+        letter-spacing: -1px;
+        margin: 25px auto 20px;
+    }
+
+    .page-tit .ic-new {
+        top: -3px;
+        margin-left: 5px;
+    }
+    .contents.nurisafe {
+        font-family: 'Noto Sans KR', sans-serif;
+        line-height: 1.425;
+    }
 	.cont {width: 310px; padding: 20px 10px; margin: 15px auto 40px; border: 1px solid #ddd; background: #ffffff; border-radius: 4px;}
-	.cont hr.sun {margin: 20px auto;}
-	.sec .sec-top .sec-tit {font-size: 17px; line-height: 1.2; letter-spacing: -1px;}
-	.sec .sec-mid {font-size: 12px;}
-	.sec .sec-mid .row-txt {line-height: 1.5; margin-top: 10px; letter-spacing: -0.5px; word-break: keep-all;}
+    .cont hr.sun {margin: 20px auto;}
+    
+    .sec .sec-top .title {font-size: 25px; line-height: 1.2; font-weight: 700;}
+    .sec .sec-top .st {
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .sec .sec-mid {font-size: 13px;}
+    .sec .sec-mid .picture.nurisafe {
+        width: 100%;
+        padding: 12px 0;
+        background-color: #ecfdff;
+        text-align: center;
+    }
+    .sec .sec-mid .picture.nurisafe img {
+        width: 250px;
+    }
+
+    .sec .sec-mid .text {
+        line-height: 1.65;
+        margin-top: 15px;
+        letter-spacing: -0.5px;
+        word-break: keep-all;
+    }
+    
+	.sec .sec-mid .plan-box {margin-top: 20px;}
+	.sec .sec-mid .plan-box .list {}
+	.sec .sec-mid .plan-box .list .item {
+        position: relative;
+        display: inline-block;
+        /* display: block;
+        margin: 0 auto; */
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: #eee;
+        box-sizing: border-box;
+        text-align: center;
+    }
+	.sec .sec-mid .plan-box .list .item.nth-1 {
+	    margin-right: 2.5px;
+	}
+
+	.sec .sec-mid .plan-box .list .item.nth-2 {
+	    margin: 0 2.5px;
+	}
+
+	.sec .sec-mid .plan-box .list .item.nth-3 {
+	    margin-left: 2.5px;
+	}
+
+	.sec .sec-mid .plan-box .list .item:after,
+	.sec .sec-mid .plan-box .list .item .picture {
+	    position: relative;
+	    display: inline-block;
+	    vertical-align: middle;
+	    font-size: 0;
+	}
+
+	.sec .sec-mid .plan-box .list .item:after {
+	    content: '';
+	    height: 100%;
+	}
+
+	.sec .sec-mid .plan-box .list .item {}
+
+	.sec .sec-mid .plan-box .list .item .picture {
+	    /* padding-top: 2px; */
+	}
+
+	.sec .sec-mid .plan-box .list .item .picture figcaption {
+	    margin-top: 3px;
+        font-size: 11px;
+        letter-spacing: -1.7px;
+	    line-height: 1.2;
+	}
+
+	.sec .sec-mid .plan-box .list .item .picture img {
+        position: relative;
+        width: 45px;
+	}
+
+	.sec .sec-mid .plan-box .list .item.nth-2 .picture {
+	    top: -5px;
+	}
+	.sec .sec-mid .plan-box .list .item.nth-3 .picture {
+	    top: -2px;
+	}
+
+	.sec .sec-mid .plan-box .list .item.nth-1 .picture img {
+	    /* left: -5px; */
+	}
+
+	.sec .sec-mid .plan-box .list .item.nth-2 .picture img {
+	    /* left: 10px; */
+	    left: 5px;
+	}
+
+	.sec .sec-mid .plan-box .list .item.nth-3 .picture img {
+	    left: 5px;
+	}
+    
+    .sec .sec-mid .cmt {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .sec .sec-bottom .title {
+        font-size: 16px;
+    }
+
+    .sec .sec-bottom .title .bor-b {
+        display: inline-block;
+        padding-bottom: 8px;
+    }
+
+    .sec .sec-bottom .text-list {
+        margin-top: 20px;
+    }
+
+    .sec .sec-bottom .text-list .text {
+        position: relative;
+        margin-top: 5px;
+        padding-left: 15px;
+        letter-spacing: 0;
+        font-size: 12.5px;
+    }
+
+    .sec .sec-bottom .text-list .text .num {
+        position: absolute;
+        left: 0;
+    }
+    
+	/* .sec .sec-mid .row-txt {line-height: 1.5; margin-top: 10px; letter-spacing: -0.5px; word-break: keep-all;}
 	.sec .sec-mid .row-btn .cmt {line-height: 1.5;}
 	.sec .sec-mid .row-btn .cmt > p {margin-top: 5px;}
 	.sec .sec-mid .row-btn .cmt > p:first-child {margin-top: 0px;}
@@ -21,35 +178,27 @@
 	.sec.intro .sec-mid .row-btn .btn-base {width: 100%; margin-top: 10px; font-size: 14px; height: 40px; line-height: 40px;}
 	.sec.intro .sec-mid .row-btn .btn-base:first-child {margin-top: 0;}
 	.sec.intro .sec-mid .row-btn .cmt {margin-top: 10px; line-height: 1.4;}
-	.sec.merit .list {margin-top: 15px; font-size: 0;}
-	.sec.merit .list .item {font-size: 13px; position: relative; display: inline-block; vertical-align: top; width: 33.33%; box-sizing: border-box;}
-	.sec.merit .list .item.nth-2:before,
-	.sec.merit .list .item.nth-2:after {position: absolute; content: ""; display: inline-block; top: 10px; width: 1px; height: 35px; background: #8dbdec;}
-	.sec.merit .list .item.nth-2:before {left: 0;}
-	.sec.merit .list .item.nth-2:after {right: 0;}
-	.sec.merit .list .item figure figcaption {font-size: 11px; line-height: 1.5; margin-top: 15px; letter-spacing: -1.5px;}
-	.sec.merit .list .item figure img {padding: 0 20px;}
 	.sec.merit .row-txt.notice {margin-top: 10px; font-size: 11px;}
 	.sec.merit .row-txt.notice strong {display: block; margin-bottom: 5px; font-size: 12px;}
 	.sec.merit .row-txt.notice .row-dot {padding-left: 15px;}
-	.sec.merit .row-txt.notice .row-dot .dot {position: absolute; left: 2px;}
+	.sec.merit .row-txt.notice .row-dot .dot {position: absolute; left: 2px;} */
 
 }
 
 @media (min-width: 768px) {
-    .contents.nurisafe {
-        font-family: 'Noto Sans KR', sans-serif;
-        line-height: 1.425;
-    }
     strong {font-weight: 500;}
     em {font-weight: 700;}
     .bor-b {
         border-bottom: 1px solid #333;
     }
+    .page-tit {display: block; text-align: center; width: 100%; font-size: 36px; font-weight: 00; letter-spacing: -1px; margin: 45px auto 40px;}
+    .page-tit .ic-new {top: -5px; margin-left: 5px;}
+    .contents.nurisafe {
+        font-family: 'Noto Sans KR', sans-serif;
+        line-height: 1.425;
+    }
     .cont {width: 800px; padding: 50px 90px; margin: 15px auto 65px; border: 1px solid #ddd; background: #ffffff; border-radius: 4px;}
     .cont hr.sun {margin: 50px auto; border-top-width: 2px}
-	.page-tit {display: block; text-align: center; width: 100%; font-size: 36px; font-weight: 00; letter-spacing: -1px; margin: 45px auto 40px;}
-    .page-tit .ic-new {top: -5px; margin-left: 5px;}
     .sec .sec-top .title {font-size: 50px; line-height: 1.2; font-weight: 700;}
     .sec .sec-top .st {
         margin-top: 30px;
@@ -57,6 +206,12 @@
         font-weight: 500;
     }
     .sec .sec-mid {}
+    .sec .sec-mid .picture.nurisafe {
+        width: 100%;
+        padding: 22px 0;
+        background-color: #ecfdff;
+        text-align: center;
+    }
     .sec .sec-mid .text {
         line-height: 1.65; margin-top: 35px; font-size: 18px; 
         letter-spacing: -0.5px; word-break: keep-all;
@@ -75,7 +230,6 @@
         background-color: #eee;
         box-sizing: border-box;
         text-align: center;
-        /* vertical-align: top; */
     }
     .sec .sec-mid .plan-box .list .item.nth-1 {margin-right: 15px;}
     .sec .sec-mid .plan-box .list .item.nth-2 {margin: 0 15px;}
@@ -94,16 +248,12 @@
     .sec .sec-mid .plan-box .list .item {
     }
     .sec .sec-mid .plan-box .list .item .picture {
-        /* width: 180px;
-        background-color: #eee;
-        border-radius: 50%; */
-        /* height: 100%; */
+        padding-top: 2px;
     }
 	.sec .sec-mid .plan-box .list .item .picture figcaption {
         margin-top: 10px;
         font-size: 18px; 
         line-height: 1.2;
-        /* line-height: 1.5;  */
     }
     .sec .sec-mid .plan-box .list .item .picture img {
         position: relative;
@@ -120,7 +270,7 @@
     .sec .sec-mid .plan-box .list .item.nth-3 .picture img {
         left: 10px;
     }
-    .sec .sec-mid .plan-box .cmt {
+    .sec .sec-mid .cmt {
         margin-top: 50px;
         text-align: center;
         font-size: 22px;
@@ -138,12 +288,9 @@
     .sec .sec-bottom .text-list .text {
         position: relative;
         margin-top: 8px;
-        letter-spacing: 0;
         padding-left: 20px;
+        letter-spacing: 0;
     }
-    /* .sec .sec-bottom .text-list .text > * {
-        float: left;
-    } */
     .sec .sec-bottom .text-list .text .num {
         position: absolute;
         left: 0;
