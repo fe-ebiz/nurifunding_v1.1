@@ -377,7 +377,7 @@ hr {border: none; border-top: 1px solid #ddd;}
     .header .header-box .navbar-header .navbar-brand img {width: 150px;}
 
     .main-nav > li, .main-nav > li > a {padding-bottom: 20px;}
-    .main-nav > li {position: relative; float: left; font-size: 14px; margin-left:7px;}
+    .main-nav > li {position: relative; float: left; font-size: 12.5px; margin-left:7px;}
     .main-nav > li:first-child {margin-left: 0;}
     .main-nav > li:hover .sub-nav {opacity: 1; filter: alpha(opacity=100); visibility: visible; margin-top: 10px; transition: all 0.8s; -webkit-transition: all 0.8s; -moz-transition: all 0.8s; -o-transition: all 0.8s;}
     .main-nav .h-link {margin-top: -10px;}
@@ -471,6 +471,11 @@ hr {border: none; border-top: 1px solid #ddd;}
         width: 50px;
     }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+    .header .header-box {
+        width: 98%
+    }
+}
 
 /* 사이드 배너 테블릿 & 소형 모니터 */
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -478,13 +483,13 @@ hr {border: none; border-top: 1px solid #ddd;}
     .side-banner.subpage {top: 130px; margin-left: 540px;}
 }
 
-@media (min-width: 980px){
+@media (min-width: 992px){
     .header {height: 85px;}
     .header .header-box .navbar-header {top: -10px;}
     .header .header-box .navbar-header .navbar-brand {width: 200px;}
     .header .header-box .navbar-header .navbar-brand img {width: 200px;}
 
-    .main-nav > li {font-size: 17px; margin-left:8px;}
+    .main-nav > li {font-size: 16px; margin-left:8px;}
     .main-nav .h-link.fir {margin-left:20px;} 
     .main-nav .h-link img {width:130px;}
 
@@ -498,8 +503,13 @@ hr {border: none; border-top: 1px solid #ddd;}
     .tooltip-detail {right:auto; margin-left:-40px}
 }
 
+@media (min-width: 992px) and (max-width: 1210px) {
+    .main-nav>li {font-size: 14px;}
+}
+
 /* 
-    .footer-01 .f-txt span {display:inline-block} */
+    .footer-01 .f-txt span {display:inline-block} 
+*/
 
 /*@media (min-width: 980px) {
 	.hidden-md {display: none !important;}
