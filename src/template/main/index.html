@@ -12,6 +12,8 @@
     <h1 class="skip">누리펀딩</h1>
     <div class="wrap">
         @@include('../include/_header.html')
+        <!-- @@include('../include/pop/main/_phishingPop.html') -->
+        <!-- @@include('../include/pop/main/_eventWinner.html') -->
 
         <!--변경내용 메인슬라이드-->
         <section class="main">
@@ -536,23 +538,29 @@
             </div>
         </section>
 
-        <!-- 190415 -->
-        <!-- 메인, 내정보, 투자하기 페이지 -->
+        <!-- 사이드 배너 -->
         <div class="side-banner hidden-xs">
             <a href="https://www.nurifunding.co.kr/member/auto.php"><img src="https://www.nurifunding.co.kr/img/banner/banner_auto1_pc.png" alt="선정산 상품 자동투자 기능 오픈!" /></a>
+            <!-- 191231 작업영역 -->
+            <!-- 추가 작업 - 게시판 링크 연결 추가 -->
+            <a href="">
+                <img src="https://www.nurifunding.co.kr/img/evt/sales1000/bnr_reward.png" alt="누리펀딩투자상품100호달성기념리워드이벤트">
+            </a>
         </div>
         <!-- // -->
 
         <!-- <div class="side-banner"> <a href="#none" class="hidden-md"><img src="http://img.nurifunding.co.kr/side_banner_01.png" alt="카카오톡 플러스 친구" /></a> <a href="#none"><img src="http://img.nurifunding.co.kr/side_banner_02.jpg" alt="가상계죄개설시1만원지급" /></a> </div> <script> $(function() { var scrNum = 300 $(window).scroll(function() { var scr = $(window).scrollTop(); // console.log(scr + ", " + relativeScr); if (scr > scrNum) { $(".side-banner").fadeOut(); } else { $(".side-banner").fadeIn(); } }); }); </script> -->
 
-        <!-- 팝업 -->
         <!--@@include('../include/pop/main/_phishingPop.html') -->
+
+        <!-- 팝업 -->
+        @@include('../include/pop/main/_sales1000.html')
 
         @@include('../include/_footer.html')
     </div>
 
     <!-- 팝업 -->
-    <!--@@include('../include/pop/main/_eventWinner.html') -->
+    <!-- @@include('../include/pop/main/_eventWinner.html') -->
 
 </body>
 
