@@ -185,12 +185,13 @@
 	.est-box.nth-5 p.mt {margin-top: 20px;}
 	.est-box.nth-5 p.nth-1, .est-box.nth-5 p.nth-2 {font-size: 15px;}
 	.est-box.nth-5 em {font-weight: 400;}
+	/* .est-box .tbCms {width:100%; margin-top: 15px; font-size:14px; font-weight:300; table-layout: fixed;} */
 	.est-box .tbCms {width:100%; margin-top: 15px; font-size:14px; font-weight:300;}
 	.est-box .tbCms col.nth-1 {width: 30%;}
 	.est-box .tbCms col.nth-2 {width: 70%;}
 	.est-box .tbCms thead {background:#6ab0f2; border-top:1px solid #ccc; color:#fff;}
 	.est-box .tbCms tr {width:100%; border-bottom:1px solid #ccc;}
-	.est-box .tbCms td, .est-box .tbCms th {vertical-align:middle; border-left:1px solid #ccc; padding: 7px 0; word-break: keep-all; line-height: 1.4;}
+	.est-box .tbCms td, .est-box .tbCms th {vertical-align:middle; border-left:1px solid #ccc; padding: 7px 0; line-height: 1.4;}
 	.est-box .tbCms td:first-child, .est-box .tbCms th:first-child {border-left: 0; }
 	.est-box .tbCms td {padding-left: 5px;}
 	.est-box .tbCms td.ta-center {text-align: center; padding-left: 0;}
@@ -1460,7 +1461,8 @@
 	.ip-per-num {font-size: 16px; color: #777; margin-left: 2px;}
 	.ip-percent {position: relative; font-size: 18px; font-weight: 600;}
 	li[class*=ipli] .pull-right.day {font-weight: 500; font-size: 17px;}
-	.ip-btn-box {position:absolute; width:100%; text-align: center; bottom:25px; /*margin: 15px 0 25px;*/}
+	.ip-btn-box {position:absolute; width:100%; text-align: center; bottom:25px;}
+	/* .ip-btn-box {width:100%; text-align: center; bottom:25px;} */
 	.ip-btn {display: inline-block; width: 88.5%; color: #fff; line-height: 2.8em; font-size: 18px; letter-spacing: 0; border:1px solid #398fe1;}
 
 	/* 180703_상품리스트 수정_다솜 */
