@@ -203,7 +203,7 @@
 	.est-box.nth-5 .tbCms.last-none td, .est-box.nth-5 .tbCms.last-none th {display:block; float:left; width:70%;}
 	.est-box.nth-5 .tbCms.last-none td:first-child, .est-box.nth-5 .tbCms.last-none th:first-child {width:30%;}
 	.est-box.nth-5 .tbCms.last-none tr:last-child {}
-	.est-box.nth-5 .tbCms.last-none tr:last-child td {border-left:0; width:100%;}
+	.est-box.nth-5 .tbCms.last-none tr:last-child td {border-left:0; width:100%; padding-left: 0;}
 	.est-box.nth-5 .tbCms.last-none tr:last-child td:first-child {display:none}
 
 
