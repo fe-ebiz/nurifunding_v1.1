@@ -6,8 +6,8 @@
 /* css 초기화 */
 @import url(https://nurifunding.co.kr/static/css/reset.css);
 @import url(https://nurifunding.co.kr/static/css/grid_1024.css);
-@import url(https://nurifunding.co.kr/static/css/include/pop.css);
-/* @import url(../../static/css/include/pop.css); */
+/* @import url(https://nurifunding.co.kr/static/css/include/pop.css); */
+@import url(../../static/css/include/pop.css);
 /*@import url(../../src/css/grid_1024.css);*/
 /*@import url(https://nurifunding.co.kr/static/fonts/nanumgothic/nanumgothic.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
@@ -366,7 +366,7 @@ hr {border: none; border-top: 1px solid #ddd;}
 	.form-check:checked {background: #fff url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 3px 3px; background-size: 12px;}
 	.form-radio {width: 20px; height: 20px; border-radius: 50%;}
 	.form-radio:checked {background: #fff url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 20px;}
-    .form-input {}
+    .form-input {;}
     .form-select {}
     .btn-base {position: relative; display: inline-block; vertical-align: middle; box-sizing: border-box; color: #fff; background: #398fe1; height: 36px; padding: 0 5px; border-radius: 3px; line-height: 36px; font-size: 14px; text-align: center;}
     .btn-base.btn-blue {background: #398fe1;}

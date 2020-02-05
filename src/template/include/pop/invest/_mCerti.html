@@ -1,11 +1,18 @@
-
-<div class="pop-container fixed autoinv" style="display: block" onmousewheel="return false">
+<div class="pop-container fixed autoinv" style="display: none" onmousewheel="return false">
     <div class="bg-back"></div>
 
     <div class="pop-wrapper">
-        <a href="javascript:;" class="a-pop">
-            <img src="http://nurifunding.co.kr/img/invest/autoinv_m_certi.png" alt="자동투자관련휴대폰인증안내" class="img-pop">
-            <img src="https://nurifunding.co.kr/img/invest/loading_bar.gif" alt="로딩" class="loading">
-        </a>
+        <div class="pop-contents">
+            <img src="http://nurifunding.co.kr/img/invest/autoinv_m_certi_new.png" alt="자동투자관련휴대폰인증안내" class="img-pop">
+            <!-- <img src="https://nurifunding.co.kr/img/invest/loading_bar.gif" alt="로딩" class="loading"> -->
+            <div class="form-wrapper">
+                <div class="form-group">
+                    <label class="label"><span>인증번호(4자리)</span> <input type="text" class="form-base"></label>
+                </div>
+                <div class="form-group">
+                    <a href="javascript:;" class="btn-base btn-blue ok-btn" onclick="$(this).closest('.pop-container').hide()">인증확인</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
