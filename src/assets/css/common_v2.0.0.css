@@ -511,10 +511,10 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .gnb .navbar-collapse {position: relative; float: right; height: 100%;}
     .gnb .navbar-collapse .menu {position: relative; font-size: 0;}
     .gnb .navbar-collapse .menu > li {display: inline-block; position: relative; vertical-align: middle;font-size: 15px; text-align: center;}
-    .gnb .navbar-collapse .menu .hidden-margin {margin-left: 0; width: 129px; height: 10px;}
-    .gnb .navbar-collapse .menu.status-login .hidden-margin {margin-left: 0; width: 200px; height: 10px;}
-    /* .gnb .navbar-collapse .menu .hidden-margin {margin-left: 0; width: 40px; height: 10px;}
-    .gnb .navbar-collapse .menu.status-login .hidden-margin {width: 111px;} */
+    /* .gnb .navbar-collapse .menu .hidden-margin {margin-left: 0; width: 129px; height: 10px;}
+    .gnb .navbar-collapse .menu.status-login .hidden-margin {margin-left: 0; width: 200px; height: 10px;} */
+    .gnb .navbar-collapse .menu .hidden-margin {margin-left: 0; width: 40px; height: 10px;}
+    .gnb .navbar-collapse .menu.status-login .hidden-margin {width: 111px;}
     .gnb .navbar-collapse .menu > li:first-child,
     .gnb .navbar-collapse .menu .hidden-margin + li {margin-left: 0;}
     .gnb .navbar-collapse .menu > li.btn + li.btn {margin-left: 8px;}
@@ -594,10 +594,18 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .gnb .menu2-bg .autoinv-box .autoinv-item.item-2:after {content: ''; height: 60px;}
     .gnb .menu2-bg .autoinv-box .autoinv-item.item-2 > span:after {content: '▶'; position: relative; top: -3px; left: 5px; font-family: 'Nanum Gothic', sans-serif; font-size: 10px; transform: scale(0.85);}
 
-    .footer {position:relative; padding-bottom: 75px; background: #3D3F49; color: #ccc;}
+    .footer {
+        position: relative;
+        padding-bottom: 75px;
+        background: #343640;
+        color: #ccc;
+    }
     .footer [class*='-area'] {border-top: 1px solid #4f515b;}
     .footer [class*='-area']:first-child {border-top: 0;}
-    .footer .term-area {padding: 20px 0; background: #33353e;}
+    .footer .term-area {
+        padding: 20px 0;
+        background: #2D3037;
+    }
     .footer .term-area .link {position: relative; display: inline-block; padding: 0 30px; font-size: 15px; line-height: 1.2; color: #bbb; letter-spacing: normal;}
     .footer .term-area .link:before {content: ''; display: inline-block; position: absolute; left: -1px; top: 2px; width: 1px; height: 15px; background: #bbb;}
     .footer .term-area .link:first-child {padding-left: 0;}
@@ -622,7 +630,15 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .footer .addr-area .row-addr .split address em {margin-right: 5px; font-size: 22px; font-weight: 500;}
     .footer .addr-area .row-addr .split.split-1 .link {position: absolute; bottom: 0px; right: 45px;}
     .footer .addr-area .row-addr-2 {margin-top: 20px; font-size: 12px; color: #9f9f9f; line-height: 1.3;}
-    .footer .addr-area .row-notice {padding: 15px; background: #41434E; font-size: 13px; line-height: 1.4; color: #9f9f9f; letter-spacing: 0; word-break: keep-all;}
+    .footer .addr-area .row-notice {
+        padding: 15px;
+        background: #393C45;
+        font-size: 13px;
+        line-height: 1.4;
+        color: #9f9f9f;
+        letter-spacing: 0;
+        word-break: keep-all;
+    }
     .footer .addr-area .certify-box {}
     .footer .addr-area .certify-box .list {text-align-last: justify;}
     .footer .addr-area .certify-box .list > li {margin-top: 10px; margin-left: 20px; display: inline-block; vertical-align: middle;}
