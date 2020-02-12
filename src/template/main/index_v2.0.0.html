@@ -37,6 +37,7 @@
     <script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.bxslider.min.js"></script>
     <script type="text/javascript" src="https://nurifunding.co.kr/static/js/waypoints.min.js"></script>
     <script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.counterup.min.js"></script>
     <!--<script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.lazyload.min.js"></script>-->
     <!-- <script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.animateNumber.min.js"></script> -->
     <!--<script type="text/javascript" src="https://nurifunding.co.kr/static/js/components_custom.js"></script>-->
@@ -293,7 +294,19 @@
                             </ul>
                         </div>
                         <div class="box box-3 hidden-mdlg">
-                            <span class="tt">공지</span> <span class="t">누리펀딩, 선정산 서비스 '미리페이' 출시</span>
+                            <span class="tt">공지</span>
+                            <div class="t">
+                                <div class="swiper-container quicknotice-container" id="quicknoticeContainer">
+                                    <div class="swiper-wrapper quicknotice-wrapper">
+                                        <div class="swiper-slide item">누리펀딩, 선정산 서비스 '미리페이' 출시</div>
+                                        <div class="swiper-slide item">누리펀딩, 선정산 서비스 '미리페이' 출시 2</div>
+                                        <div class="swiper-slide item">누리펀딩, 선정산 서비스 '미리페이' 출시 3</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <a href="https://www.nurifunding.co.kr/notice/" class="more-btn"></a>
                         </div>
                         <div class="box-1-2 hidden-smxs">
                             <div class="incell">
@@ -537,25 +550,61 @@
                 </div>
             </section>
             <!-- /.ingProduct.nuriword -->
-            <section class="sec rate">
+            <div class="sec primary-bnr">
+                <div class="swiper-container primary-container" id="primaryBnrContainer">
+                    <div class="swiper-wrapper primary-wrapper">
+                        <div class="swiper-slide bn-slide item-1">
+                            <a href="https://www.nurifunding.co.kr/miripay/" class="picture">
+                                <figure class="group-f">
+                                    <img src="https://www.nurifunding.co.kr/img/renew/main/bnr_miripay.jpg" alt="미리페이로필요자금긴급지원받자" class="hidden-smxs">
+                                    <img src="https://www.nurifunding.co.kr/img/renew/m/main/bnr_miripay.jpg" alt="미리페이로필요자금긴급지원받자" class="hidden-mdlg">
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide bnr-slide item-2">
+                            <a href="https://www.nurifunding.co.kr/member/auto.php" class="picture">
+                                <figure class="group-f">
+                                    <img src="https://www.nurifunding.co.kr/img/renew/main/bnr_auto.jpg" alt="자동투자설정으로 투자시간을 절약하세요" class="hidden-smxs">
+                                    <img src="https://www.nurifunding.co.kr/img/renew/m/main/bnr_auto.jpg" alt="자동투자설정으로 투자시간을 절약하세요" class="hidden-mdlg">
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide bnr-slide item-3">
+                            <a href="https://www.nurifunding.co.kr/invest/" class="picture">
+                                <figure class="group-f">
+                                    <img src="https://www.nurifunding.co.kr/img/renew/main/bnr_nurisafe.jpg" alt="누리세이프로안전하게투자하세요" class="hidden-smxs">
+                                    <img src="https://www.nurifunding.co.kr/img/renew/m/main/bnr_nurisafe.jpg" alt="누리세이프로안전하게투자하세요" class="hidden-mdlg">
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bnr-navigation group-f">
+                        <div class="btn-prev"></div>
+                        <div class="btn-next"></div>
+                    </div>
+                    <div class="bnr-pagination"></div>
+                </div>
+            </div>
+            <!-- /.sec primary-bnr -->
+            <section class="sec rate" id="rate">
                 <h1 class="sr-only">누적 상황</h1>
                 <div class="group inner">
                     <div class="row">
                         <div class="rr nth-1">
                             <h2 class="r-f">누적 상환액</h2>
-                            <p class="r-f2"><span id="n1">67억 7,039</span> 만원</p>
+                            <p class="r-f2"><span><span class="count">67</span>억 <span class="count">7,039</span></span> 만원</p>
                         </div>
                         <div class="rr nth-2">
                             <h2 class="r-f">대출잔액</h2>
-                            <p class="r-f2"><span id="n2">12억 4,726</span> 만원</p>
+                            <p class="r-f2"><span><span class="count">12</span>억 <span class="count">4,726</span></span> 만원</p>
                         </div>
                         <div class="rr nth-3">
                             <h2 class="r-f">누적대출 취급액</h2>
-                            <p class="r-f2"><span id="n3">80억 1,765</span> 만원</p>
+                            <p class="r-f2"><span><span class="count">80</span>억 <span class="count">1,765</span></span> 만원</p>
                         </div>
                         <div class="rr nth-4">
                             <h2 class="r-f">평균금리</h2>
-                            <p class="r-f2"><span id="n4">11.08</span>%</p>
+                            <p class="r-f2"><span class="count">11.08</span>%</p>
                         </div>
                         <div class="rr nth-5">
                             <h2 class="r-f">
@@ -577,7 +626,7 @@
                             <p class="r-f2"><span id="n5">0</span>%</p>
                         </div>
                     </div>
-                    <div class="row-cmt">※ 2018년 6월 현재 기준</div>
+                    <!-- <div class="row-cmt">※ 2018년 6월 현재 기준</div> -->
                 </div>
             </section>
             <!-- /.rate -->
@@ -653,7 +702,7 @@
             </section>
             <!-- /.benefit -->
 
-            <section class="sec bn-account">
+            <!-- <section class="sec bn-account">
                 <h1 class="sr-only">누리펀딩 투자의 첫 걸음! 투자를 위한 계좌를 등록하세요.</h1>
                 <div class="group">
                     <a href="https://www.nurifunding.co.kr/member/account.php">
@@ -661,10 +710,9 @@
                             <p class="sr-only">누리펀딩 투자의 첫 걸은! 투자를 위한 계좌를 등록하세요.</p>
                         </div>
                         <img src="https://nurifunding.co.kr/img/renew/main/m_bnr_s_01.jpg" alt="계좌등록하기" class="hidden-smxs">
-                        <!-- <img src="https://nurifunding.co.kr/img/renew/main/m_bnr_s_01.jpg" alt="계좌등록하기"> -->
                     </a>
                 </div>
-            </section>
+            </section> -->
             <!-- /.bn-account -->
 
             <section class="sec faq" id="faq">
@@ -696,6 +744,22 @@
                 </div>
             </section>
             <!-- /.faq -->
+
+            <div class="sec firststep-bnr">
+                <div class="firststep-wrapper">
+                    <a href="https://www.nurifunding.co.kr/invest/" class="picture">
+                        <figure class="group-f">
+                            <img src="https://nurifunding.co.kr/img/renew/main/bnr_firststep.jpg" alt="누리펀딩투자의첫걸음" class="hidden-smxs">
+                            <img src="https://nurifunding.co.kr/img/renew/m/main/bnr_firststep.jpg" alt="누리펀딩투자의첫걸음" class="hidden-mdlg">
+                        </figure>
+                        <div class="firststep-text group-f">
+                            <h1 class="title">누리펀딩 투자의 첫 걸음!</h1>
+                            <p class="st">투자를 위한 계좌를 등록하세요.</p>
+                            <div class="btn invest-btn">투자 시작하기</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
 
             <!-- 190415 -->
             <!-- 메인, 내정보, 투자하기 페이지 -->

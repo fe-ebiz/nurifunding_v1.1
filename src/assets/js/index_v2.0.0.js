@@ -3,6 +3,9 @@ $(function () {
     sliderFn();
     firstStep();
     wayP();
+    quicknoticeFn();
+    rateCountFn();
+    primaryBnrFn();
 
     //이미지로드 지연 - 로딩속도 단축
     /*$("img.lazy").lazyload({
@@ -56,6 +59,81 @@ function ingProductFn() {
         }
     });
 }
+// 퀵바 공지
+function quicknoticeFn() {
+    var mySwiper = new Swiper('#quicknoticeContainer', {
+        autoplay: true,
+        direction: 'vertical',
+        loop: 'true'
+    });
+    $(window).resize(function () {
+        var winWidth = $(window).width();
+        if (winWidth >= 992) {
+            mySwiper.destroy();
+        }
+    });
+}
+// 주요 기능 배너 
+function primaryBnrFn() {
+    var mySwiper = new Swiper('#primaryBnrContainer', {
+        autoplay: {
+            delay: 8000,
+        },
+        loop: true,
+        // slidesPerView: 'auto',
+        // spaceBetween: 15,
+        // centeredSlides: true,
+        navigation: {
+            nextEl: '#primaryBnrContainer .btn-next',
+            prevEl: '#primaryBnrContainer .btn-prev',
+        },
+        pagination: {
+            el: '',
+            type: ''
+        },
+        breakpoints: {
+            768: {
+                navigation: {
+                    nextEl: '',
+                    prevEl: '',
+                },
+                pagination: {
+                    el: '#primaryBnrContainer .bnr-pagination',
+                    type: 'bullets',
+                    clickable: true
+                },
+            }
+        }
+    });
+}
+
+// 카운트 업
+function rateCountFn() {
+    var rateTop = 0;
+    var scrTop = 0;
+    var mg = 250;
+    var flag = true;
+    $('#rate .count').addClass("blind");
+    $(window).on('scroll', function () {
+        rateTop = $('#rate .row').offset().top - $(window).height() + mg;
+        scrTop = $(this).scrollTop();
+        if (rateTop <= scrTop) {
+            $('#rate .count').addClass("animated fadeIn");
+            if (flag) {
+                count();
+            }
+        }
+    })
+
+    function count() {
+        $('#rate .count').counterUp({
+            delay: 10,
+            time: 1000
+        });
+        return flag = false;
+    }
+}
+
 
 // 처음 방문하셨나요?
 function firstStep() {
