@@ -132,7 +132,7 @@
 	.type-01 p[class*="mib-p"] .label, .mi-box.com-box.type-01 .bank-area .bank-sel-box .label {display: block; margin-top: 18px; margin-bottom:14px; font-size:14px; font-weight:500; color:#0468c8}
     .type-01 p[class*="mib-p"].fir .label {margin-top:0}
 	.type-01 p[class*="mib-p"] .member-name, p[class*="mib-p"] .nr-text {font-size: 12px; font-weight: 400;}
-	.type-01 p[class*="mib-p"] .nr-text {border: 0; border-bottom: 1px solid #ddd; width: 100%; padding-bottom:12px; font-size:15px; color:#656565}
+	.type-01 p[class*="mib-p"] .nr-text {border: 0; border-bottom: 1px solid #ddd; width: 100%; padding:12px; font-size:15px; color:#656565}
 	.type-01 p[class*="mib-p"] .nr-text.detail {margin-top: 12px;}
 	.type-01 p[class*="mib-p"] .nr-text.buis {width: 47%;}
 	.mi-box.type-01 .file-buis {width: 50%; margin-left: 1%;}
@@ -331,7 +331,7 @@
 	.type-01 p[class*="mib-p"] .label, .mi-box.com-box.type-01 .bank-area .bank-sel-box .label {display: block; margin-top: 20px; margin-bottom:13px; font-size:22px; font-weight:500; color:#0468c8}
     .type-01 p[class*="mib-p"].fir .label {margin-top:0}
 	.type-01 p[class*="mib-p"] .member-name, p[class*="mib-p"] .nr-text {font-size: 17px; font-weight: 400;}
-	.type-01 p[class*="mib-p"] .nr-text {border: 0; border-bottom: 1px solid #ddd; width: 100%; padding-bottom:12px; font-size:16px; color:#656565}
+	.type-01 p[class*="mib-p"] .nr-text {border: 0; border-bottom: 1px solid #ddd; width: 100%; padding:12px; font-size:16px; color:#656565}
 	.type-01 p[class*="mib-p"] .nr-text.detail {margin-top: 12px;}
 	.type-01 p[class*="mib-p"] .nr-text.buis {width: 47%;}
 	.mi-box.type-01 .file-buis {width: 50%; margin-left: 1%;}
