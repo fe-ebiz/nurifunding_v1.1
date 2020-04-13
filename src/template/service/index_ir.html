@@ -1,185 +1,380 @@
 @@include('../include/_head.html', {
-	"page": "service"
+"page": "service"
 })
-    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/service/service2.css">
+<!-- <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/service/service2.css"> -->
+<link rel="stylesheet" href="../../static/css/service/service2.css">
 
-	<!--[if lt IE 9]>
+<!--[if lt IE 9]>
         <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/service/service2_ie9lt.css">
   <![endif]-->
 </head>
+
 <body>
 
-<h1 class="skip">누리펀딩 기업 IR정보</h1>
-<div class="wrap">
-	@@include('../include/_header.html') 
-   
-    <section class="page-sect">
-        <div class="container">
-            <div class="ps-wrap com-box">
-                <!--변경내용 제목변경-->
-                <h2 class="ps-h2">기업 IR정보</h2>
-            </div>
-        </div>
-    </section>
-   
-    <section class="info-sect ir-sect">
-        <div class="container">
-            <h2 class="">누리펀딩 <span class="c-blue">기업 IR정보</span></h2>
-        </div>
-        <div class="container cont-ir cont-struc">
-            <h3><span class="c-blue">1. </span>P2P 대출의 구조 및 유형별 누적 대출금액, 대출잔액, 연체율, 연체건수(비중 포함)</h3>
-            <div class="subtit"><span class="c-blue"><span class="dot">■</span> <span>2018년 12월</span></span> <span class="pull-right unit">(단위: 만원)</span></div>
-            <div class="cf grid-tbl vertical struc-tbl">
-                <ul class="cf nth-1 rowCol">
-                    <li class="cell th-cell"><div class="inCell">구분</div></li>
-                    <li class="cell td-cell"><div class="inCell">전월말 기준</div></li>
-                    <li class="cell td-cell"><div class="inCell">신용</div></li>
-                    <li class="cell td-cell"><div class="inCell">부동산 담보</div></li>
-                    <li class="cell td-cell"><div class="inCell">부동산 PF</div></li>
-                    <li class="cell td-cell"><div class="inCell">매출채권</div></li>
-                    <li class="cell td-cell total-cell"><div class="inCell">총계</div></li>
-                </ul>
-                <ul class="cf nth-2 rowCol">
-                    <li class="cell th-cell"><div class="inCell">누적대출금액</div></li>
-                    <li class="cell td-cell"><div class="inCell">377,600</div></li>
-                    <li class="cell td-cell"><div class="inCell"></div></li>
-                    <li class="cell td-cell"><div class="inCell"></div></li>
-                    <li class="cell td-cell"><div class="inCell"></div></li>
-                    <li class="cell td-cell"><div class="inCell">561,130</div></li>
-                    <li class="cell td-cell total-cell"><div class="inCell">561,130</div></li>
-                </ul>
-                <ul class="cf nth-3 rowCol">
-                    <li class="cell th-cell"><div class="inCell">대출잔액</div></li>
-                    <li class="cell td-cell"><div class="inCell">173,500</div></li>
-                    <li class="cell td-cell"><div class="inCell"></div></li>
-                    <li class="cell td-cell"><div class="inCell"></div></li>
-                    <li class="cell td-cell"><div class="inCell"></div></li>
-                    <li class="cell td-cell"><div class="inCell">315,302</div></li>
-                    <li class="cell td-cell total-cell"><div class="inCell">315,302</div></li>
-                </ul>
-                <div class="cf show-xs division"></div>
-                <ul class="cf nth-1 rowCol show-xs">
-                    <li class="cell th-cell"><div class="inCell">구분</div></li>
-                    <li class="cell td-cell"><div class="inCell">전월말 기준</div></li>
-                    <li class="cell td-cell"><div class="inCell">신용</div></li>
-                    <li class="cell td-cell"><div class="inCell">부동산 담보</div></li>
-                    <li class="cell td-cell"><div class="inCell">부동산 PF</div></li>
-                    <li class="cell td-cell"><div class="inCell">매출채권</div></li>
-                    <li class="cell td-cell total-cell"><div class="inCell">총계</div></li>
-                </ul>
-                <ul class="cf nth-4 rowCol">
-                    <li class="cell th-cell"><div class="inCell">연체율</div></li>
-                    <li class="cell td-cell"><div class="inCell">0</div></li>
-                    <li class="cell td-cell"><div class="inCell"></div></li>
-                    <li class="cell td-cell"><div class="inCell"></div></li>
-                    <li class="cell td-cell"><div class="inCell"></div></li>
-                    <li class="cell td-cell"><div class="inCell">0</div></li>
-                    <li class="cell td-cell total-cell"><div class="inCell">0</div></li>
-                </ul>
-                <ul class="cf nth-5 rowCol">
-                    <li class="cell th-cell row-2"><div class="inCell">연체건수/<br>연체비중</div></li>
-                    <li class="cell td-cell"><div class="inCell">0</div></li>
-                    <li class="cell td-cell"><div class="inCell"></div></li>
-                    <li class="cell td-cell"><div class="inCell"></div></li>
-                    <li class="cell td-cell"><div class="inCell"></div></li>
-                    <li class="cell td-cell"><div class="inCell">0</div></li>
-                    <li class="cell td-cell total-cell"><div class="inCell">0</div></li>
-                </ul>
-                <ul class="cf nth-6 rowCol">
-                    <li class="cell th-cell row-2"><div class="inCell">부실채권/<br>매각내역</div></li>
-                    <li class="cell td-cell"><div class="inCell">0</div></li>
-                    <li class="cell td-cell"><div class="inCell"></div></li>
-                    <li class="cell td-cell"><div class="inCell"></div></li>
-                    <li class="cell td-cell"><div class="inCell"></div></li>
-                    <li class="cell td-cell"><div class="inCell">0</div></li>
-                    <li class="cell td-cell total-cell"><div class="inCell">0</div></li>
-                </ul>
-            </div>
-            <p class="add-info">
-                * 매월 15일 까지 전월 실적 공지 및 누적대출금액. 대출잔액.연체율.연체건수.부실채권매각내역은 과거 5년간 사업연도별 구분하여 공시
-            </p>
-            <p class="add-info">
-                * NPL 매각정보 공시(매각대금, 부실대출금액, 매각처 등을 공시)
-            </p>
-        </div>
+    <h1 class="skip">누리펀딩 기업 IR정보</h1>
+    <div class="wrap">
+        @@include('../include/_header.html')
 
-        <div class="container cont-ir cont-finance">
-            <h3><span class="c-blue">2. </span>재무현황 <span class="pull-right unit">(단위: 만원)</span></h3>
-            <div class="cf grid-tbl horizon contents-tbl">
-                <ul class="cf nth-1 rowCol">
-                    <li class="cell nth-1 th-cell"><div class="inCell">년도</div></li>
-                    <li class="cell nth-2 th-cell"><div class="inCell">총자산</div></li>
-                    <li class="cell nth-3 th-cell"><div class="inCell">매출액</div></li>
-                    <li class="cell nth-4 th-cell"><div class="inCell">영업이익</div></li>
-                    <li class="cell nth-5 th-cell"><div class="inCell">당기순이익</div></li>
-                </ul>
-                <ul class="cf nth-2 rowCol">
-                    <li class="cell nth-1 td-cell th-col"><div class="inCell">2018</div></li>
-                    <li class="cell nth-2 td-cell"><div class="inCell">-</div></li>
-                    <li class="cell nth-3 td-cell"><div class="inCell">-</div></li>
-                    <li class="cell nth-4 td-cell"><div class="inCell">-</div></li>
-                    <li class="cell nth-5 td-cell"><div class="inCell">-</div></li>
-                </ul>
-                <ul class="cf nth-3 rowCol">
-                    <li class="cell nth-1 td-cell th-col"><div class="inCell">2017</div></li>
-                    <li class="cell nth-2 td-cell"><div class="inCell">3,0393</div></li>
-                    <li class="cell nth-3 td-cell"><div class="inCell">0</div></li>
-                    <li class="cell nth-4 td-cell"><div class="inCell">-128</div></li>
-                    <li class="cell nth-5 td-cell"><div class="inCell">-126</div></li>
-                </ul>
+        <section class="page-sect">
+            <div class="container">
+                <div class="ps-wrap com-box">
+                    <!--변경내용 제목변경-->
+                    <h2 class="ps-h2">기업 IR정보</h2>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container cont-ir cont-execu">
-            <h3><span class="c-blue">3. </span>임직원 현황</h3>
-            <div class="cf grid-tbl vertical contents-tbl">
-                <ul class="cf nth-1 rowCol">
-                    <li class="cell th-cell"><div class="inCell">임직원</div></li>
-                    <li class="cell td-cell"><div class="inCell">14명</div></li>
-                </ul>
-                <ul class="cf nth-2 rowCol">
-                    <li class="cell th-cell"><div class="inCell">여신심사역수</div></li>
-                    <li class="cell td-cell"><div class="inCell">1명(김정권)</div></li>
-                </ul>
-                <div class="cf show-xs division"></div>
-                <ul class="cf nth-3 rowCol">
-                    <li class="cell th-cell"><div class="inCell">전문가</div></li>
-                    <li class="cell td-cell"><div class="inCell">변호사 1명(김부식), 신용분석사 1명(김정권)</div></li>
-                </ul>
+        <section class="info-sect ir-sect">
+            <div class="container">
+                <h2 class="">누리펀딩 <span class="c-blue">기업 IR정보</span></h2>
             </div>
-        </div>
+            <div class="container cont-ir cont-struc">
+                <h3><span class="c-blue">1. </span>P2P 대출의 구조 및 유형별 누적 대출금액, 대출잔액, 연체율, 연체건수(비중 포함)</h3>
+                <div class="subtit"><span class="c-blue"><span class="dot">■</span> <span>2020년 3월</span></span> <span class="pull-right unit">(단위: 만원)</span></div>
+                <div class="cf grid-tbl vertical struc-tbl">
+                    <ul class="cf nth-1 rowCol">
+                        <li class="cell th-cell">
+                            <div class="inCell">구분</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">전월말 기준</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">신용</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">부동산 담보</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">부동산 PF</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">매출채권</div>
+                        </li>
+                        <li class="cell td-cell total-cell">
+                            <div class="inCell">총계</div>
+                        </li>
+                    </ul>
+                    <ul class="cf nth-2 rowCol">
+                        <li class="cell th-cell">
+                            <div class="inCell">누적대출금액</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">2,683,516</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell"></div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">3,000</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell"></div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">2,989,841</div>
+                        </li>
+                        <li class="cell td-cell total-cell">
+                            <div class="inCell">2,992,841</div>
+                        </li>
+                    </ul>
+                    <ul class="cf nth-3 rowCol">
+                        <li class="cell th-cell">
+                            <div class="inCell">대출잔액</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">277,592</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell"></div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">0</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell"></div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">323,841</div>
+                        </li>
+                        <li class="cell td-cell total-cell">
+                            <div class="inCell">323,841</div>
+                        </li>
+                    </ul>
+                    <div class="cf show-xs division"></div>
+                    <ul class="cf nth-1 rowCol show-xs">
+                        <li class="cell th-cell">
+                            <div class="inCell">구분</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">전월말 기준</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">신용</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">부동산 담보</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">부동산 PF</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">매출채권</div>
+                        </li>
+                        <li class="cell td-cell total-cell">
+                            <div class="inCell">총계</div>
+                        </li>
+                    </ul>
+                    <ul class="cf nth-4 rowCol">
+                        <li class="cell th-cell">
+                            <div class="inCell">연체율</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">0</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell"></div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">0</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell"></div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">0</div>
+                        </li>
+                        <li class="cell td-cell total-cell">
+                            <div class="inCell">0</div>
+                        </li>
+                    </ul>
+                    <ul class="cf nth-5 rowCol">
+                        <li class="cell th-cell row-2">
+                            <div class="inCell">연체건수/<br>연체비중</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">0</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell"></div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">0</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell"></div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">0</div>
+                        </li>
+                        <li class="cell td-cell total-cell">
+                            <div class="inCell">0</div>
+                        </li>
+                    </ul>
+                    <ul class="cf nth-6 rowCol">
+                        <li class="cell th-cell row-2">
+                            <div class="inCell">부실채권/<br>매각내역</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">0</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell"></div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">0</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell"></div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">0</div>
+                        </li>
+                        <li class="cell td-cell total-cell">
+                            <div class="inCell">0</div>
+                        </li>
+                    </ul>
+                </div>
+                <p class="add-info">
+                    * 매월 15일 까지 전월 실적 공지 및 누적대출금액. 대출잔액.연체율.연체건수.부실채권매각내역은 과거 5년간 사업연도별 구분하여 공시
+                </p>
+                <p class="add-info">
+                    * NPL 매각정보 공시(매각대금, 부실대출금액, 매각처 등을 공시)
+                </p>
+            </div>
 
-        <div class="container cont-ir cont-grand">
-            <h3><span class="c-blue">4. </span>대대주 현황</h3>
-            <div class="cf grid-tbl vertical contents-tbl">
-                <ul class="cf nth-1 rowCol">
-                    <li class="cell th-cell"><div class="inCell">성명</div></li>
-                    <li class="cell td-cell"><div class="inCell">김정권</div></li>
-                </ul>
-                <ul class="cf nth-2 rowCol">
-                    <li class="cell th-cell"><div class="inCell">직위</div></li>
-                    <li class="cell td-cell"><div class="inCell">대표이사</div></li>
-                </ul>
-                <ul class="cf nth-3 rowCol">
-                    <li class="cell th-cell"><div class="inCell">보유 주식수</div></li>
-                    <li class="cell td-cell"><div class="inCell">62,000주</div></li>
-                </ul>
-                <ul class="cf nth-4 rowCol">
-                    <li class="cell th-cell"><div class="inCell">비율</div></li>
-                    <li class="cell td-cell"><div class="inCell">100%</div></li>
-                </ul>
+            <div class="container cont-ir cont-finance">
+                <h3><span class="c-blue">2. </span>재무현황 <span class="pull-right unit">(단위: 만원)</span></h3>
+                <div class="cf grid-tbl horizon contents-tbl">
+                    <ul class="cf nth-1 rowCol">
+                        <li class="cell nth-1 th-cell">
+                            <div class="inCell">년도</div>
+                        </li>
+                        <li class="cell nth-2 th-cell">
+                            <div class="inCell">총자산</div>
+                        </li>
+                        <li class="cell nth-2 th-cell">
+                            <div class="inCell">자본금</div>
+                        </li>
+                        <li class="cell nth-3 th-cell">
+                            <div class="inCell">매출액</div>
+                        </li>
+                        <li class="cell nth-4 th-cell">
+                            <div class="inCell">영업이익</div>
+                        </li>
+                        <li class="cell nth-5 th-cell">
+                            <div class="inCell">당기순이익</div>
+                        </li>
+                    </ul>
+                    <ul class="cf nth-2 rowCol">
+                        <li class="cell nth-1 td-cell th-col">
+                            <div class="inCell">2019</div>
+                        </li>
+                        <li class="cell nth-2 td-cell">
+                            <div class="inCell">103,772</div>
+                        </li>
+                        <li class="cell nth-2 td-cell">
+                            <div class="inCell">50,000</div>
+                        </li>
+                        <li class="cell nth-3 td-cell">
+                            <div class="inCell">35,222</div>
+                        </li>
+                        <li class="cell nth-4 td-cell">
+                            <div class="inCell">5,263</div>
+                        </li>
+                        <li class="cell nth-5 td-cell">
+                            <div class="inCell">3,905</div>
+                        </li>
+                    </ul>
+                    <ul class="cf nth-2 rowCol">
+                        <li class="cell nth-1 td-cell th-col">
+                            <div class="inCell">2018</div>
+                        </li>
+                        <li class="cell nth-2 td-cell">
+                            <div class="inCell">-</div>
+                        </li>
+                        <li class="cell nth-2 td-cell">
+                            <div class="inCell">31,000</div>
+                        </li>
+                        <li class="cell nth-3 td-cell">
+                            <div class="inCell">16,835</div>
+                        </li>
+                        <li class="cell nth-4 td-cell">
+                            <div class="inCell">-3,261</div>
+                        </li>
+                        <li class="cell nth-5 td-cell">
+                            <div class="inCell">-3,268</div>
+                        </li>
+                    </ul>
+                    <ul class="cf nth-3 rowCol">
+                        <li class="cell nth-1 td-cell th-col">
+                            <div class="inCell">2017</div>
+                        </li>
+                        <li class="cell nth-2 td-cell">
+                            <div class="inCell">30,393</div>
+                        </li>
+                        <li class="cell nth-2 td-cell">
+                            <div class="inCell">30,000</div>
+                        </li>
+                        <li class="cell nth-3 td-cell">
+                            <div class="inCell">0</div>
+                        </li>
+                        <li class="cell nth-4 td-cell">
+                            <div class="inCell">-128</div>
+                        </li>
+                        <li class="cell nth-5 td-cell">
+                            <div class="inCell">-126</div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="cf grid-tbl horizon total-tbl">
-                <ul class="cf rowCol">
-                    <li class="cell nth-1 td-cell total-cell"><div class="inCell">총 계</div></li>
-                    <li class="cell nth-1 td-cell total-cell"><div class="inCell"></div></li>
-                    <li class="cell nth-2 td-cell total-cell"><div class="inCell">6,2000주</div></li>
-                    <li class="cell nth-3 td-cell total-cell"><div class="inCell">100%</div></li>
-                </ul>
-            </div>
-        </div>
 
-<!--
+            <div class="container cont-ir cont-execu">
+                <h3><span class="c-blue">3. </span>임직원 현황</h3>
+                <div class="cf grid-tbl vertical contents-tbl">
+                    <ul class="cf nth-1 rowCol">
+                        <li class="cell th-cell">
+                            <div class="inCell">임직원</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">14명(업무협약직원 9명)</div>
+                        </li>
+                    </ul>
+                    <ul class="cf nth-2 rowCol">
+                        <li class="cell th-cell">
+                            <div class="inCell">여신심사역수</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">3명</div>
+                        </li>
+                    </ul>
+                    <div class="cf show-xs division"></div>
+                    <ul class="cf nth-3 rowCol">
+                        <li class="cell th-cell">
+                            <div class="inCell">전문가</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">변호사 1명(김부식), 신용분석사 1명(김정권)</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container cont-ir cont-grand">
+                <h3><span class="c-blue">4. </span>대대주 현황</h3>
+                <div class="cf grid-tbl vertical contents-tbl">
+                    <ul class="cf nth-1 rowCol">
+                        <li class="cell th-cell">
+                            <div class="inCell">성명</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">김정권</div>
+                        </li>
+                    </ul>
+                    <ul class="cf nth-2 rowCol">
+                        <li class="cell th-cell">
+                            <div class="inCell">직위</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">대표이사</div>
+                        </li>
+                    </ul>
+                    <ul class="cf nth-3 rowCol">
+                        <li class="cell th-cell">
+                            <div class="inCell">보유 주식수</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">62,000주</div>
+                        </li>
+                    </ul>
+                    <ul class="cf nth-4 rowCol">
+                        <li class="cell th-cell">
+                            <div class="inCell">비율</div>
+                        </li>
+                        <li class="cell td-cell">
+                            <div class="inCell">100%</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cf grid-tbl horizon total-tbl">
+                    <ul class="cf rowCol">
+                        <li class="cell nth-1 td-cell total-cell">
+                            <div class="inCell">총 계</div>
+                        </li>
+                        <li class="cell nth-1 td-cell total-cell">
+                            <div class="inCell"></div>
+                        </li>
+                        <li class="cell nth-2 td-cell total-cell">
+                            <div class="inCell">6,2000주</div>
+                        </li>
+                        <li class="cell nth-3 td-cell total-cell">
+                            <div class="inCell">100%</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--
         <div class="container cont-ir cont-">
             <h3><span class="c-blue">. </span><span class="pull-right unit">(단위: 만원)</span></h3>
             <div class="cf grid-tbl struc-tbl">
@@ -192,74 +387,77 @@
         </div>
 -->
 
-        <div class="container cont-guide">
-            <div class="guide-area">
-                <div class="pd-area">
-                    <h3>P2P대출 가이드 라인 준수내용</h3>
-                    <div class="fp-contents">
-                        1. 사업정보의 제공<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;1) P2P 대출의 구조, 유형별 누적 대출금액 / 대출잔액 / 연체율 / 연체건수(비중 포함)<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;2) 재무현황<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;3) 임직원수: 14명<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;4) 여신심사역수: 1명(김정권)<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;5) 전문가: 변호사 1명(김부식), 신용분석사 1명(김정권). <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;6) 대주주 현황<br>
-                        <br>
-                        2. 차입자에게 제공하는 정보: 차입자의 대출이용에 도움을 줄 수 있는 정보를 “가이드라인 내용” 에 따라 차입자가 쉽게 이해할 수 있도록 제공하고 있습니다.<br>
-                        <br>
-                        3. 투자광고: P2P 대출 투자를 위한 표시, 광고, 계약 체결 등 행위를 할 때 “가이드라인 내용” 을준수하고 있습니다<br>
-                         <br>
-                        4. 투자자에게 제공하는 정보: 투자판단에 도움을 줄 수 있는 정보를 투자자가 쉽게 이해할 수 있도록 홈페이지에 게재하고 있습니다.<br>
-                        O. 차입자에 대한 정보는 투자자에게 제공하기 전 “가이드라인 내용”에 따라 확인한 후 왜곡 없이 제공하고 있습니다.<br>
-                        <br>
-                        5. 영업행위: P2P 대출 영업행위를 함에 있어서“가이드라인 내용” 에 따라 준수하고 있습니다.<br>
-                        <br>
-                        6. 투자금 및 대출금상환금 별도 관리: 투자자로부터 받은 자산을 P2P 대출정보 중개업체 등의 자산과 명확히 분리하여 관리하고 있습니다.<br>
-                        <br>
-                        7. 투자한도: 투자자에 대해 “가이드라인 내용” 에 따라 투자한도를 준수하고 있습니다.<br>
-                        <br>
-                        8. 온라인개인정보 관리실태 점검: 외부기관 등을 통해 온라인 개인정보 관리실태를 연1회 이상 점검한 후 3개월 이내에 홈페이지에 공시할 계획입니다.<br>
-                         -외부기관 점검(금보원, 인터넷진흥원): 검토중임<br>
-                         -자체점검(온라인 개인정보보호 자율점검 체크리스트): 확인중임<br>
-                        <br>
-                        9. 자료제공: 연계 금융회사에 가이드라인 준수 여부를 확인할 수 있는 자료를 충분히 금융감독원에 제공하고 미준수 시 금융감독원 및 소속 협회에 통보 하겠습니다.<br>
-                        <br>
-                        10.  청산업무처리절차 마련: 부도, 청산 등 영업중단 등에 대비하여 채권추심 및 상환금 배분 등을 법무법인 등 외부기관에 위탁하는 등 공정하고 투명한 청산절차를 마련 하겠습니다.<br>
-                         -청산업무 처리 절차 마련: 마련중임<br>
-                         -연체 추심 현황 및 관리실태 공시: 연체 없음<br>
-                        <br>
-                        11. 법령과의 관계: P2P 대출에 현재 적용되고 있는 관련 법령을 준수 하겠습니다.<br>
-                        <br>
-                        12. 부동산 PF 취급시 “가이드라인 내용”을 준수 하겠습니다.<br>
-                        <br>
-                        P2P 가이드라인 개정안(2019.1.1. 시행)을 준수하고 있음을<br>
-                        위와 같이 공시합니다.<br>
-                        <br>
-                        <br>
-                        ㈜누리펀딩 대표 김정권<br>
-                        <br>
-                        <br>
-                        <a href="https://www.fsc.go.kr/info/ntc_news_view.jsp?bbsid=BBS0030&amp;page=1&amp;sch1=subject&amp;sword=P2P&amp;r_url=&amp;menu=7210100&amp;no=32841" target="_blank"><font color="blue">▶ 금융위원회 "P2P대출 가이드라인 개정 방안 및 법제화 방향" 자세히 보기</font></a><br>
-                        <br>
+            <div class="container cont-guide">
+                <div class="guide-area">
+                    <div class="pd-area">
+                        <h3>P2P대출 가이드 라인 준수내용</h3>
+                        <div class="fp-contents">
+                            1. 사업정보의 제공<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;1) P2P 대출의 구조, 유형별 누적 대출금액 / 대출잔액 / 연체율 / 연체건수(비중 포함)<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;2) 재무현황<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;3) 임직원수: 14명(업무협약직원 9명)<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;4) 여신심사역수: 3명<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;5) 전문가: 변호사 1명(김부식), 신용분석사 1명(김정권). <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;6) 대주주 현황<br>
+                            <br>
+                            2. 차입자에게 제공하는 정보: 차입자의 대출이용에 도움을 줄 수 있는 정보를 “가이드라인 내용” 에 따라 차입자가 쉽게 이해할 수 있도록 제공하고 있습니다.<br>
+                            <br>
+                            3. 투자광고: P2P 대출 투자를 위한 표시, 광고, 계약 체결 등 행위를 할 때 “가이드라인 내용” 을준수하고 있습니다<br>
+                            <br>
+                            4. 투자자에게 제공하는 정보: 투자판단에 도움을 줄 수 있는 정보를 투자자가 쉽게 이해할 수 있도록 홈페이지에 게재하고 있습니다.<br>
+                            O. 차입자에 대한 정보는 투자자에게 제공하기 전 “가이드라인 내용”에 따라 확인한 후 왜곡 없이 제공하고 있습니다.<br>
+                            <br>
+                            5. 영업행위: P2P 대출 영업행위를 함에 있어서“가이드라인 내용” 에 따라 준수하고 있습니다.<br>
+                            <br>
+                            6. 투자금 및 대출금상환금 별도 관리: 투자자로부터 받은 자산을 P2P 대출정보 중개업체 등의 자산과 명확히 분리하여 관리하고 있습니다.<br>
+                            <br>
+                            7. 투자한도: 투자자에 대해 “가이드라인 내용” 에 따라 투자한도를 준수하고 있습니다.<br>
+                            <br>
+                            8. 온라인개인정보 관리실태 점검: 외부기관 등을 통해 온라인 개인정보 관리실태를 연1회 이상 점검한 후 3개월 이내에 홈페이지에 공시할 계획입니다.<br>
+                            -외부기관 점검(금보원, 인터넷진흥원): 검토중임<br>
+                            -자체점검(온라인 개인정보보호 자율점검 체크리스트): 확인중임<br>
+                            <br>
+                            9. 자료제공: 연계 금융회사에 가이드라인 준수 여부를 확인할 수 있는 자료를 충분히 금융감독원에 제공하고 미준수 시 금융감독원 및 소속 협회에 통보 하겠습니다.<br>
+                            <br>
+                            10. 청산업무처리절차 마련: 부도, 청산 등 영업중단 등에 대비하여 채권추심 및 상환금 배분 등을 법무법인 등 외부기관에 위탁하는 등 공정하고 투명한 청산절차를 마련 하겠습니다.<br>
+                            -청산업무 처리 절차 마련: 마련중임<br>
+                            -연체 추심 현황 및 관리실태 공시: 연체 없음<br>
+                            <br>
+                            11. 법령과의 관계: P2P 대출에 현재 적용되고 있는 관련 법령을 준수 하겠습니다.<br>
+                            <br>
+                            12. 부동산 PF 취급시 “가이드라인 내용”을 준수 하겠습니다.<br>
+                            <br>
+                            P2P 가이드라인 개정안(2019.1.1. 시행)을 준수하고 있음을<br>
+                            위와 같이 공시합니다.<br>
+                            <br>
+                            <br>
+                            ㈜누리펀딩 대표 김정권<br>
+                            <br>
+                            <br>
+                            <a href="https://www.fsc.go.kr/info/ntc_news_view.jsp?bbsid=BBS0030&amp;page=1&amp;sch1=subject&amp;sword=P2P&amp;r_url=&amp;menu=7210100&amp;no=32841" target="_blank">
+                                <font color="blue">▶ 금융위원회 "P2P대출 가이드라인 개정 방안 및 법제화 방향" 자세히 보기</font>
+                            </a><br>
+                            <br>
+                        </div>
                     </div>
-                </div>
-                <div class="row-btn">
-                    <a class="btn-more fn-toggleOn"></a>
-                </div>
-                <script>
-                    $(function() {
-                        $(".fn-toggleOn").on("click", function() {
-                            $(this).toggleClass("on");
-                            $(".fp-contents").toggleClass("on");
+                    <div class="row-btn">
+                        <a class="btn-more fn-toggleOn"></a>
+                    </div>
+                    <script>
+                        $(function () {
+                            $(".fn-toggleOn").on("click", function () {
+                                $(this).toggleClass("on");
+                                $(".fp-contents").toggleClass("on");
+                            });
                         });
-                    });
-                </script>
+                    </script>
+                </div>
             </div>
-        </div>
-    </section>
-    
-	@@include('../include/_footer.html') 
-</div>
+        </section>
+
+        @@include('../include/_footer.html')
+    </div>
 
 </body>
+
 </html>

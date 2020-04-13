@@ -528,7 +528,7 @@ body {background: #fff;}
 	
 	.info-sect.ir-sect .cont-ir.cont-finance {}
 	.info-sect.ir-sect .cont-ir.cont-finance .grid-tbl .rowCol {}
-	.info-sect.ir-sect .cont-ir.cont-finance .grid-tbl .rowCol .cell {width: 20%;}
+	.info-sect.ir-sect .cont-ir.cont-finance .grid-tbl .rowCol .cell {width: calc(100% / 6);}
 	.info-sect.ir-sect .cont-ir.cont-finance .grid-tbl .rowCol .cell .inCell {}
 	
 	.info-sect.ir-sect .cont-ir.cont-execu {}
