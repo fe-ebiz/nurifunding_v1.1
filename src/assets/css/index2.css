@@ -627,7 +627,7 @@
 	/*  .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 62px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}*/
 	.r-f .q:hover .q-t {display: block;}
 	.r-f2 {font-size: 28px; margin-top: 12px; font-weight: 500;}
-	.rr-nth-5 .r-f2 {position: relative; top: -4px;}
+	.rr-nth-5 .r-f2 {position: relative; top: -5px;}
 
     .bnBar {
         position: relative;
