@@ -2,7 +2,8 @@
 	"page": "invest"
 })
    
-    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/invest/invest2.css">
+    <!-- <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/invest/invest2.css"> -->
+    <link rel="stylesheet" href="/static/css/invest/invest2.css">
 
 	<!--[if lt IE 9]>
         <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/invest/invest2_ie9lt.css">
@@ -59,19 +60,56 @@
                 </div>
 
                 <div class="prps-d-2 br4">
-                    <ul class="prps-d2-ul">
-                        <li class="prps-d2-li1 clearfix">
-                            <p class="pull-left">나의 예치금 계좌</p>
-                            <p class="pull-right">10,075원</p>
+                    <ul class="prps-d2-ul prps-invest-ul">
+                        <li>
+                            <p class="pu-left">나의 예치금 계좌</p>
+                            <p class="pu-right">10,075원</p>
                         </li>
-                        <li class="prps-d2-li1 clearfix">
-                            <p class="pull-left">투자금</p>
-                            <p class="pull-right">
+                        <li>
+                            <p class="pu-left">
+                                <span>투자가능 금액</span>
+                                <span class="pu-small-txet">(동일차주 500만원 한도)</span>
+                            </p>
+                            <p class="pu-right">60만원</p>
+                        </li>
+                        <li class="prps-d2-li1 prps-investment">
+                            <p class="pu-left">투자금액</p>
+                            <p class="pu-right">
                                 <span class="fc-blue">
                                     <input type="text" name="use_cash" value="" class="input-type" onkeyup="javascript: checktype('number', 'use_cash')">
                                 </span> 만원
                             </p>
                             <input type="hidden" name="price_0" value="">
+                        </li>
+                        <li class="prps-notice">
+                            <p>※  개인 투자자의 경우 
+                                <span class="c-org">동일 대출자에게는 </span>
+                                <span class="c-org">500만원까지 투자가 가능</span>합니다.</p>
+                        </li>
+                         <!-- 190412 -->
+                        <li class="miri-autoinv">
+                            <div class="row-txt top">
+                                <h3><span class="c-blue">선정산(미리페이)<span class="hidden-xs">상품</span> 자동 투자기능!</span> <span
+                                        class="ic-new">NEW</span></h3>
+                            </div>
+                            <!-- 인증 전 화면 -->
+                            <div class="row-txt mid before">
+                                시간에 구애받지 않는 너무 편리한 자동투자!<br />
+                                기능 설명을 확인<span class="hidden-xs">하신</span> 후 자동 투자 기능을 설정하시겠습니까?
+                                <div class="setup">
+                                    <p class="c-org">※ 현재 자동 투자 미사용 중</p>
+                                    <a href="" class="btn-base termi">기능설명 확인 후 설정하기</a>
+                                </div>
+                            </div>
+                            <!-- 인증 후 화면 -->
+                            <!-- <div class="row-txt mid after">
+                                <span class="c-blue">100만원 자동 투자 중</span><br class="show-xs" /><span class="hidden-xs">/</span> 잔여기한 [<span
+                                    class="c-red">20일</span>] 종료일 [<span class="c-red">2019.04.30</span>]
+                                <div class="setup">
+                                    <p class="c-green">※ 현재 자동 투자 미사용 중</p>
+                                    <a href="" class="btn-base termi bg-org">기간연장 또는 해지하기</a>
+                                </div>
+                            </div> -->
                         </li>
                     </ul>
 
@@ -88,31 +126,7 @@
 
                 <h3 class="prps-h3" style="text-align:right;"><input type="checkbox" name="all_chk" id="all_chk" onclick="javascript: policy_all_chk();">&nbsp;<label for="all_chk">전체 동의합니다.</label></h3>
 
-                <!-- 190412 -->
-                <div class="miri-autoinv">
-                    <div class="row-txt top">
-                        <h3><span class="c-blue">선정산(미리페이)<span class="hidden-xs">상품</span> 자동 투자기능!</span> <span
-                                class="ic-new">NEW</span></h3>
-                    </div>
-                    <!-- 인증 전 화면 -->
-                    <div class="row-txt mid before">
-                        시간에 구애받지 않는 너무 편리한 자동투자!<br />
-                        기능 설명을 확인<span class="hidden-xs">하신</span> 후 자동 투자 기능을 설정하시겠습니까?
-                        <div class="setup">
-                            <p class="c-org">※ 현재 자동 투자 미사용 중</p>
-                            <a href="" class="btn-base termi">기능설명 확인 후 설정하기</a>
-                        </div>
-                    </div>
-                    <!-- 인증 후 화면 -->
-                    <!-- <div class="row-txt mid after">
-                        <span class="c-blue">100만원 자동 투자 중</span><br class="show-xs" /><span class="hidden-xs">/</span> 잔여기한 [<span
-                            class="c-red">20일</span>] 종료일 [<span class="c-red">2019.04.30</span>]
-                        <div class="setup">
-                            <p class="c-green">※ 현재 자동 투자 미사용 중</p>
-                            <a href="" class="btn-base termi bg-org">기간연장 또는 해지하기</a>
-                        </div>
-                    </div> -->
-                </div>
+               
 
                 <h3 class="prps-h3" onclick="javascript: policy_show('1');" style="background:#666; color:#fff; padding:2%;">투자시 주의사항 안내</h3>
 

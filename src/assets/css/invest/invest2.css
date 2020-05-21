@@ -1713,7 +1713,7 @@
 	.prps-d-2 {margin-top: 15px; border: 1px solid #ddd;}
 	.prps-d2-ul {padding: 24px 25px; background: #F6FBFF; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom: 1px solid #ddd;}
 	li[class*="prps-d2-li"] {padding: 15px 5px; font-size: 20px;}
-	li[class*="prps-d2-li"] .input-type {text-align:right;padding:5px;padding-right:10px;width:80px;font-size: 20px;}
+	li[class*="prps-d2-li"] .input-type {text-align:right;padding:4px;padding-right:10px;width:100px;font-size: 20px;}
 	.prps-d2-li1 {border-bottom: 1px solid #ddd;}
 	.prps-d2-li2 .pull-left {font-weight: 300; font-size: 17px}
 	.prps-d2-p1 {font-size: 15px; text-align: center; padding: 20px 0px; font-weight: 300;}
@@ -2039,3 +2039,55 @@
 
 }
 .est-box.nth-11 .grade .g-td {display: none;}
+
+
+
+/*_application(투자신청서)쪽 제어*/
+.prps-invest-ul {
+}
+.prps-invest-ul li {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	font-size:20px;
+	padding:18px 5px;
+	border-bottom:1px solid #ddd;
+}
+.prps-invest-ul li.prps-investment {
+	padding:12px 5px;
+}
+.prps-invest-ul li.prps-notice {
+	display:block;
+	text-align:center;
+	font-size:17px;
+	padding-bottom:50px;
+}
+.prps-invest-ul li.miri-autoinv {
+	display:block;
+	border: none;
+}
+.prps-invest-ul li .pu-small-txet {
+	font-size:17px;
+	display:inline-block;
+}
+
+@media (max-width:767px) {
+		.prps-invest-ul li {
+		font-size:15px;
+	}
+	.prps-invest-ul li.prps-notice {
+		font-size:15px;
+		word-break:keep-all;
+		line-height:20px;
+	}
+	.prps-invest-ul li .pu-small-txet {
+		font-size:14px;
+	}
+	.prps-invest-ul li.prps-notice span {
+		display:inline-block;
+	}
+}
+
+
+
+
