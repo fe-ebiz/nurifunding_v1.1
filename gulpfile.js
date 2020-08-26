@@ -111,7 +111,7 @@ function sassDev() {
         }).on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(dest(config.sass.dest, {
-            sourcemaps: true
+            sourcemaps: false
         }))
         .pipe(browserSync.stream({
             match: '**/*.css'
@@ -127,7 +127,7 @@ function sassDevAll() {
         }).on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(dest(config.sass.dest, {
-            sourcemaps: true
+            sourcemaps: false
         }))
         .pipe(browserSync.stream({
             match: '**/*.css'

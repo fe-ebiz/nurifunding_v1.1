@@ -175,15 +175,15 @@ $page_type = "idx";
 	</figure>
 </section>
 <!-- 20191226 누리세이프 -->
-<section class="bnBar nurisafeBn">
-	<h2 class="hidden">채권의 연체 및 투자 원금 손실위험에서 투자자를 보호하는 누리세이프 플랜으로 안심하고 투자하세요!</h2>
-	<figure>
-		<a href="/member/safe.php">
-			<img src="https://nurifunding.co.kr/img/banner/nurisafe/bn_safe.png" alt="누리세이프 플랜" class="hidden-xs">
-			<img src="https://nurifunding.co.kr/img/banner/nurisafe/bn_safe_m.png" alt="누리세이프 플랜" class="hidden-md">
-		</a>
-	</figure>
-</section>
+<!-- <section class="bnBar nurisafeBn">
+    <h2 class="hidden">채권의 연체 및 투자 원금 손실위험에서 투자자를 보호하는 누리세이프 플랜으로 안심하고 투자하세요!</h2>
+    <figure>
+        <a href="/member/safe.php">
+            <img src="https://nurifunding.co.kr/img/banner/nurisafe/bn_safe.png" alt="누리세이프 플랜" class="hidden-xs">
+            <img src="https://nurifunding.co.kr/img/banner/nurisafe/bn_safe_m.png" alt="누리세이프 플랜" class="hidden-md">
+        </a>
+    </figure>
+</section> -->
 
 <section class="benefit com-pd">
     <div class="container">
@@ -281,14 +281,14 @@ $page_type = "idx";
 			## 4순위 : 투자완료 - 상품번호 높은순 우선
 
 			$gArray = array();
-			$qry1 = 'SELECT * FROM goods WHERE state="Y" AND state2 IN ("Y", "S") AND mprice != price ORDER BY FIELD(state2, "Y", "S"), sdate, edate';
+			$qry1 = 'SELECT * FROM goods WHERE state="Y" and liiv="N" AND state2 IN ("Y", "S") AND mprice != price ORDER BY FIELD(state2, "Y", "S"), sdate, edate';
 			$res1 = mysqli_query($dbconn, $qry1);
 			while($row1 = mysqli_fetch_array($res1)) {
 				$gArray[] = $row1;
 			}
 
 			if(count($gArray) < 2) {
-				$qry2 = 'select * from goods where state="Y" and state2 in ("Y", "S") AND mprice = price order by field(state2, "Y", "S"), sdate,  edate';
+				$qry2 = 'select * from goods where state="Y" and liiv="N" and state2 in ("Y", "S") AND mprice = price order by field(state2, "Y", "S"), sdate,  edate';
 				$res2 = mysqli_query($dbconn, $qry2);
 				while($row2 = mysqli_fetch_array($res2)) {
 					$gArray[] = $row2;
@@ -296,7 +296,7 @@ $page_type = "idx";
 			}
 
 			if(count($gArray) < 2) {
-				$qry3 = 'select * from goods where state="Y" and state2 in ("G", "E") order by field(state2, "G", "E"), num desc';
+				$qry3 = 'select * from goods where state="Y" and liiv="N" and state2 in ("G", "E") order by field(state2, "G", "E"), num desc';
 				$res3 = mysqli_query($dbconn, $qry3);
 				while($row3 = mysqli_fetch_array($res3)) {
 					$gArray[] = $row3;
@@ -409,16 +409,6 @@ $page_type = "idx";
 					}
 				?>
 
-				<?php
-					if($row["sdate"] >= "2019-12-18 00:00:00") {
-				?>
-				<!-- 20191226 누리세이프 -->
-				<div class="safe-mark">
-					<img src="https://nurifunding.co.kr/img/nurisafe/safe_mark2.png" alt="누리세이프마크">
-				</div>
-				<?php
-					}
-				?>
 			  </div>
 
 			  <h3 class="iph3"><?=$row["name"]?></h3>
@@ -644,6 +634,104 @@ function pop_chk(tt) {
 }
 
 ?>
+
+<!-- 팝업(리브메이트, 온투법) -->
+<link rel="stylesheet" href="/static/css/pop/pop_duble_contents.css">
+<div class="pop-area-box">
+    <div class="pop-box pop01">
+        <div class="pop-main-box">
+            <a href="https://www.nurifunding.co.kr/notice/view.php?var=EU11&page=1">
+                <img class="img-pc" src="https://www.nurifunding.co.kr/img/notice/200723_liiv_pop.jpg" alt="리브메이트 팝업 PC">
+                <img class="img-m" src="https://www.nurifunding.co.kr/img/notice/200723_liiv_m_pop.jpg" alt="온투법 팝업 모바일">
+            </a>
+        </div>
+        <div class="pop-btn-box">
+            <button class="btn-not-day" type="button">오늘 하루 보지 않기</button>
+            <button class="btn-close-pop" type="button">창 닫기</button>
+        </div>
+    </div>    
+    <div class="pop-box pop02">
+        <div class="pop-main-box">
+            <a href="https://www.nurifunding.co.kr/notice/view.php?var=EU1x&page=1">
+                <img class="img-pc" src="https://www.nurifunding.co.kr/img/notice/200807_notice_pop.jpg" alt="온투법 팝업 PC">
+                <img class="img-m" src="https://www.nurifunding.co.kr/img/notice/200807_notice_m_pop.jpg" alt="온투법 팝업 모바일">
+            </a>
+        </div>
+        <div class="pop-btn-box">
+            <button class="btn-not-day" type="button">오늘 하루 보지 않기</button>
+            <button class="btn-close-pop" type="button">창 닫기</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //쿠키이름
+        let cokieName01 = "pop_liivemate";
+        let cokieName02 = "pop_ontolaw";
+
+        //하루 안보기 둘 중 하나만 등록되었다면 스크롤 막기
+        if($.cookie(cokieName01) == undefined || $.cookie(cokieName02) == undefined){
+             //하루 안보기 등록되었다면 그 팝업 가리기
+             if($.cookie(cokieName01) != undefined){
+                $('.pop01').hide();
+            }
+            if($.cookie(cokieName02) != undefined){
+                $('.pop02').hide();
+            }
+
+            //스크롤 막기
+            $(".pop-area-box").show();
+            $('html, body').addClass('pop-non-scroll');
+        }
+
+        //닫기 버튼
+        $(".btn-close-pop").on('click', function(){
+            //선택된 팝업창 숨기기
+            let popBox = $(this).parent().parent();
+            popBox.hide();
+            //팝업창 모두 닫혔는지 체크
+            checkCloseAllPopup();
+        });
+        //하루 안보기 버튼
+        $(".btn-not-day").on('click', function(){
+            //쿠키등록
+            let popBox = $(this).parent().parent();
+            if($(popBox).hasClass('pop01')){
+                addCookieData(cokieName01)
+            }
+            if($(popBox).hasClass('pop02')){
+                addCookieData(cokieName02)
+            }
+			//선택된 팝업창 숨기기
+            popBox.hide();
+            //팝업창 모두 닫혔는지 체크
+            checkCloseAllPopup();
+        });
+        
+    });
+
+    //쿠키데이터 등록
+    addCookieData = function(popName){
+        if($.cookie(popName) == undefined){
+            //쿠키가 없는 경우 testCookie 쿠키를 추가
+            $.cookie(popName, 'Y', { expires: 1});
+            //$.removeCookie('pop_liivemate');
+        } 
+    }
+
+    checkCloseAllPopup = function(){
+        let pop01 = $('.pop-area-box .pop01').is(':visible');
+        let pop02 = $('.pop-area-box .pop02').is(':visible');
+        if(pop01 == false && pop02 == false){
+            $(".pop-area-box").hide();
+            $('html, body').removeClass("pop-non-scroll");
+        }
+    }
+
+</script>
+<!-- 팝업(리브메이트, 온투법) -->
+
 
 
 <?php

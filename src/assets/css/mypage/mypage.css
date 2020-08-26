@@ -311,3 +311,20 @@
 @media (min-width: 1200px){
 
 }
+
+/*회원탈퇴 버튼*/
+.withdrawal-box{
+	width: 100%;
+	position: relative;
+	text-align: right;
+}
+
+.withdrawal-box .btn_withdrawal{
+	color: #bbb;
+	font-size: 15px;
+	margin-top: 14px;
+	outline: none;
+}
+
+	
+
