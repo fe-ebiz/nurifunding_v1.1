@@ -166,7 +166,7 @@ hr {border: none; border-top: 1px solid #ddd;}
 		background: #fff; border: 1px solid #ddd; outline: none; cursor: pointer;
 	}
 	.form-check {width: 17px; height: 17px;}
-	.form-check:checked {background: #fff url(https://nurifunding.co.kr/img/check-icon.png) no-repeat 3px 2px; background-size: 10px;}
+	.form-check:checked {background: #fff url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 3px 2px; background-size: 10px;}
 	.form-radio {width: 17px; height: 17px; border-radius: 50%;}
 	.form-radio:checked {background: #fff url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 17px;}
     .form-base {
@@ -208,11 +208,10 @@ hr {border: none; border-top: 1px solid #ddd;}
     .mlnb-wrap.on {display: block !important;}
     .mlnb-container {position: absolute; top: 0; left: 0px; width: 285px; height: 100%; background: #fff;}
     .mlnb-header {background: #398fe1; padding: 15px 0px 20px 20px;}
-    .mlnb-header .top-box{position: relative; display: flex; justify-content: space-between; align-items: center;}
-    .mlnb-header .mh-logo img {width: 150px; vertical-align: middle;}
-    .mlnb-header .btn-logout {color: white; background-color: #126cc4; padding: 8px 6px; display: block; font-size: 13px; margin-right: 17px;}
-    .mlnb-header .cls-btn {position: absolute; top: 0px; right: -35px; float: right;}
+    .mlnb-header .mh-logo img {width: 150px}
+    .mlnb-header .cls-btn {position: relative; top: 0px; right: 15px; float: right;}
     .mlnb-header .cls-btn img {width: 26px;}
+
     .mlnb-header .t-box {margin-top: 10px; color: #fff; font-size: 14px; line-height: 1.5em;}
     .mlnb-header .t-box p {position: relative;}
     .mlnb-header .t-box .lgout {position: absolute; right: 15px; bottom: 0;}
@@ -364,7 +363,7 @@ hr {border: none; border-top: 1px solid #ddd;}
 		background: #fff; border: 1px solid #ddd; outline: none; cursor: pointer;
 	}
 	.form-check {width: 20px; height: 20px; top: -1px;}
-	.form-check:checked {background: #fff url(https://nurifunding.co.kr/img/check-icon.png) no-repeat 3px 3px; background-size: 12px;}
+	.form-check:checked {background: #fff url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 3px 3px; background-size: 12px;}
 	.form-radio {width: 20px; height: 20px; border-radius: 50%;}
 	.form-radio:checked {background: #fff url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 20px;}
     .form-input {;}

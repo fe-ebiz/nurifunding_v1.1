@@ -1,0 +1,194 @@
+@@include('../include/_head.html', {
+	"page": "myinvest"
+})
+
+    <!-- <link rel="stylesheet" href="/static/css/etc/font-awesome_v4.7.min.css"> -->
+
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/myinvest/myinvest_190412.css">
+    <!-- <link rel="stylesheet" href="/static/css/myinvest/myinvest_190412.css"> -->
+    <!-- <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/myloan/myloan.css"> -->
+    <!-- <link rel="stylesheet" href="/static/css/myloan/myloan.css"> -->
+    
+</head>
+<body>
+
+<h1 class="skip">누리펀딩</h1>
+<div class="wrap">
+	@@include('../include/_header.html') 
+   
+
+    <!--01.나의 투자-->
+    <section class="contents com-mg">
+        <div class="container">
+            <div class="row lg-wrapper">
+
+                <!--180601, 등록 했을 경우-->
+                <!-- 180703 등록 했을 경우 내용 수정 : myi-dep-on 멀티클래스 추가 -->
+                <div class="myi-dep com-box row br3n myi-dep-loan">
+                    <h2 class="clr"><span class="fc-blue">임준수</span><a href="" class="user-btn"><img src="http://img.nurifunding.co.kr/myp_icon.png" alt="회원정보"></a></h2>
+
+                    <div class="md-code">
+                        <p class="p-1">
+                            나의 추천인 코드
+                        </p>
+                        <p class="p-1">
+                            1000782 <a href="javascript: copy();" class="fc-blue btn btn-copy">복사하기</a>
+                        </p>
+                    </div>
+                    <hr class="sun">
+                    <div class="md-bank">
+                        <h3>나의 출금계좌<a href="https://www.nurifunding.co.kr/mydeposit" class="histry-btn">거래내역 &gt;</a></h3>
+                        <!-- 실계좌 등록 -->
+                        <!--p class="mdb-p1">toxnsldxn@nate.com</p-->
+                        <!-- <p class="mdb-p1">&nbsp;</p> -->
+                        <p class="mdb-p2">은행명 : 기업은행</p>
+                        <p class="mdb-p2">계좌번호 : 33710244901011</p>
+                        <p class="mdb-p2">예금주 : 강혜준</p>
+                    </div>
+                    <div class="md-with">
+                        <h3>나의 예치금<a href="https://www.nurifunding.co.kr/mydeposit" class="histry-btn">거래내역 &gt;</a></h3>
+                        <div class="md-bank2">
+                            <p class="mdb-p2">은행명 : SC제일은행</p>
+                            <p class="mdb-p2">계좌번호 : 69416001457383</p>
+                            <p class="mdb-p2">예금주 : 강혜준</p>
+                        </div>
+                        <p class="p-1 clr"><span class="pull-left s-gray">예치금</span><span class="pull-right s-1">10,075원</span></p>
+                        <!-- <p class="p-1 clr"><span class="pull-left s-purple">이벤트</span><span class="pull-right s-1"><span class="s-purple">0</span>원</span></p> -->
+                        <p class="p-1 clr"><span class="pull-left s-gray">투자액</span><span class="pull-right s-1">0원</span></p>
+                        <hr class="sun clr">
+                        <p class="p-1 total clr"><span class="pull-left s-gray">합계</span><span class="pull-right s-1"><span class="s-blue">10,075</span>원</span></p>
+                        <p class="mdw-p2"><a href="/mydeposit/" class="btn fc-white bg-blue br4">출금 하기</a></p>
+                        <!-- <input type="button" value="90일 선인증 테스트" onclick="javascript: window.open('./auto/autopay.php', 'autopay', 'width=500, height=500');">
+                        <input type="button" value="선인증 취소 테스트" onclick="javascript: window.open('./auto/auth_cancel.php', 'autopay');"> -->
+                    </div>
+
+                </div>
+
+                <!-- 190412 -->
+                <div class="md-wrapper com-box br3">
+                    <h3 class="my-title">나의 대출정보</h3>
+                </div>
+
+                <div class="row md-wrapper">
+                    <div class="revenue com-box row br3 loanlimit-box">
+                        <h3>대출(한도 금액)</h3>
+                        <div class="tp-box">
+                            <p class="tp-p1 clearfix"><span class="pull-left">한도기한 만기일</span></p>
+                            <p class="tp-p1 clearfix"><span class="pull-left p-date-limit">2020-12-20 ~ 2021-12-20</span></p>
+                        </div>
+                        <p class="ti-p1"><span class="c-blue">0</span> 원</p>
+                    </div>
+
+                    <div class="total-payment com-box row br3">
+                        <h3>총 수익</h3>
+                        <p class="ti-p1"><span class="c-blue">0</span> 원</p>
+                        <!--<p class="tp-p3"><span class="pull-left">지급 예정중</span><span class="pull-right">0 원</span></p>-->
+                    </div>
+
+                    <div class="total-invest com-box row br3">
+                        <h3>한도여유금액</h3>
+                        <p class="ti-p1"><span class="c-blue">0</span> 원</p>
+                        <!--<p class="ti-p2"><span class="pull-left">투자 신청중</span><span class="pull-right">0 원</span></p>-->
+                    </div>
+                </div>
+
+                <div class="md-wrapper com-box row br3 myloan-box">
+                    <div class="myloan-apply">
+                        <h3>대출/선정산 신청 <span class="span-sub"><span class="c-blue">신속하게 </span>상담해드립니다.</span></h3>
+                        <p class="apply-txt">
+                            온라인 선정산 신청 시 대금은 1일 이내로 지급됩니다.<br>
+                            나의 대출 정보에서 상세 내역을 확인하세요.<br>
+                            빠른 자금과 판매 물량 확보로 매출 증대에 기여할 수 있습니다.
+                        </p>
+
+                        <a href="" class="btn-go-loan"><p>대출(선정산)신청하기</p></a>
+                    </div>
+                    <div class="myloan-notice">
+                        <h3>누리펀딩 대출</h3>
+                        <ul class="notice-ul">
+                            <li><i class="fa fa-check"></i><span>신속하게 지급합니다.</span></li>
+                            <li><i class="fa fa-check"></i><span>가장 저렴합니다.</span></li>
+                            <li><i class="fa fa-check"></i><span>누구나 이용 가능합니다.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="bond-pdt com-box row br3">
+                <h3>나의 대출신청내역</h3>
+            </div>
+
+            <!--없을 경우-->
+            <!--<p class="pdt-0"><span class="fc-blue">전체</span> 투자상품이 <span class="fc-blue">0개</span> 있습니다.</p>-->
+            <!--있을 경우-->
+            <div class="mypdt-num com-box row br3">
+                <span class="pull-left nth-1">2020.09.16 기준</span><span class="pull-left nth-2">1개의 대출 진행중</span>
+                <!-- <span class="pull-right">10,000원</span> -->
+            </div>
+
+
+            <div id="pay_info"> 
+                <div class="mypdt com-box row br3"> 
+                    <ul class="mp-ul clearfix"> 
+                        <!-- 180706 스타일 제거 -->
+                        <li class="mp-li nth1 clearfix"> 
+                            <div class="mp-d1"><p class="mp-number">채권번호 : 30호</p><p class="mp-label">30호, 매출채권)</p>
+                            <!--p class="mp-wid-box"><span class="mp-wid bg-blue" style='width:0%'></span></p--></div> 
+                            <!--div class="mp-d2"><p class="mp-label">상환중</p><p class="mp-prc">0/3</p></div--> 
+                            <div class="mp-d2"></div> 
+                            <div class="mp-d3 loan-mp"><p class="mp-label">이자율</p><p class="mp-prc">10%</p></div> 
+                            <div class="mp-d4 loan-mp"><p1 class="mp-label">대출금액<p></p><p class="mp-prc fc-blue">50,000,000원</p></p1></div> 
+                            <!-- 180706 클래스 추가 및 스타일 제거 -->
+                            <!--<a href="javascript: void(0);" onclick="javascript: show_fee('30');" class="btn-mp">원리금수취증서</a>-->
+                        </li> 
+                        <li class="mp-li nth2 clearfix"> 
+                            <div class="mp-d clearfix"><p class="pull-left">대출잔액</p><p class="pull-right">50,000,000원</p></div> 
+                            <div class="mp-d clearfix"><p class="pull-left">대출만기일</p><p class="pull-right">2018-09-19</p></div> 
+                            <div class="mp-d clearfix"><a class="fc-blue pull-right btn btn-table" >상세내역 보기</a></div>
+                            <!-- // -->
+                        </li> 
+                        <!-- 180816 PC, Table용 -->
+                        <li class="row-dPrc hidden-xs">
+                            대출실행일: 2018-09-19
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="mypdt com-box row br3"> 
+                    <!-- 180808 취소 클래스 cancle 추가-->
+                    <div class="bg-cancle">취소</div>
+                    <!-- // -->
+                    <ul class="mp-ul clearfix"> 
+                        <!-- 180706 스타일 제거 -->
+                        <li class="mp-li nth1 clearfix"> 
+                                <div class="mp-d1"><p class="mp-number">채권번호 : 30호</p><p class="mp-label">30호, 매출채권</p>
+                                <!--p class="mp-wid-box"><span class="mp-wid bg-blue" style='width:0%'></span></p--></div> 
+                                <!--div class="mp-d2"><p class="mp-label">상환중</p><p class="mp-prc">0/3</p></div--> 
+                                <div class="mp-d2"></div> 
+                                <div class="mp-d3 loan-mp"><p class="mp-label">이자율</p><p class="mp-prc">10%</p></div> 
+                                <div class="mp-d4 loan-mp"><p1 class="mp-label">대출금액<p></p><p class="mp-prc fc-blue">30,000원</p></p1></div> 
+                                <!-- 180706 클래스 추가 및 스타일 제거 -->
+                                <!--<a href="javascript: void(0);" onclick="javascript: show_fee('30');" class="btn-mp">원리금수취증서</a>-->
+                            </li> 
+                            <li class="mp-li nth2 clearfix"> 
+                                <div class="mp-d clearfix"><p class="pull-left">대출잔액</p><p class="pull-right">50,000,000원</p></div> 
+                                <div class="mp-d clearfix"><p class="pull-left">대출만기일</p><p class="pull-right">2018-09-19</p></div> 
+                                <div class="mp-d clearfix"><a class="fc-blue pull-right btn btn-table">상세내역보기</a></div>
+                                <!-- // -->
+                        </li> 
+                    </ul>
+
+    
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

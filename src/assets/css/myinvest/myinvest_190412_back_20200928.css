@@ -538,7 +538,7 @@ hr.sun {margin: 10px auto;}
 	.mod-p2 .cancle-btn {border: 1px solid #ccc;}
 	.mod-p2 .save-btn {margin-left: 6px; border: 1px solid #398fe1;}
 
-	.myi-dep {width: 270px; height: 754px; float: left;}
+	.myi-dep {width: 270px; height: 654px; float: left;}
 	.myi-dep h2 {}
 	.myi-dep h2 .user-btn {position: relative; float: right;}
 	.myi-dep h2 .user-btn img {width: 18px;}
@@ -578,7 +578,7 @@ hr.sun {margin: 10px auto;}
 	.md-wrapper {width: 740px; /* height: 241px; */ float: left; margin-left: 14px;}
 
 	/*미리페이 자동 투자*/
-	.miri-autoinv { height: 140px;}
+	.miri-autoinv {}
 	.miri-autoinv .row-txt.top h3 {font-size: 20px;}
 	.miri-autoinv .row-txt {position: relative; line-height: 1.5; word-break: keep-all; font-size: 17px;}
 	.miri-autoinv .row-txt.mid {margin-top: 5px;}
@@ -672,7 +672,6 @@ hr.sun {margin: 10px auto;}
 	.mp-d1, .mp-d2, .mp-d3, .mp-d4 {float: left;}
 	.mp-d1 .mp-number {font-size: 15px; font-weight: 300;}
 	.mp-d1 .mp-label {font-size: 18px; margin-top: 20px; line-height: 1.2;} 
-	.mp-d1 .mp-date {font-size: 15px; margin-top: 20px; line-height: 1.2;} 
 	.mp-wid-box {position: relative; margin-top: 20px; height: 8px; width: 100%; background: #DCDCDC;}
 	.mp-wid {display: block; width: 70%; height: 100%;}
 	.mp-d2, .mp-d3, .mp-d4 {display: inline-block; text-align: left; font-size: 16px; margin-top: 44px;}
@@ -745,161 +744,4 @@ hr.sun {margin: 10px auto;}
 	.exp-list-box .exp-list .tfoot .nth-1, .exp-list-box .exp-list .tfoot .nth-2, .exp-list-box .exp-list .tfoot .nth-3 {text-align:center}
 	.exp-list-box .exp-list-txt {margin-top:6px; font-size:15px; line-height:20px; color:#1d1d1d}
 	
-}
-
-/*유저정보쪽*/
-.myi-dep .md-user .user-name{
-	display: block;
-}
-
-.myi-dep .md-user .btn-go-user{
-	margin-top: 15px;
-	display: block;
-	float: none;
-}
-
-@media (min-width: 1200px){
-	.myi-dep .md-user + hr.sun{
-		margin: 15px 0;
-	}
-}
-
-@media (max-width: 1200px){
-	.myi-dep .md-user .user-name{
-		display: inline;
-	}
-
-	.myi-dep .md-user .btn-go-user{
-		display: inline;
-		margin-top: 0px;
-		float: right;
-	}
-}
-
-/*대출정보*/
-.com-box .my-title{
-	font-size: 30px;
-	font-weight: 500;
-}
-
-.myi-dep-loan {
-	/* height: auto;*/
-	height: 580px; 
-}
-
-@media (max-width: 1200px){
-	.myi-dep-loan {
-		/* height: auto;*/
-		height: auto; 
-	}
-}
-
-.loanlimit-box h3{
-	margin-bottom: 25px;	
-}
-
-.loanlimit-box .p-date-limit{
-	margin-top: 5px;
-}
-
-.myloan-box{
-	display: flex;
-	justify-content: space-between;
-	/* height: 100%; */
-	height: 268px;
-}
-
-
-
-.myloan-box::before{
-	content: none;
-}
-
-.myloan-box::after{
-	content: none;
-}
-
-.myloan-box .myloan-apply{
-	position: relative;
-}
-
-.myloan-box .myloan-apply h3{
-	/* font-size: 28px; */
-	margin-bottom: 35px;
-}
-
-.myloan-box .myloan-apply h3 .span-sub{
-	font-size: 16px;
-}
-
-.myloan-box .myloan-apply .apply-txt{
-	/* margin-bottom: 45px; */
-	font-size: 16px;
-	line-height: 25px;
-}
-.myloan-box .myloan-apply .btn-go-loan{
-	background-color: #398fe2;
-	color: white;
-	border-radius: 4px;
-	width: 218px;
-	height: 45px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-left: 110px;
-	position: absolute;
-	bottom: 18px;
-}
-
-.myloan-box .myloan-notice{
-	background-color: #f2f9ff;
-	padding: 0 25px;
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	height: 200px;
-}
-
-.myloan-box .myloan-notice h3{
-	font-size: 20px;
-	margin-bottom: 27px;
-}
-
-.myloan-box .myloan-notice .notice-ul>li{
-	font-size: 15px;
-	margin-bottom: 12px;
-}
-
-.myloan-box .myloan-notice .notice-ul i{
-	color: #398fe2;
-	font-size: 15px;
-	margin-right: 6px;
-}
-
-@media (max-width: 767px){
-	.myloan-box{
-		flex-flow: column;
-		height: auto;
-	}
-	.myloan-box .myloan-apply .btn-go-loan{
-		position: relative;
-		bottom: 0;
-		margin: 0 auto;
-		margin-top: 30px
-	}
-	.myloan-box .myloan-notice{
-		margin-top: 20px;
-		height: 180px;
-	}
-}
-
-
-.loan-mp{
-	margin-top: 24px;
-}
-
-@media (max-width: 767px){
-	.loan-mp{
-		margin-top: 0;
-	}	
 }

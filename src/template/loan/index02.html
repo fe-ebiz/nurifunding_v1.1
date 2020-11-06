@@ -1,0 +1,138 @@
+@@include('../include/_head.html', {
+	"page": "loan2"
+})
+    <!-- <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/loan/loan2.css"> -->
+    <link rel="stylesheet" href="/static/css/loan/loan2.css">
+    
+	<!--[if lt IE 9]>
+        <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/loan/loan2_ie9lt.css">
+    <![endif]-->
+
+</head>
+<body>
+
+<h1 class="skip">누리펀딩 대출신청</h1>
+<div class="wrap">
+	@@include('../include/_header.html') 
+   
+    <div class="contents">
+
+        <!--180619 수정-->
+        <!-- 00.대출신청 -->
+        <section class="loan nth-1">
+            <h2 class="lon-h2">대출신청</h2>
+            <p class="fc-blue p-1">대출상담 문의전화 1644-4570</p>
+            <p class="p-2">누리펀딩으로 전화주시면 친절한 상담을 약속드립니다.</p>
+            <div class="container lon-box br4">
+
+                <ul class="lon-ul">
+                    <li class="lon-li">
+                        <p class="lon-p">이름 </p>
+                        <div class="lon-d nr-box">
+                            <input type="text" name="name" class="nr-text br4 center-block" placeholder="이름을 입력해주세요"><span class="nr-ph">이름을 입력해주세요</span>
+                        </div>
+                    </li>
+                    <li class="lon-li">
+                        <div class="nth-1">
+                            <p class="lon-p">휴대폰 번호 </p>
+                            <div class="lon-d nr-box" id="lon-phone">
+                                <input type="text" name="phone" onkeyup="javascript: checktype('number','phone');" class="nr-text br4 center-block" placeholder="'-'를 제외하고 입력해주세요"><span class="nr-ph">'-'를 제외하고 입력해주세요</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lon-li">
+                        <p class="lon-p">주소 </p>
+                        <div class="lon-d nr-box">
+                            <input type="text" name="adress" class="nr-text br4 center-block" placeholder="주소 입력"><span class="nr-ph"></span>
+                        </div>
+                    </li>
+                    <li class="lon-li-limit">
+                        <div class="line-bar"></div>
+                        <p class="p-won">ㆍ나의 대출한도:  <span class="span-txt">100,000,000원</span></p>
+                        <p class="p-date">ㆍ한도기간 만료일:  <span class="span-txt">2020-09-15 ~ 2020-09-15</span></p>
+                    </li>
+                    <li class="lon-li-amount">
+                      <div class="amount-top">
+                          <p class="amount-title">희망대출금액
+                          </p>
+                          <a href="" class="btn-go-myloan"><p>나의 대출내역보기</p></a>
+                      </div>
+                      <div class="lon-d nr-box">
+                        <input type="text" name="loan_price" class="nr-text br4 center-block input-amount" placeholder="'원'단위로 입력해 주세요.(예시: 10,000,000원)"><span class="nr-ph">원</span>
+                      </div>
+                      <ul class="amount-info-ul">
+                        <li>
+                            <p>대출한도</p>
+                            <p>100,000,000원</p>
+                        </li>
+                        <li>
+                            <p>대출잔액</p>
+                            <p>50,000,000원</p>
+                        </li>
+                        <li>
+                            <p>한도여유</p>
+                            <p>50,000,000원</p>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lon-li">
+                        <p class="lon-p">정산일</p>
+                        <div class="nr-box lon-d lon-date-box">
+                          <input type="text" class="nr-text br4 center-block" maxlength="10" value="2020-09-20" placeholder="">
+                          <p class="p-tilde">~</p>
+                          <input type="text" class="nr-text br4 center-block" maxlength="10"  value="2020-09-20" placeholder="">
+                        </div>
+                      </li>
+                      <li class="lon-li">
+                        <p class="lon-p">총 정산금액</p>
+                        <div class="lon-d nr-box">
+                          <input type="text" name="loan_price" class="nr-text br4 center-block" placeholder="총 정산금액"><span class="nr-ph">원</span>
+                        </div>
+                      </li>
+                      <li class="lon-li">
+                        <p class="lon-p">요청사항</p>
+                        <div class="txt-request-box nr-box">
+                            <textarea class="txt-request" placeholder="요청사항 입력"></textarea>
+                        </div>
+                      </li>
+                      <li class="lon-li-agree">
+                          <div class="agree-box">
+                            <p class="agree-title">차입자 유의사항</p>
+                            <div class="agree-contents">
+                                <p class="icon-dot">
+                                    다음 사항을 차입자에게 모두 설명하고, 관련 계약서를 교부하고 있습니다.<br>당사와 차입자의 명칭 및 주소/계약일자/대출금액/대출이자율 및 연체이자율/수수료 등 부대비용/변제기간 및 변제방법/손해배상액 또는 강제집행에 관한 약정/채무의 조기상환조건/그밖의 필요한 사항
+                                </p>
+                                <p class="icon-dot">
+                                    체크박스 연계대출계약을 체결한 경우 계약관계서류를 열람하거나, 채무와 관련된 증명서 발급을 요구할 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="agree-check-box">
+                                <p class="p-txt"><span class="span-name">(주)이엔전자</span>은(는) 상기 내용에 대해 설명을 돋고 이해하였음.</p>
+                                <div class="in-txt-box"><input class="input-txt" placeholder="이해하였음"></div>
+                                <ul class="check-ul">
+                                    <li>
+                                        <input type="checkbox" id="ckeck01">
+                                        <label for="ckeck01">체크박스 개인(신용)정보수비/제공/조회에 동의합니다.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="ckeck02">
+                                        <label for="ckeck02">체크박스 대출거래(건별거래)를 신청코자 합니다.</label>
+                                    </li>
+                                </ul>
+                            </div>
+                          </div>
+                      </li>
+                </ul>
+
+                <p class="alow3"><a href="loan_04.html" class="a-btn br4 bg-blue">신청하기<span class="pull-right">▶</span></a></p>
+            </div>
+        </section>
+        <!-- // -->
+
+    </div>
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

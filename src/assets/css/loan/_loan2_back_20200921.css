@@ -60,7 +60,7 @@
   .nr-check {width: 17px; height: 17px;}
   .nr-check:checked {width: 17px; height: 17px; background: url(https://nurifunding.co.kr/img/check-icon.png) no-repeat 3px 2px; background-size: 10px; background-color: #fff;}
   .alow3 {text-align: center;}
-  /* .alow3 {margin-top: 25px;} */
+  .alow3 {margin-top: 25px;}
   .a-btn {display: inline-block; width: 100%; color: #fff; font-size: 15px; line-height: 3.1em; height: 46px; letter-spacing: 0;}
   .a-btn span {position: relative; right: 20px;font-size: 10px;}
   .a-ps {font-size: 13px; text-align: center; margin-top: 10px; color: #545454; line-height: 1.2; word-break: keep-all;}
@@ -145,7 +145,7 @@
   .nr-check {width: 17px; height: 17px;}
   .nr-check:checked {width: 17px; height: 17px; background: url(https://nurifunding.co.kr/img/check-icon.png) no-repeat 3px 2px; background-size: 10px; background-color: #fff;}
   .alow3 {text-align: center;}
-  /* .alow3 {margin-top: 25px;} */
+  .alow3 {margin-top: 25px;}
   .a-btn {display: inline-block; width: 100%; color: #fff; font-size: 16px; line-height: 3.2em; height: 50px; letter-spacing: 0;}
   .a-btn span {position: relative; right: 20px;font-size: 11px;}
   .a-ps {font-size: 15px; text-align: center; margin-top: 15px; color: #545454;}
@@ -232,16 +232,25 @@
 }
 
 /*요청사항부분*/
-.lon-box .txt-request-box{margin-top:12px;}
-.lon-box .txt-request-box .txt-request{resize:none;outline:none;width:100%;height:80px;text-align:left;letter-spacing:0;background-color:transparent;font-size:16px;padding:8px 15px;border:1px solid #ddd;line-height:1.36em;overflow:hidden;}
-
-
-/*색상*/
-.lon-h2-orange{
-  color: #ff7600;
+.lon-box .txt-request-box{
+  margin-top: 12px;
 }
 
-/*====대출신청_2번째용====*/
+.lon-box .txt-request-box .txt-request{
+  resize: none;
+  outline: none;
+  width: 100%;
+  height: 80px;
+  text-align: left;
+  letter-spacing: 0;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  line-height: 1.36em;
+  overflow: hidden;
+}
+
 
 /*정산일 부분*/
 .lon-box .lon-date-box{
@@ -266,230 +275,4 @@
   font-size: 30px;
   font-weight: 500;
   color: #999;
-}
-
-
-.lon-li-limit .line-bar{
-  background-color: #ddd;
-  width: 100%;
-  height: 1px;
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
-.lon-li-limit p{
-  font-size: 16px;
-  margin-bottom: 10px;
-  margin-left: -3px;
-  /* letter-spacing: -1.2px; */
-}
-
-@media (max-width: 767px){
-  .lon-li-limit .p-date .span-txt{
-      display: block;
-      padding-left: 14px;
-      margin-top: 3px;
-  }
-}
-
-.lon-li-amount{
-  margin-top: 42px;
-}
-
-.lon-li-amount .amount-top{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.lon-li-amount .amount-top .amount-title{
-  color: #333;
-  font-size: 18px;
-  font-weight: 600;
-}
-.lon-li-amount .amount-top .btn-go-myloan{
-  background-color: #398fe1;
-  color: white;
-  border-radius: 4px;
-  width: 120px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-}
-.lon-li-amount .input-amount{
-  border: 1px solid #398fe1;
-  color: #398fe2;
-  font-weight: 600;
-}
-
-.lon-li-amount .input-amount::placeholder{
-  font-weight: 500;
-}
-
-.lon-li-amount .amount-info-ul{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
-}
-
-.lon-li-amount .amount-info-ul li{
-  background-color: #f5f5f5;
-  border: 1px solid #eaeaea;
-  border-radius: 5px;
-  width: 31.8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 16px 15px;
-}
-
-.lon-li-amount .amount-info-ul li p{
-  font-size: 15px;
-}
-
-@media (max-width: 1200px){
-  .lon-li-amount .amount-info-ul li{
-    justify-content: center;
-    padding: 10px 0;
-  }
-  .lon-li-amount .amount-info-ul li p{
-    padding: 2px 0;
-  }
-}
-
-@media (max-width: 767px){
-  .lon-li-amount .amount-info-ul li p{
-    font-size: 13px;
-  }
-}
-
-.lon-li-agree{
-  margin-top: 50px;
-}
-
-@media (max-width: 1200px){
-  .lon-li-agree{
-    margin-top: 30px;
-  }
-}
-
-.agree-box{
-  background-color: #f6fbff;
-  padding: 22px 4%;
-  
-}
-
-.agree-box .agree-title{
-  color: #444;
-  font-weight: 600;
-  font-size: 16px;
-  margin-bottom: 12px;
-}
-
-.agree-box .agree-contents{
-  background-color: white;
-  margin: 0 auto;
-  border: 1px solid #dfe5ea;
-  /* width: 92%; */
-  padding: 20px 25px;
-}
-
-.agree-box .agree-contents p{
-  color: #757575;
-  font-size: 15px;
-  line-height: 18px;
-  word-break: keep-all;
-  margin-bottom: 20px;
-}
-
-.agree-box .agree-contents p:last-of-type{
-  margin-bottom: 0;
-}
-
-.agree-box .agree-contents .icon-dot{
-  position: relative;
-}
-
-.agree-box .agree-contents .icon-dot::before{
-  content: "ㆍ";
-  position: absolute;
-  top: 0;
-  left: -14px;
-}
-
-.agree-box .agree-check-box{
-  text-align: center;
-}
-
-.agree-box .agree-check-box .p-txt{
-  word-break: keep-all;
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-.agree-box .agree-check-box .p-txt .span-name{
-   color: #398fe1;
-}
-
-.agree-box .agree-check-box .in-txt-box{
-  border: 2px dashed #398fe1;  
-  width: 168px;
-  height: 44px;
-  margin: 0 auto;
-  margin-top: 18px;
-}
-
-.agree-box .agree-check-box .in-txt-box .input-txt{
-  outline: none;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  font-size: 15px;
-}
-
-.agree-box .agree-check-box .in-txt-box .input-txt::placeholder{
-  font-size: 15px;
-}
-
-.agree-box .agree-check-box .check-ul{
-  margin: 0 auto;
-  margin-top: 40px;
-  display: inline-block;
-}
-
-@media (max-width: 767px){
-  .agree-box .agree-check-box .check-ul{
-    width: 90%;
-  }
-}
-
-
-.agree-box .agree-check-box .check-ul>li{
-  font-size: 15px;
-  line-height: 18px;
-  margin-bottom: 10px;
-  display: flex;
-}
-
-
-.agree-box .agree-check-box .check-ul>li:last-of-type{
-  margin-bottom: 0;
-}
-
-.agree-box .agree-check-box .check-ul>li input{
-  width: 13px;
-  height: 13px;
-  margin-right: 7px;
-  margin-top: 2px;
-  flex-shrink: 0;
-}
-
-.agree-box .agree-check-box .check-ul>li label{
-  font-size: 15px;
-  word-break: keep-all;
-  text-align: left;
 }

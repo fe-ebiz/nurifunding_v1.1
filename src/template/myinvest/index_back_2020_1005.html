@@ -1,8 +1,8 @@
 @@include('../include/_head.html', {
 	"page": "myinvest"
 })
-    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/myinvest/myinvest_190412.css">
-    <!-- <link rel="stylesheet" href="/static/css/myinvest/myinvest_190412.css"> -->
+    <!-- <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/myinvest/myinvest_190412.css"> -->
+    <link rel="stylesheet" href="/static/css/myinvest/myinvest_190412.css">
     
 </head>
 <body>
@@ -15,30 +15,82 @@
     <!--01.나의 투자-->
     <section class="contents com-mg">
         <div class="container">
+
+<!--
+            <div class="mode com-box row br3">
+                <h2><img class="mode-icon" src="http://img.nurifunding.co.kr/mode_icon.png" alt="자동투자">자동투자 모드 : <span class="use">사용안함</span><span class="hidden-xs">동일한 금액을 자동으로 투자하여 최적의 포트폴리오를 구성할 수 있습니다.</span></h2>
+                <div class="modify-tab" id="modify-tab">
+                    - 각 채권당 <span class="td-under">5만원</span>씩 자동으로 투자 <a href="" class="on-btn fc-white">수정</a>
+                </div>
+                <div class="modify-box clearfix" id="modify-box">
+                    - 각 채권당
+                    <div class="dropdown mode-prc" id="mode-prc">
+                        <button type="button" class="btn">5만원<span class="pull-right">▼</span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">5만원</a></li>
+                            <li><a href="#">10만원</a></li>
+                            <li><a href="#">20만원</a></li>
+                            <li><a href="#">50만원</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown mode-range" id="mode-range">
+                        <button type="button" class="btn">채권기간 범위<span class="pull-right">▼</span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">6개월</a></li>
+                            <li><a href="#">12개월</a></li>
+                            <li><a href="#">18개월</a></li>
+                            <li><a href="#">24개월</a></li>
+                            <li><a href="#">30개월</a></li>
+                            <li><a href="#">36개월</a></li>
+                        </ul>
+                    </div>
+                    자동투자
+                    <p class="mod-p1 nr-box">
+                        <input type="checkbox" class="nr-check"><span>예치금 잔액부족 문자 알림받기 (SMS)</span></p>
+                    <p class="mod-p2"><a href="" class="cancle-btn br4">취소</a><a href="" class="save-btn fc-white bg-blue br4">저장</a></p>
+                </div>
+            </div>
+-->
+
             <div class="row lg-wrapper">
+                <!--등록 안했을 경우-->
+                <!-- 180703 등록안했을 경우 내용 수정 -->
+                <!--<div class="myi-dep com-box row br3">
+                    <h2 class="clr"><span class="fc-blue">성다솜</span><a href="/member/mypage.php" class="user-btn"><img src="https://www.nurifunding.co.kr/img/myp_icon.png" alt="회원정보"></a></h2>
+                    <div class="md-bank">
+                        <h3>나의출금계좌<a href="/mydeposit/#pay_log" class="histry-btn">거래내역 &gt;</a></h3>
+                        <p class="mdb-p1">&nbsp;</p>
+                        <p class="mdb-p2">
+                            투자의 원리금을 수취할 본인명의의 은행 계좌 정보를 입력해 주세요<br><br>
+                            반드시 "성다솜"님 본인명의의 계좌를 등록해 주십시오.
+                        </p>
+                        <p class="mdw-p2"><a href="#none" class="btn fc-white bg-blue br4">나의 출금계좌 등록하기</a></p>            
+                    </div>
+                    <div class="md-with">
+                        <h3>나의 예치금<a href="/mydeposit/#pay_log" class="histry-btn">거래내역 &gt;</a></h3>
+                        <p class="mdw-p0" style="text-align:left;">
+                            투자를 진행하시려면 먼저 예치금 가상계좌를 발급받아주세요.<br><br>
+                            고객님의 가상계좌로 입금후 투자가 가능합니다.
+                        </p>
+
+                        <p class="mdw-p2"><a href="javascript: bank_insert();" class="btn fc-white bg-blue br4">예치금 가상계좌 발급받기</a></p>            
+
+                    </div>
+                </div>-->
+
                 <!--180601, 등록 했을 경우-->
                 <!-- 180703 등록 했을 경우 내용 수정 : myi-dep-on 멀티클래스 추가 -->
                 <div class="myi-dep com-box row br3">
-                    <!--교체 부분-->
-                    <div class="md-user">
-                        <h3>
-                            <span class="fc-blue user-name">임준수</span>
-                            <a href="" class="btn-go-user">회원정보 &gt;</a>
-                        </h3>
-                    </div>
-                    <!--//교체 부분-->
+                    <h2 class="clr"><span class="fc-blue">임준수</span><a href="" class="user-btn"><img src="http://img.nurifunding.co.kr/myp_icon.png" alt="회원정보"></a></h2>
 
-
-                    <!-- <h2 class="clr"><span class="fc-blue">임준수</span><a href="" class="user-btn"><img src="http://img.nurifunding.co.kr/myp_icon.png" alt="회원정보"></a></h2>-->
-                    <!-- <div class="md-code">
+                    <div class="md-code">
                         <p class="p-1">
                             나의 추천인 코드
                         </p>
                         <p class="p-1">
                             1000782 <a href="javascript: copy();" class="fc-blue btn btn-copy">복사하기</a>
                         </p>
-                    </div> -->
-                    
+                    </div>
                     <hr class="sun">
                     <div class="md-bank">
                         <h3>나의 출금계좌<a href="https://www.nurifunding.co.kr/mydeposit" class="histry-btn">거래내역 &gt;</a></h3>
@@ -65,6 +117,24 @@
                         <!-- <input type="button" value="90일 선인증 테스트" onclick="javascript: window.open('./auto/autopay.php', 'autopay', 'width=500, height=500');">
                         <input type="button" value="선인증 취소 테스트" onclick="javascript: window.open('./auto/auth_cancel.php', 'autopay');"> -->
                     </div>
+                    <!--<div class="md-bank">
+                        <p class="mdb-p1">mykasya@naver.com</p>
+                        <p class="mdb-p2">국민은행 55284 16238510</p>
+                    </div>
+                    <div class="md-with">
+                        <h3>나의 예치금<a href="" class="histry-btn">거래내역 &gt;</a></h3>
+                        <p class="p-1 clr"><span class="pull-left s-gray">일반 예치금</span><span class="pull-right s-1">20,001원</span></p>
+                        <p class="p-1 clr"><span class="pull-left s-purple">이벤트 적립금</span><span class="pull-right s-1"><span class="s-purple">10,000</span>원</span></p>
+                        <hr class="sun clr">
+                        <p class="p-1 total clr"><span class="pull-left s-gray">총 예치금</span><span class="pull-right s-1"><span class="s-blue">30,001</span>원</span></p>
+                        <p class="mdw-p2"><a href="../mydeposit/index.html" class="btn fc-white bg-blue br4">출금 하기</a></p>
+                    </div>
+                    <div class="md-bank2">
+                        <p class="mdb-p1">예치금 계좌</p>
+                        <p class="mdb-p2">신한은행 4567894561238</p>
+                        <p class="mdb-p1">예금주</p>
+                        <p class="mdb-p2">누리펀딩임준수</p>
+                    </div>-->
 
                 </div>
                 <div class="md-wrapper com-box br3">
@@ -84,6 +154,14 @@
                             <a href="" class="btn-base termi">기능설명 확인 후 설정하기</a>
                         </div>
                     </div>
+                    <!-- 인증 후 화면 -->
+                    <!-- <div class="row-txt mid after">
+                        <span class="c-blue">100만원 자동 투자 중</span><br class="show-xs"/><span class="hidden-xs">/</span> 잔여기한 [<span class="c-red">20일</span>] 종료일 [<span class="c-red">2019.04.30</span>]
+                        <div class="setup">
+                            <p class="c-green">※ 현재 자동 투자 미사용 중</p>
+                            <a href="" class="btn-base termi bg-org">기간연장 또는 해지하기</a>
+                        </div>
+                    </div> -->
                 </div>
 
                 <div class="row md-wrapper">

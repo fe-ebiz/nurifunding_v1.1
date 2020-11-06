@@ -166,7 +166,7 @@ hr {border: none; border-top: 1px solid #ddd;}
 		background: #fff; border: 1px solid #ddd; outline: none; cursor: pointer;
 	}
 	.form-check {width: 17px; height: 17px;}
-	.form-check:checked {background: #fff url(https://nurifunding.co.kr/img/check-icon.png) no-repeat 3px 2px; background-size: 10px;}
+	.form-check:checked {background: #fff url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 3px 2px; background-size: 10px;}
 	.form-radio {width: 17px; height: 17px; border-radius: 50%;}
 	.form-radio:checked {background: #fff url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 17px;}
     .form-base {
@@ -364,7 +364,7 @@ hr {border: none; border-top: 1px solid #ddd;}
 		background: #fff; border: 1px solid #ddd; outline: none; cursor: pointer;
 	}
 	.form-check {width: 20px; height: 20px; top: -1px;}
-	.form-check:checked {background: #fff url(https://nurifunding.co.kr/img/check-icon.png) no-repeat 3px 3px; background-size: 12px;}
+	.form-check:checked {background: #fff url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 3px 3px; background-size: 12px;}
 	.form-radio {width: 20px; height: 20px; border-radius: 50%;}
 	.form-radio:checked {background: #fff url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 20px;}
     .form-input {;}
