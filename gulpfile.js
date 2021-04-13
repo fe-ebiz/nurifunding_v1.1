@@ -32,6 +32,21 @@ function bSync() {
     });
 };
 
+
+function bSyncLand() {
+    browserSync.init({
+        // watch: true,
+        port: 3030,
+        startPath: './views/landing_pay/secured.html',
+        server: {
+            baseDir: './dist'
+        }
+    });
+};
+
+
+
+
 function bSyncTest() {
     browserSync.init({
         port: 3050,
@@ -294,5 +309,6 @@ exports.testPathLocal = testPathLocal;
 exports.default = parallel(bSync, watching);
 exports.serve = parallel(series(parallel(template), sassDev, css, js, img, etc, bSync), watching);
 exports.build = parallel(series(parallel(template), sassDev, css, js, img, etc, bSync), watching);
+exports.land = parallel(series(parallel(template), sassDev, css, js, img, etc, bSyncLand), watching);
 exports.default = parallel(bSync, watching);
 exports.test = series(parallel(template), sassPrd, css, js, img, etc, copyTest, testPathServer, bSyncTest);

@@ -22,16 +22,14 @@
     .pay-header .main-nav > li {margin-left:0; }
     .pay-header .main-nav > li > a {font-size:13px; font-weight:bold; color:#616161}
     .pay-header .main-nav .img-call {display:inline-block; margin:0 5px}
-    /* .pay-header .main-nav .last {display:none} */
+    .pay-header .main-nav .last {display:none}
     
     /* 메인 */
     .pay-sec1 {padding:30px 0 17px; text-align:center; background:url(https://nurifunding.co.kr/img/nuripay/m/bg_sec1.jpg) no-repeat center center; background-size:cover}
-    
     .pay-sec1 .btn-pay {margin:20px 0 26px; width:100px;}
     
     /* 누리페이 선정산 */
-    /* .pay-sec2 { padding:27px 18px 25px; background:#f4f4f4} */
-    .pay-sec2 { padding:27px 18px 25px; background:#fff}
+    .pay-sec2 {/*padding:27px 18px 320px;*/ padding:27px 18px 25px; background:#f4f4f4}
     .pay-sec2 .pay-cal {display:none; position:absolute; box-sizing:border-box; width:100%; height:280px; margin:0 auto; bottom:-297px; padding:20px 0; text-align:center; border:1px solid #c8c6c7; border-radius:1px; background:#fff}
     .pay-sec2 .pay-cal .cal-tit {position:relative; display:block; width:95px; height:auto; margin:0 auto}
     .pay-sec2 .pay-cal .cal-tit img {height:24px;}
@@ -58,8 +56,7 @@
     .pay-sec4 {box-sizing:border-box; padding:27px 0 23px; background:#f4f4f4}
     
     /* 누리페이 선정산 서비스를 신청하세요! */
-    /* .pay-sec5 {box-sizing:border-box; padding:28px 17px 33px; margin:0 auto; background:#fff} */
-    .pay-sec5 {box-sizing:border-box; padding:28px 17px 33px; margin:0 auto; background:#f4f4f4}
+    .pay-sec5 {box-sizing:border-box; padding:28px 17px 33px; margin:0 auto; background:#fff}
     .pay-sec5 .pay-area { margin:0 auto; text-align:center}
     .pay-sec5 .cal-tit {margin-bottom:7px; font-size:19px; font-weight:600; text-align:center; word-break:keep-all; line-height:22px; color:#0076b8}
     .pay-sec5 .cal-txt {margin-bottom:14px; font-size:12px; text-align:center; line-height:15px; word-break:keep-all; color:#3d3d3d}
@@ -88,171 +85,29 @@
     
 /* 
   20180810
-  후순위담보대출(모바일)
-  (2021_0305 재수정)
+  후순위담보대출
 */
-    .fc-green {color:#ac3500 !important}
+    .fc-green {color:#00964a !important}
     
-    /* .mrgg-wrap {padding-top:34px} */
-    .mrgg-wrap {padding-top:0}
-    .mrgg-wrap .btn-pay {background:#ac3500}
-    /* .mrgg-wrap .i-s {background:#ac3500} */
+    .mrgg-wrap {padding-top:34px}
+    .mrgg-wrap .btn-pay {background:#3fb118}
+    .mrgg-wrap .i-s {background:#3fb118}
 
-   /* 헤더 */
-   .pay-header-new{
-    z-index: 20;
-    position: fixed;
-    top: 0;
-    background-color: #e5e5e5;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px;
-  }
-
-  .pay-header-new *{
-    /* font-family: 'NanumSquare', sans-serif; */
-  }
-
-  .pay-header-new .header-area{
-    position: relative;
-    width: 960px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .pay-header-new .header-area .top-logo{
-    width: 112px;
-  }
-
-  .pay-header-new .header-area .top-logo img{
-    vertical-align: middle;
-  }
-
-  .pay-header-new .header-area .btn-fn-box{
-    display: flex;
-    align-items: center;
-  }
-
-  .pay-header-new .header-area .tel{
-    margin-right: 8px;
-    color: #616161;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: -1.2px;
-  }
-
-  .pay-header-new .header-area .btn-apply{
-    background-color: #176AE6;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 11px;
-    font-weight: 600;
-    width: 120px;
-    height: 26px;
-    outline: none;
-  }
+    /* 헤더 */
+    .mrgg-wrap .pay-header {height:34px; padding-top:6px}
+    .mrgg-wrap .pay-header h2 {width:93px;}
+    .mrgg-wrap .pay-header .main-nav > li a {font-weight:bold}
+    
 
     /* 메인 */
-    /* .mrgg-wrap .pay-sec1 {padding:26px 0 23px; color:#fff;} */
-    .mrgg-wrap .pay-sec1 {
-      min-height: 250px;
-	    padding:40px 0 20px 0;
-	    text-align:center;
-	    color:#fff;
-      background: linear-gradient(to bottom, #edbe6b, #ffe0a9 80%, #a17342 80%);
-      margin-top: 40px;
-    }
-    .mrgg-wrap .pay-sec1 *{
-      font-family: 'NanumSquare', sans-serif;
-    }
-
-    .mrgg-wrap .pay-sec1 button{
-      outline: none;
-    }
-
-
-    .mrgg-wrap .pay-sec1 .pay-tit {
-      color:#323232;
-      font-size:30px;
-      font-weight:800;
-      line-height:1;
-      letter-spacing:-3px;
-    }
-    .mrgg-wrap .pay-sec1 .pay-tit .mark{color:#a63b00;}
-    .mrgg-wrap .pay-sec1 .pay-sub-tit {
-      margin-top:5px;
-      color:#333;
-      font-weight:700;
-      font-size:17px;
-      line-height:36px;
-      letter-spacing:-1.5px;
-      margin-top: 12px;
-      line-height: 1.2;
-    }
-    .mrgg-wrap .pay-sec1 .pay-sub-tit span{
-      display: block;
-    }
-
-
-    .mrgg-wrap .pay-sec1 .pay-txt-1 {
-      color:#694115;
-      font-size:20px;
-      font-weight: 800;
-      line-height: 1;
-      letter-spacing:-1.7px;
-      margin-top:15px;
-    }
-
-    
+    .mrgg-wrap .pay-sec1 {padding:26px 0 23px; color:#fff;}
+    .mrgg-wrap .pay-sec1 .pay-tit {font-size:24px; line-height:28px;}
+    .mrgg-wrap .pay-sec1 .pay-sub-tit {margin-top:11px; font-size:16px; line-height:20px;}
+    .mrgg-wrap .pay-sec1 .pay-txt-1 {font-size:12px; line-height:16px;}
     .mrgg-wrap .pay-sec1 .pay-txt-2 {display: none;}
-
-
-    .mrgg-wrap .pay-sec1 .pay-img-area{
-      width: 100%;
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .mrgg-wrap .pay-sec1 .pay-img-area .img-box{
-      width: 320px;
-      flex-shrink: 0;
-    }
-
-    .mrgg-wrap .pay-sec1 .pay-img-area .btn-apply{
-      display: none;
-    }
-
-    
-    
     .mrgg-wrap .pay-sec1 .pay-img {position:relative; width:77px; margin:0 auto; padding:11px 0 11px;}
     .mrgg-wrap .pay-sec1 .btn-pay {width:125px; margin:18px 0 0 0; font-size:11px}
     .mrgg-wrap .pay-sec1 .show-xs {display:block}
-
-    /*모바일 하단 대출버튼*/
-    .mrgg-wrap .bottom-btn-area{
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      position: fixed;
-      bottom: 0;
-    }
-    .mrgg-wrap .bottom-btn-area .btn-apply{
-      width: 100%;
-      height: 52px;
-      background-color: #ac3500;
-      color: #fff;
-      font-size: 20px;
-      font-weight: 600;
-      letter-spacing: -1.2px;
-      outline: none;
-    }
-
 
     /* 서비스 */
     .mrgg-wrap .pay-sv-sec {padding:30px 15px 30px; text-align:center; word-break:keep-all}
@@ -275,7 +130,7 @@
     .mrgg-wrap .pay-form-sec .input-box, .mrgg-wrap .pay-form-sec .btn-pay {width:85%}
     
     /* 푸터 */
-    .mrgg-wrap .pay-footer {padding:19px 18px 80px; height:auto;}
+    .mrgg-wrap .pay-footer {padding:19px 18px 24px; height:auto;}
     .mrgg-wrap .pay-footer .f-txt-box .btn-kakao {position:absolute; display:inline-block; width:116px; top:27%; right:-4px}
     
 }
@@ -304,13 +159,11 @@
     .pay-header .main-nav .btn-pay {height:34px; font-size:14px; line-height:34px}
     
     /* 메인 */
-    /* .pay-sec1 {padding:95px 0 86px; background:url(https://nurifunding.co.kr/img/nuripay/bg_sec1.jpg) no-repeat center center; background-size:cover} */
-    .pay-sec1 {padding:95px 0 86px;}
+    .pay-sec1 {padding:95px 0 86px; background:url(https://nurifunding.co.kr/img/nuripay/bg_sec1.jpg) no-repeat center center; background-size:cover}
     .pay-sec1 .btn-pay {margin:36px 0 118px; width:165px; height:53px; font-size:14px; line-height:53px}
     
     /* 누리페이 선정산 */
-    /* .pay-sec2 {padding:35px 0 60px; background:#f4f4f4} */
-    .pay-sec2 {padding:35px 0 60px; background:#fff}
+    .pay-sec2 {/*padding:45px 0;*/ padding:35px 0 60px; background:#f4f4f4}
     .pay-sec2 .pay-cal {display:none; float:left; position:relative; box-sizing:border-box; width:348px; height:437px; margin:0 auto; padding:30px 15px; text-align:center; border:1px solid #c8c6c7; border-radius:1px; background:#fff}
     .pay-sec2 .pay-cal .cal-tit {position:relative; display:block; width:163px; height:52px; margin:0 auto}
     .pay-sec2 .pay-cal .cal-tit img {height:40px;}
@@ -338,8 +191,7 @@
     .pay-sec4 {padding:46px 0 55px; background:#f4f4f4}
     
     /* 누리페이 선정산 서비스를 신청하세요! */
-    /* .pay-sec5 {padding:50px 0 53px; margin:0 auto; background:#fff} */
-    .pay-sec5 {padding:50px 0 53px; margin:0 auto; background:#f4f4f4}
+    .pay-sec5 {padding:50px 0 53px; margin:0 auto; background:#fff}
     .pay-sec5 .pay-area { margin:0 auto; text-align:center}
     .pay-sec5 .cal-tit {margin-bottom:10px; font-size:28px; font-weight:600; text-align:center; line-height:28px; color:#0076b8}
     .pay-sec5 .cal-txt {margin-bottom:30px; font-size:20px; text-align:center; line-height:24px; color:#3d3d3d}
@@ -365,172 +217,26 @@
     
 /* 
   20180810
-  후순위담보대출(PC)
-  (2021_0305 재수정)
+  후순위담보대출
 */
-    .fc-green {color:#ac3500 !important}
+    .fc-green {color:#00964a !important}
     
     .mrgg-wrap {}
-    .mrgg-wrap .btn-pay {background:#ac3500}
-    /* .mrgg-wrap .i-s {background:#3fb118} */
+    .mrgg-wrap .btn-pay {background:#3fb118}
+    .mrgg-wrap .i-s {background:#3fb118}
     
-    
-     /* 헤더 */
-    .pay-header-new{
-      z-index: 20;
-      position: fixed;
-      top: 0;
-      background-color: #e5e5e5;
-      width: 100%;
-      height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-
-    .pay-header-new .header-area{
-      position: relative;
-      width: 960px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .pay-header-new .header-area .top-logo{
-      width: 192px; 
-    }
-    .pay-header-new .header-area .top-logo img{
-      vertical-align: middle;
-    }
-
-    .pay-header-new .header-area .btn-fn-box{
-      display: flex;
-      align-items: center;
-    }
-
-    .pay-header-new .header-area .tel{
-      margin-right: 20px;
-      color: #616161;
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: -1.2px;
-    }
-
-    .pay-header-new .header-area .btn-apply{
-      background-color: #176AE6;
-      border-radius: 5px;
-      color: #fff;
-      font-size: 14px;
-      font-weight: 600;
-      width: 162px;
-      height: 34px;
-      outline: none;
-    }
+    /* 헤더 */
+    .mrgg-wrap .pay-header h2 {width:192px;}
+    .mrgg-wrap .pay-header .main-nav > li a {font-weight:bold}
     
     /* 메인 */
-    .mrgg-wrap .pay-sec1 {padding:90px 0 45px; text-align:center; color:#fff; background:url(https://nurifunding.co.kr/img/nuripay/mrgg/bg_sec1.jpg) no-repeat center center; background-size:cover}
-    .mrgg-wrap .pay-sec1 {
-      min-height: 600px;
-	    padding:70px 0 20px 0;
-	    text-align:center;
-	    color:#fff;
-      background: linear-gradient(to bottom, #edbe6b, #ffe0a9 80%, #a17342 80%);
-    }
-    .mrgg-wrap .pay-sec1 *{
-      font-family: 'NanumSquare', sans-serif;
-    }
-
-    .mrgg-wrap .pay-sec1 button{
-      outline: none;
-    }
-
-    .mrgg-wrap .pay-sec1 .pay-tit {
-      color:#323232;
-      font-size:60px;
-      font-weight:800;
-      line-height:1;
-      letter-spacing:-3px;
-    }
-    .mrgg-wrap .pay-sec1 .pay-tit .mark {
-      color:#a63b00;
-    }
-    .mrgg-wrap .pay-sec1 .pay-sub-tit {
-      margin-top:5px;
-      color:#333;
-      font-weight:700;
-      font-size:28px;
-      line-height:36px;
-      line-height: 1.2;
-      letter-spacing:-1.5px;
-      margin-top: 12px;
-    }
-    .mrgg-wrap .pay-sec1 .pay-txt-1 {
-      color:#694115;
-      font-size:34px;
-      font-weight: 800;
-      line-height:1;
-      letter-spacing:-1.7px;
-      margin-top:30px;
-    }
-
+    .mrgg-wrap .pay-sec1 {/*min-height:600px;*/ padding:90px 0 45px; text-align:center; color:#fff; background:url(https://nurifunding.co.kr/img/nuripay/mrgg/bg_sec1.jpg) no-repeat center center; background-size:cover}
+    .mrgg-wrap .pay-sec1 .pay-tit {font-size:42px; line-height:50px;}
+    .mrgg-wrap .pay-sec1 .pay-sub-tit {margin-top:5px; font-size:28px; line-height:36px;}
+    .mrgg-wrap .pay-sec1 .pay-txt-1 {font-size:20px; line-height:28px;}
     .mrgg-wrap .pay-sec1 .pay-txt-2 {font-size:18px; line-height:26px;}
-
-    .mrgg-wrap .pay-sec1 .pay-img-area{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      padding-left: 80px;
-    }
-
-    .mrgg-wrap .pay-sec1 .pay-img-area .img-box{
-      width: 627px;
-      flex-shrink: 0;
-    }
-
-    .mrgg-wrap .pay-sec1 .pay-img-area .btn-apply{
-      width: 320px;
-      height: 100px;
-      border-radius: 50px;
-      background-color: #ac3500;
-      margin-left: -5px;
-      flex-shrink: 0;
-      margin-top: 70px;
-    }
-
-    .mrgg-wrap .pay-sec1 .pay-img-area .btn-apply .p-txt{
-      color: #fff;
-      font-size: 30px;
-      letter-spacing: -1.5px;
-      font-weight: 700;
-    }
-
-    .mrgg-wrap .pay-sec1 .btn-apply .icon-arrow-down{
-    }
-
-    .mrgg-wrap .pay-sec1 .btn-apply .icon-arrow-down::before{
-      content: "";
-      display: block;
-      border-right: 4px solid #fff; 
-      border-bottom: 4px solid #fff; 
-      width: 20px;
-      height: 20px;
-      transform: rotate(45deg);
-      margin: 0 auto;
-      margin-top: -5px;
-    }
-
-
-
     .mrgg-wrap .pay-sec1 .pay-img {padding:24px 0 26px;}
     .mrgg-wrap .pay-sec1 .btn-pay {width:214px; margin:24px 0 132px 0; font-size:18px}
-
-    /*모바일 하단 대출버튼*/
-    .mrgg-wrap .bottom-btn-area{
-      display: none;
-    }
     
     /* 서비스 */
     .mrgg-wrap .pay-sv-sec {padding:50px 0 50px}
@@ -562,7 +268,19 @@
     .mrgg-wrap .pay-footer .f-txt-box .btn-kakao {position:relative; display:inline-block; width:163px; margin-left:15px;}
     .mrgg-wrap .pay-footer .f-txt-box .btn-kakao img {position:relative; width:100%}
     .mrgg-wrap .pay-footer .f-cs-txt {padding-top:15px}
+    
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,67 @@
+<!-- 팝업(리브메이트, 온투법)[통합신규] -->
+<link rel="stylesheet" href="/static/css/pop/pop_duble_contents2.css">
+<div class="pop-area-box">
+    <div class="pop-box">
+        <div class="pop-main-box pop01">
+            <a href="https://www.nurifunding.co.kr/notice/view.php?var=EU1x&page=1">
+                <img src="https://www.nurifunding.co.kr/img/notice/200202_notice_pop.jpg" alt="온투법 팝업">
+            </a>
+        </div>
+        <div class="pop-main-box pop02">
+            <a href="https://www.nurifunding.co.kr/notice/view.php?var=EU11&page=1">
+                <img src="https://www.nurifunding.co.kr/img/notice/200202_liiv_pop.jpg" alt="리브메이트 팝업">
+            </a>
+        </div>
+        <div class="pop-btn-box">
+            <button class="btn-not-day" type="button">오늘 하루 보지 않기</button>
+            <button class="btn-close-pop" type="button">창 닫기</button>
+        </div>
+    </div>    
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //쿠키이름
+        let cokieName = "pop_duble";
+
+        //하루 안보기 체크하기
+        if($.cookie(cokieName) == undefined){
+            
+            //스크롤 막기
+            $(".pop-area-box").show();
+            $('html, body').addClass('pop-non-scroll');
+        }
+
+        //닫기 버튼
+        $(".pop-area-box .btn-close-pop").on('click', function(){
+            //선택된 팝업창 숨기기
+            let popBox = $(".pop-area-box");
+            popBox.hide();
+            $('html, body').removeClass("pop-non-scroll");
+        });
+        //하루 안보기 버튼
+        $(".pop-area-box .btn-not-day").on('click', function(){
+            //선택된 팝업창 숨기기
+            let popBox = $(".pop-area-box")
+            addCookieData(cokieName);
+            popBox.hide();
+            $('html, body').removeClass("pop-non-scroll");
+        });
+        
+    });
+
+    //쿠키데이터 등록
+    addCookieData = function(popName){
+        if($.cookie(popName) == undefined){
+            //초단위 테스트용
+            // var date = new Date;
+            // date.setTime(date.getTime() + 5*1000);
+            //쿠키가 없는 경우 testCookie 쿠키를 추가
+            let date = 1;//하루
+            $.cookie(popName, 'Y', { expires: date});
+            //$.removeCookie('pop_duble');
+        } 
+    }
+
+</script>
+<!-- 팝업(리브메이트, 온투법)[통합신규] -->
